@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/Logo (1).png">
+
+  <title>Mint</title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+  <!-- Nucleo Icons -->
+  <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link href="./assets/css/custom.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.5" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="g-sidenav-show  " style="background-color: #E5EBE6;">
+  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3  "
+  id="sidenav-main"
+  style="background-color: #38383E;box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);">
+
+  <div class="sidenav-header">
+    <i class="fas fa-times px-5 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+    <a class="navbar-brand m-0 mx-1" href="# " target="_blank">
+      <img src="./assets/img/Mint-logo.png" class="navbar-brand-img h-90 img-fluid" alt="main_logo"  >
+ 
+      <span class="ms-2   text-white" style="font-size: 23px;font-family: monospace,'bolder';margin-top: 3px!important;font-weight: bolder;">MINT</span>
+    </a>
+  </div>
+  <hr class="horizontal dark mt-0 mb-2">
+  <div class="collapse navbar-collapse  w-auto h-auto" id="sidenav-collapse-main">
+    <ul class="navbar-nav">
+      <li class="nav-item mb-2 mt-0">
+        <a data-bs-toggle="collapse" href="#ProfileNav" class="nav-link text-dark " aria-controls="ProfileNav"
+          role="button" aria-expanded="false">
+          <img src="./assets/img/kal-visuals-square.jpg" class="avatar">
+          <span class="nav-link-text ms-2 ps-1 text-white" style="font-weight: 400;">Alex Brooklyn</span>
+        </a>
+        <div class="collapse" id="ProfileNav" style="">
+          <ul class="nav ">
+
+            <li class="nav-item">
+              <a class="nav-link text-dark " href="Login.html">
+                <span class="sidenav-mini-icon"> L </span>
+                <span class="sidenav-normal  ms-3  ps-1" style="font-weight: 400;"> Logout</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </li>
+      <hr class="horizontal dark mt-0">
+
+      <li class="nav-item">
+        <a href="index.html" class="nav-link text-light  " >
+          <i class="material-icons-round  text-light  float-start" >dashboard</i>
+          <span class="nav-link-text  px-3 " style="font-weight: 500;">Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="Clients.html" class="nav-link text-light" >
+            <i class="fa fa-users  text-light  text-sm" aria-hidden="true" ></i>
+          <span class="nav-link-text  px-2 ps-3  "
+            style="font-weight: 400">Clients</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="Tickets.html" class="nav-link text-dark " >
+          <i class="fa fa-file-text text-light text-sm" aria-hidden="true"></i>
+          <span class="nav-link-text text-light px-3 "
+            style="font-weight: 400">Inbox</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="FormTemplates.html" class="nav-link text-dark " >
+          <i class="fa fa-file-text text-light text-sm" aria-hidden="true"></i>
+          <span class="nav-link-text text-light px-2 ps-3  "
+            style="font-weight: 400">Resources</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="Settings.html" class="nav-link  active">
+          <i class="fa fa-cog  text-sm" aria-hidden="true" style="color:#2A6737!important;"></i>
+          <span class="nav-link-text   px-3  " style="font-weight: 400">
+            Settings</span>
+        </a>
+      </li>
+ 
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</aside>
+  <main class="main-content border-radius-lg ">
+    <!-- Navbar -->
+    <nav
+    class="navbar navbar-main navbar-expand-lg position-sticky mt-4 top-1 px-0 mx-4 shadow-none border-radius-xl z-index-sticky"
+    id="navbarBlur" data-scroll="true">
+    <div class="container-fluid py-1 px-3">
+
+      <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
+        <a href="javascript:;" class="nav-link text-body p-0">
+          <div class="sidenav-toggler-inner">
+            <i class="sidenav-toggler-line"></i>
+            <i class="sidenav-toggler-line"></i>
+            <i class="sidenav-toggler-line"></i>
+          </div>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+        <div class="col-lg-11 px-4">
+          <div class="main">
+            <div class="form-group has-search">
+              <span class="fa fa-search form-control-feedback"></span>
+              <input type="text" class="form-control search" placeholder="Search">
+
+            </div>
+          </div>
+        </div>
+
+        <ul class="navbar-nav  justify-content-end">
+          <li class="nav-item dropdown pe-2 mt-2">
+            <a href="javascript:;" class="nav-link text-body p-0 position-relative" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons cursor-pointer">
+            notifications
+          </i>
+              <!-- <span class="position-absolute top-5 start-100 translate-middle badge rounded-pill bg-danger border border-white small py-1 px-2">
+                <span class="small">11</span>
+                <span class="visually-hidden">unread notifications</span>
+              </span> -->
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end p-2 me-sm-n4" aria-labelledby="dropdownMenuButton">
+              <p class="text-end text-info text-decoration-underline">Clear all</p>
+              <li class="mb-2">
+                <a class="dropdown-item border-radius-md" href="javascript:;">
+                  <div class="d-flex align-items-center py-1">
+                    <span class="material-symbols-outlined">
+                      person_add
+                      </span>
+                    <div class="ms-2">
+                      <p class="text-sm font-weight-normal my-auto">
+                        Johan Doe set up their account successfully
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="mb-2">
+                <a class="dropdown-item border-radius-md" href="javascript:;">
+                  <div class="d-flex align-items-center py-1">
+                    <span class="material-symbols-outlined">
+                      person_add
+                      </span>
+                    <div class="ms-2">
+                      <p class="text-sm font-weight-normal my-auto">
+                        Johan Doe set up their account successfully
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+           
+            </ul>
+          </li>
+          <img src="./assets/img/kal-visuals-square.jpg" alt="bruce" class="rounded-circle shadow-lg"
+            style="width: 50%;">
+
+          <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+            <a href="javascript:;" class="nav-link text-body p-0">
+              <div class="sidenav-toggler-inner">
+                <i class="sidenav-toggler-line"></i>
+                <i class="sidenav-toggler-line"></i>
+                <i class="sidenav-toggler-line"></i>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- End Navbar -->
+    <div class="container py-2">
+      <div class="">
+        <div class="d-flex justify-content-between">
+          <div class="col-lg-5 mb-0">
+            <h6 class="mb-0">Settings</h6>
+            <div class="d-flex">
+              <p class="font-weight-bolder text-xs">Settings</p>
+              <ul class="d-flex justify-content-between">
+                <li class="text-xs">Personal Details</li>
+            
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid col-md-12" style="border-radius: 10%;box-shadow:none; ">
+        <div class="tabbable-line">
+          <ul class="nav nav-tabs  ">
+            <li class="active">
+              <a href="#tab_default_1" data-toggle="tab" class="font-weight-bold text-sm" onclick="changeText()">
+                Personal Details</a>
+            </li>
+            <li> <a href="#tab_default_2" data-toggle="tab" class="font-weight-bold text-sm" id="btn1">Update Password </a>
+            </li>
+            <li> <a href="#tab_default_3" data-toggle="tab" class="font-weight-bold text-sm">Roles and Permissions</a>
+            </li>
+           
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane  active" id="tab_default_1" style="overflow: hidden;">
+                <div class="col-lg-12 flex-wrap d-flex justify-content-between">
+                    <div class="col-lg-3 col-sm-12 px-2">
+                        <div class="card align-items-center py-2">
+                           <h6 class="text-center">Profile Photo</h6>
+                             <div id="profile-container">
+                <image id="profileImage" src="http://lorempixel.com/100/100" />
+             </div>
+             <input id="imageUpload" type="file" 
+                    name="profile_photo" placeholder="Photo" required="" capture>
+                       <!-- <img src="./assets/img/kal-visuals-square.jpg" class="avatar"> -->
+                       <p  class="mt-2   text-dark">  <span class=" ">Choose photo</span></p>
+                  
+                
+        </div>
+             </div>
+             <div class="col-lg-9">
+              <div class="tab-content" id="v-pills-tabContent">
+               <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                      <div class="card mt-2 " id="Div5">
+                             <div class="card-header d-flex align-items-center justify-content-between p-0 mt-3 mx-2">
+                                 <div class="d-flex align-items-center">
+                                     <span><i class="material-icons-round text-dark  text-lg position-relative ">person</i></span>
+                                     <h6 class="ms-1">Personal Details</h6>
+                                 </div>
+                                 <div class="button mx-2 d-flex " onclick=switchVisibleeditprofile()>
+                                  <!-- <p class="text-success">External User Access</p> -->
+    
+                                     <i class="material-icons text-success text-lg me-2">edit</i>
+                                 </div>
+                             </div> 
+                             <div class="card-body px-3 mt-0 pt-0">
+                                 <div class="row  align-items-center">
+                                     <div class="col-md-6">
+                                       <div class="row justify-content-center align-items-center">
+                                             <div class="col-md-6">
+                                                 <p class="text-sm  ">First Name:</p>
+                                              
+                                                 <p class="text-sm ">Phone No :</p>
+                                             </div>
+                                             <div class="col-md-6">
+                                                 <p class="text-sm font-weight-bold">Olamide</p>
+                                           
+                                                 <p class="text-sm font-weight-bold">(012) 345 6789</p>
+                                             </div>
+                                         </div> 
+                                     </div>
+                                     <div class="col-md-6">
+                                      <div class="row justify-content-center align-items-center">
+                                            <div class="col-md-6">
+                                                <p class="text-sm  ">Last Name :</p>
+                                              
+                                                <p class="text-sm ">Email :</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="text-sm font-weight-bold">Afia</p>
+                                         
+                                                <p class="text-sm font-weight-bold">Olamide@gmail.com</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                 </div>
+                                 <h6 class=" my-4">Address Details</h6>
+                                 <div class="row  align-items-center">
+                                  <div class="col-md-6">
+                                    <div class="row justify-content-center align-items-center">
+                                          <div class="col-md-6">
+                                              <p class="text-sm  ">Street Address</p>
+                                              <p class="text-sm ">State</p>
+                                          
+                                            
+                                          </div>
+                                          <div class="col-md-6">
+                                              <p class="text-sm font-weight-bold">112 hawkin street</p>
+                                              <p class="text-sm font-weight-bold">Africa</p>
+                                          
+                                             
+                                          </div>
+                                      </div> 
+                                  </div>
+                                  <div class="col-md-6">
+                                   <div class="row justify-content-center align-items-center">
+                                         <div class="col-md-6">
+                                             <p class="text-sm  ">City</p>
+                                             <p class="text-sm ">Zip Code</p>
+                                        
+                                         </div>
+                                         <div class="col-md-6">
+                                             <p class="text-sm font-weight-bold">LA</p>
+                                             <p class="text-sm font-weight-bold">0000</p>
+                                     
+                                         </div>
+                                     </div> 
+                                 </div>
+                              </div>
+                              <div class="row  align-items-center">
+                                <div class="col-md-6">
+                                  <div class="row justify-content-center align-items-center">
+                                        <div class="col-md-6">
+                                            <p class="text-sm  ">Income :</p>
+                                          
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="text-sm font-weight-bold">$4000 </p>
+                                        </div>
+                                    </div> 
+                                </div>
+                                
+                            </div>
+                             </div>
+                       </div>
+                       <div id="Div6" style="display: none;">
+                        <div class="card py-3 px-3">
+                          <div class="d-flex align-items-center justify-content-start">
+                            <h6 class="ps-1 pt-1">Personal Details</h6>
+                          </div>
+
+                          <div class="">
+                              <div class="row">
+                                  <div class="col-md-6">
+
+                                      <div class="input-group input-group-outline my-1">
+                                          
+                                          <input type="text" class="form-control" placeholder="First Name">
+                                      </div>
+
+                                  </div>
+                                  <div class="col-md-6">
+
+                                      <div class="input-group input-group-outline my-1">
+                                         
+                                          <input type="text" class="form-control" placeholder="Last Name">
+                                      </div>
+
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-md-6">
+
+                                      <div class="input-group input-group-outline my-1">
+                                          
+                                          <input type="email" class="form-control"  placeholder="Email">
+                                      </div>
+
+                                  </div>
+                                  <div class="col-md-6">
+
+                                      <div class="input-group input-group-outline my-1">
+                                          
+                                          <input type="number" class="form-control" placeholder="Contact">
+                                      </div>
+
+                                  </div>
+                              </div>
+                                <h6>Address Detail</h6>
+                                <div class="row">
+                                  <div class="col-md-6">
+
+                                      <div class="input-group input-group-outline my-1">
+                                          
+                                          <input type="text" class="form-control" placeholder="Street Address">
+                                      </div>
+
+                                  </div>
+                                  <div class="col-md-6">
+
+                                      <div class="input-group input-group-outline my-1">
+                                         
+                                          <input type="text" class="form-control" placeholder="City">
+                                      </div>
+
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-md-6">
+
+                                      <div class="input-group input-group-outline my-1">
+                                          
+                                          <input type="email" class="form-control"  placeholder="State">
+                                      </div>
+
+                                  </div>
+                                  <div class="col-md-6">
+
+                                      <div class="input-group input-group-outline my-1">
+                                          
+                                          <input type="number" class="form-control" placeholder="Zip Code">
+                                      </div>
+
+                                  </div>
+                              </div>
+                               <div class="text-end mb-1 mt-2 mb-2">
+                              
+                                  <button id="buttonColor" class="btn  btn-sm mb-0">
+                                      <span>
+                                          <a href="" class="text-success">
+                                      </span>Save Changes
+                                      </a>
+
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                 
+                       </div>
+                 </div>
+                 <div class="tab-pane fade " id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                  <div class="card mt-2">
+                    <div class="card-header d-flex align-items-center justify-content-between p-0 mt-3 mx-2">
+                        <div class="d-flex align-items-center">
+                            <span><i class="material-icons-round text-dark  text-lg position-relative ">person</i></span>
+                            <h6 class="ms-1">Partner Contact</h6>
+                        </div>
+                        <div class="button mx-2 d-flex " onclick="switchVisibleGenDetails()">
+                         <p class="text-success">External User Access</p>
+                         <switch></switch>
+                            <i class="material-icons text-success text-lg me-2">edit</i>
+                        </div>
+                    </div> 
+                    <div class="card-body px-3 mt-0 pt-0">
+                        <div class="row  align-items-center">
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                    <div class="col-md-6">
+                                        <p class="text-sm  ">First Name:</p>
+                                        <p class="text-sm ">Date of Birth :</p>
+                                        <p class="text-sm ">Gender :</p>
+                                        <p class="text-sm ">Phone No :</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="text-sm font-weight-bold">Olamide</p>
+                                        <p class="text-sm font-weight-bold">15/07/1995</p>
+                                        <p class="text-sm font-weight-bold">Male</p>
+                                        <p class="text-sm font-weight-bold">(012) 345 6789</p>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-6">
+                             <div class="row justify-content-center align-items-center">
+                                   <div class="col-md-6">
+                                       <p class="text-sm  ">Last Name :</p>
+                                       <p class="text-sm ">Smoking Status :</p>
+                                       <p class="text-sm ">Mobile No :</p>
+                                       <p class="text-sm ">Email :</p>
+                                   </div>
+                                   <div class="col-md-6">
+                                       <p class="text-sm font-weight-bold">Afia</p>
+                                       <p class="text-sm font-weight-bold">.</p>
+                                       <p class="text-sm font-weight-bold">(012) 345 6789</p>
+                                       <p class="text-sm font-weight-bold">Olamide@gmail.com</p>
+                                   </div>
+                               </div> 
+                           </div>
+                        </div>
+                        <h6 class=" my-4">General Details</h6>
+                        <div class="row  align-items-center">
+                         <div class="col-md-6">
+                           <div class="row justify-content-center align-items-center">
+                                 <div class="col-md-6">
+                                     <p class="text-sm  ">Physical Address :</p>
+                                     <p class="text-sm ">Postal Address :</p>
+                                     <p class="text-sm ">Dependents Names :</p>
+                                     <p class="text-sm ">Main Bank :</p>
+                                   
+                                 </div>
+                                 <div class="col-md-6">
+                                     <p class="text-sm font-weight-bold">Street 23, New York City  </p>
+                                     <p class="text-sm font-weight-bold">LA</p>
+                                     <p class="text-sm font-weight-bold">Johan Doe</p>
+                                     <p class="text-sm font-weight-bold">Bank Name</p>
+                                    
+                                 </div>
+                             </div> 
+                         </div>
+                         <div class="col-md-6">
+                          <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                    <p class="text-sm  ">Location :</p>
+                                    <p class="text-sm ">NZ Citizen/ Resident :</p>
+                                    <p class="text-sm ">Dependents DOB :</p>
+                                    <p class="text-sm ">Occupation :</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="text-sm font-weight-bold">New York City</p>
+                                    <p class="text-sm font-weight-bold">Yes</p>
+                                    <p class="text-sm font-weight-bold">12/02/1976</p>
+                                    <p class="text-sm font-weight-bold">Lawyer</p>
+                                </div>
+                            </div> 
+                        </div>
+                     </div>
+                     <div class="row  align-items-center">
+                       <div class="col-md-6">
+                         <div class="row justify-content-center align-items-center">
+                               <div class="col-md-6">
+                                   <p class="text-sm  ">Income :</p>
+                                 
+                               </div>
+                               <div class="col-md-6">
+                                   <p class="text-sm font-weight-bold">$4000 </p>
+                               </div>
+                           </div> 
+                       </div>
+                       
+                   </div>
+                    </div>
+              </div>
+              </div>
+                 </div>
+                </div>
+                </div>
+             </div>
+            <div class="tab-pane" id="tab_default_2">
+              <div class="card mt-4" id="password">
+                <div class="px-4 py-3">
+                  <h6>Update Password</h6>
+                </div>
+                <div class="card-body pt-0">
+                  <div class="input-group input-group-outline">
+                    <label class="form-label">Current password</label>
+                    <input type="password" class="form-control">
+                  </div>
+                  <div class="input-group input-group-outline mt-2 ">
+                    <label class="form-label">New password</label>
+                    <input type="password" class="form-control">
+                  </div>
+                  <span class="text-sm mx-0"><span class="material-symbols-outlined text-sm font-weight-bolder mx-1">
+                    info
+                    </span>Password must be minimum 6+</span>
+                  <div class="input-group input-group-outline mt-2">
+                    <label class="form-label">Confirm New password</label>
+                    <input type="password" class="form-control">
+                  </div>
+              
+                  <button  id="buttonColor" class="btn  btn-sm float-end mt-6 mb-0">Save Change</button>
+                </div>
+              </div>
+            </div>
+                   <div class="tab-pane" id="tab_default_3">
+                    <div class="card py-4">
+                      <div class="d-lg-flex mb-3">
+                          <div class="ms-3 d-flex align-items-center">
+
+
+                              <h6 class="ms-1 mt-1">Role and permission</h6>
+
+                          </div>
+
+                          <div class="ms-md-auto  d-flex align-items-center mt-2">
+                             
+                              <div class="w-100">
+                                  <div class="button-row d-flex align-items-center">
+                                      <i class="material-icons position-relative me-1 text-info" style="font-size: 18px">add_circle</i>
+                                      <a data-url="/Settingss/RollsAndPermission" data-id="0" class="text-sm text-info me-3 anchoredit" style="cursor: pointer">Add New Role</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row justify-content-between align-items-center px-2 ms-1 ">
+                          <div class="col-md-6">
+                              <div class="row">
+
+                                  <div class="col-md-1">
+                                      <button class="btn btn-icon-only btn-rounded btn-outline-dark mb-0 me-2 btn-sm d-flex align-items-center justify-content-center shadow-sm">
+                                        <i class="fa fa-certificate text-sm" aria-hidden="true"></i>
+                                      </button>
+
+                                  </div>
+                                  <div class="col-md-11">
+                                      <span><p class="font-weight-bold">Lorem Ipsum</p></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-4">
+                                      <button class="btn btn-outline-info btn-sm mb-0 py-1">
+
+                                          <a href="" class="text-info">
+
+                                              Edit
+                                          </a>
+
+                                      </button>
+                                  </div>
+
+                                  <div class="col-md-4 text-end">
+                                      <span class="badge badge-danger ms-auto py-2">DELETE</span>
+                                  </div>
+
+
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="row justify-content-between align-items-center px-2 ms-1">
+                          <div class="col-md-6">
+                              <div class="row">
+
+                                  <div class="col-md-1">
+                                      <button class="btn btn-icon-only btn-rounded btn-outline-dark mb-0 me-2 btn-sm d-flex align-items-center justify-content-center shadow-sm">
+                                          <i class="fa fa-certificate text-sm" aria-hidden="true"></i>
+                                      </button>
+
+                                  </div>
+                                  <div class="col-md-11">
+                                      <span><p class="font-weight-bold">Lorem Ipsum</p></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-4">
+                                      <button class="btn btn-outline-info btn-sm mb-0 py-1">
+
+                                          <a href="" class="text-info">
+
+                                              Edit
+                                          </a>
+
+                                      </button>
+                                  </div>
+
+                                  <div class="col-md-4 text-end">
+                                      <span class="badge badge-danger ms-auto py-2">DELETE</span>
+                                  </div>
+
+
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="row justify-content-between align-items-center px-2 ms-1">
+                          <div class="col-md-6">
+                              <div class="row">
+
+                                  <div class="col-md-1">
+                                      <button class="btn btn-icon-only btn-rounded btn-outline-dark mb-0 me-2 btn-sm d-flex align-items-center justify-content-center shadow-sm">
+                                          <i class="fa fa-certificate text-sm" aria-hidden="true"></i>
+                                      </button>
+
+                                  </div>
+                                  <div class="col-md-11">
+                                      <span><p class="font-weight-bold">Lorem Ipsum</p></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-4">
+                                      <button class="btn btn-outline-info btn-sm mb-0 py-1">
+
+                                          <a href="" class="text-info">
+
+                                              Edit
+                                          </a>
+
+                                      </button>
+                                  </div>
+
+                                  <div class="col-md-4 text-end">
+                                      <span class="badge badge-danger ms-auto py-2">DELETE</span>
+                                  </div>
+
+
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="row justify-content-between align-items-center px-2 ms-1 ">
+                          <div class="col-md-6">
+                              <div class="row">
+
+                                  <div class="col-md-1">
+                                      <button class="btn btn-icon-only btn-rounded btn-outline-dark mb-0 me-2 btn-sm d-flex align-items-center justify-content-center shadow-sm">
+                                           <i class="fa fa-certificate text-sm" aria-hidden="true"></i>
+                                      </button>
+
+                                  </div>
+                                  <div class="col-md-11">
+                                      <span><p class="font-weight-bold">Lorem Ipsum</p></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="row justify-content-center">
+                                  <div class="col-md-4">
+                                      <button class="btn btn-outline-info btn-sm mb-0 py-1">
+
+                                          <a href="" class="text-info">
+
+                                              Edit
+                                          </a>
+
+                                      </button>
+                                  </div>
+
+                                  <div class="col-md-4 text-end">
+                                      <span class="badge badge-danger ms-auto py-2">DELETE</span>
+                                  </div>
+
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+         
+                       </div>
+                    
+                </div>
+                </div>
+         
+      </div>
+    </div>
+    <!--  -->
+  
+    <!--  -->
+  </main>
+ 
+  <!-- 2nd modal -->
+  <div class="modal " id="ShareDocumentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-sl text-sm  modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header d-flex justify-content-start">
+        <span class="material-symbols-outlined text-dark text-sm">
+          share
+          </span>
+        <h6 class="modal-title  text-dark text-sm my-1" id="myModalLabel">Share Documents</h6>
+      </div>
+      <div class="modal-body">
+        <form role="form" action='#' method="post">
+          <div class="col-lg-12 px-1">
+          <p>Select documents to share with the external users</p>
+          <div class="d-flex px-3 mb-1  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#" class="d-flex">
+              <i class="fa fa-file-text text-warning my-1 mx-2" aria-hidden="true"></i>
+            
+              <p class="mb-0 py-1 mx-1 font-weight-normal text-xs">Financial or employment contract</p>
+            </a>
+          </div>
+          <div class="d-flex px-3 mb-1  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#" class="d-flex">
+              <i class="fa fa-file-text text-warning my-1 mx-2" aria-hidden="true"></i>
+            
+              <p class="mb-0 py-1 mx-1 font-weight-normal text-xs">Terms of Engagement</p>
+            </a>
+          </div>
+          <div class="d-flex px-3 mb-1  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#" class="d-flex">
+              <i class="fa fa-file-text text-warning my-1 mx-2" aria-hidden="true"></i>
+            
+              <p class="mb-0 py-1 mx-1 font-weight-normal text-xs">Authority & Declaration form</p>
+            </a>
+          </div>
+          <div class="d-flex px-3 mb-1  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#" class="d-flex">
+              <i class="fa fa-file-text text-warning my-1 mx-2" aria-hidden="true"></i>
+            
+              <p class="mb-0 py-1 mx-1 font-weight-normal text-xs">Transactional Bank Statements</p>
+            </a>
+          </div>
+          <div class="d-flex px-3 mb-1  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#" class="d-flex">
+              <i class="fa fa-file-text text-warning my-1 mx-2" aria-hidden="true"></i>
+            
+              <p class="mb-0 py-1 mx-1 font-weight-normal text-xs">Loan Statements</p>
+            </a>
+          </div>
+          <div class="d-flex px-3 mb-1  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#" class="d-flex">
+              <i class="fa fa-file-text text-warning my-1 mx-2" aria-hidden="true"></i>
+            
+              <p class="mb-0 py-1 mx-1 font-weight-normal text-xs">Deposit Evidence</p>
+            </a>
+          </div>
+          <div class="d-flex px-3 mb-1  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#" class="d-flex">
+              <i class="fa fa-file-text text-warning my-1 mx-2" aria-hidden="true"></i>
+            
+              <p class="mb-0 py-1 mx-1 font-weight-normal text-xs">KiwiSaver</p>
+            </a>
+          </div>
+          <div class="d-flex px-3 mb-1  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#" class="d-flex">
+              <i class="fa fa-file-text text-warning my-1 mx-2" aria-hidden="true"></i>
+            
+              <p class="mb-0 py-1 mx-1 font-weight-normal text-xs">S&P Agreements</p>
+            </a>
+          </div>
+          <div class="d-flex px-3 mb-1  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#" class="d-flex">
+              <i class="fa fa-file-text text-warning my-1 mx-2" aria-hidden="true"></i>
+            
+              <p class="mb-0 py-1 mx-1 font-weight-normal text-xs">Payslips</p>
+            </a>
+          </div>
+       </div> 
+          <div class="text-end px-3 ">
+              <button type="button" class="btn btn-default text-light mt-2 " id="signin" data-dismiss="myModal" data-bs-toggle="modal" data-bs-target="#SharedModal"
+                style="background-color: #2A6737;text-transform: none;" >Share</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal -->
+<div class="modal " id="SharedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sl text-sm  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-start">
+          <span class="material-symbols-outlined text-dark text-sm">
+            share
+            </span>
+          <h6 class="modal-title  text-dark text-sm my-1" id="myModalLabel">Share Documents</h6>
+        </div>
+        <div class="modal-body">
+          <form role="form" action='#' method="post">
+            <div class="col-lg-12 px-1">
+            
+              <div for="field" class="input-group input-group-outline  ">
+                <select class="form-control" name="websites[]" for="field" id="field" id="Property"  >
+                  <option value="Select Client">Select User....</option>
+                       <option value="Select Client">Insurance</option>
+                       <option value="Select Client">Claim</option>
+                       <option value="Select Client">Employment Contract Request</option>
+                       <option value="Select Client">Mortage</option>
+                 </select>
+         </div>
+     <p>Copy and Share URL and Passcode to share this file with your trusted once</p>
+         </div> 
+         <div class="col-lg-12 px-1">
+          <label class="form-label text-dark font-weight-bold">User:</label>
+         <div class="input-group input-group-outline mb-4">
+          <span class="input-group-text" id="basic-addon1"><span class="material-symbols-outlined text-dark">
+            content_copy
+            </span> </span>
+          <input type="text" class="form-control" placeholder="www.google.com" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+           </div>
+          <div class="text-end px-3 ">
+                <button type="button" class="btn btn-default text-light mt-2 " id="signin" data-dismiss="myModal"
+                  style="background-color: #2A6737;text-transform: none;">Create</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  -->
+  <!-- 3rd modal  -->
+  <div class="modal " id="RequestedDocumentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sl text-sm  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-start">
+          <span class="material-symbols-outlined text-dark">
+        description
+            </span>
+          <h6 class="modal-title  text-dark text-sm my-1" id="myModalLabel"> Request Document</h6>
+        </div>
+        <div class="modal-body">
+          <form role="form" action='#' method="post">
+            <div class="col-lg-12 px-1">
+            
+              <div for="field" class="input-group input-group-outline  ">
+                <select class="form-control" name="websites[]" for="field" id="field" id="Property"  >
+                  <option value="Select Client">Document Type</option>
+                       <option value="Select Client">Insurance</option>
+                       <option value="Select Client">Claim</option>
+                       <option value="Select Client">Employment Contract Request</option>
+                       <option value="Select Client">Mortage</option>
+                 </select>
+         </div>
+     
+         </div> 
+            <div class="col-lg-12 px-1 mt-1 ">
+              <div class="input-group input-group-outline mb-1" >
+                <input type="text" class="form-control" placeholder="Document Name">
+              </div>
+         </div>
+            <div class="col-lg-12 px-1">
+           <div class="input-group input-group-outline mb-1" >
+            <textarea class="multisteps-form__textarea form-control" rows="5"
+            placeholder="Comment"></textarea> 
+           </div>
+    
+         </div>
+          
+          <div class="text-end px-3 ">
+                <button type="button" class="btn btn-default text-light mt-2 " id="signin" data-dismiss="myModal"
+                  style="background-color: #2A6737;text-transform: none;">Create</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 4th -->
+  <div class="modal " id="CreateTicketModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sl text-sm  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-start">
+          <span class="material-symbols-outlined text-dark">
+            person
+            </span>
+          <h6 class="modal-title  text-dark text-sm my-1" id="myModalLabel"> Create ticket for client</h6>
+        </div>
+        <div class="modal-body">
+          <form role="form" action='#' method="post">
+            <div class="col-lg-12 px-1 d-flex justify-content-between">
+              <div class="col-lg-3">
+                <p class="text-sm">Ticket ID :</p>
+              </div>
+             <div class="col-lg-9">
+              <p class="text-sm">TID.123</p>
+        </div>
+         </div>
+            <div class="col-lg-12 px-1 d-flex justify-content-between">
+              <div class="col-lg-3">
+                <p class="text-sm">Client Name :</p>
+              </div>
+             <div class="col-lg-9">
+              <div class="input-group input-group-outline mb-1" style="border-color: #384B6B !important;">
+                <input type="text" class="form-control" placeholder="Johan Doe">
+              </div>
+        </div>
+         </div>
+            <div class="col-lg-12 px-1 d-flex justify-content-between">
+              <div class="col-lg-3">
+                <p class="text-sm">Subject :</p>
+              </div>
+             <div class="col-lg-9">
+              <div class="input-group input-group-outline mb-1" style="border-color: #384B6B !important;">
+                <input type="text" class="form-control" placeholder="Enter Subject">
+              </div>
+        </div>
+         </div>
+            <div class="col-lg-12 px-1 d-flex justify-content-between">
+              <div class="col-lg-3">
+                <p>Ticket Type :</p>
+              </div>
+             <div class="col-lg-9">
+              <div for="field" class="input-group input-group-outline  ">
+                <select class="form-control" name="websites[]" for="field" id="field" id="Property"  >
+                  <option value="Select Client">Enter Ticket Type</option>
+                       <option value="Select Client">Insurance</option>
+                       <option value="Select Client">Claim</option>
+                       <option value="Select Client">Employment Contract Request</option>
+                       <option value="Select Client">Mortage</option>
+                 </select>
+         </div>
+        </div>
+         </div>
+          <div class="text-end px-3 ">
+                <button type="button" class="btn btn-default text-light mt-2 " id="signin" data-dismiss="myModal"
+                  style="background-color: #2A6737;text-transform: none;">Create</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 5th -->
+<!-- switch to tabular form -->
+<script>
+       function switchVisibleeditprofile() {
+            if (document.getElementById('Div5')) {
+
+                if (document.getElementById('Div5').style.display == 'none') {
+                    document.getElementById('Div5').style.display = 'block';
+                    document.getElementById('Div6').style.display = 'none';
+                }
+                else {
+                    document.getElementById('Div5').style.display = 'none';
+                    document.getElementById('Div6').style.display = 'block';
+                }
+            }
+        }
+        function switchVisibleboard() {
+            if (document.getElementById('Div1')) {
+
+                if (document.getElementById('Div1').style.display == 'none') {
+                    document.getElementById('Div1').style.display = 'block';
+                    document.getElementById('Div2').style.display = 'none';
+                }
+                else {
+                    document.getElementById('Div1').style.display = 'none';
+                    document.getElementById('Div2').style.display = 'block';
+                }
+            }
+        }
+</script>
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap.min.js"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/choices.min.js"></script>
+  <script src="./assets/js/plugins/multistep-form.js"></script>
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap.min.js"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/datatables.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./assets/js/plugins/quill.min.js"></script>
+  <script src="./assets/js/plugins/dragula/dragula.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./assets/js/plugins/chartjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+document.getElementById("colorpicker1").addEventListener("change", function() {
+  document.getElementById("changecolor1").style.backgroundColor = this.value;
+  });
+  document.getElementById("colorpicker2").addEventListener("change", function() {
+  document.getElementById("changecolor2").style.backgroundColor = this.value;
+  });
+  document.getElementById("colorpicker3").addEventListener("change", function() {
+  document.getElementById("changecolor3").style.backgroundColor = this.value;
+  });
+  document.getElementById("colorpicker4").addEventListener("change", function() {
+  document.getElementById("changecolor4").style.backgroundColor = this.value;
+  });
+  document.getElementById("colorpicker5").addEventListener("change", function() {
+  document.getElementById("changecolor5").style.backgroundColor = this.value;
+  });
+  document.getElementById("colorpicker6").addEventListener("change", function() {
+  document.getElementById("changecolor6").style.backgroundColor = this.value;
+  });
+  document.getElementById("colorpicker7").addEventListener("change", function() {
+  document.getElementById("changecolor7").style.backgroundColor = this.value;
+  });
+  document.getElementById("colorpicker8").addEventListener("change", function() {
+  document.getElementById("changecolor8").style.backgroundColor = this.value;
+  });
+  </script>
+  
+  <script>
+              $("#profileImage").click(function(e) {
+$("#imageUpload").click();
+});
+
+function fasterPreview( uploader ) {
+if ( uploader.files && uploader.files[0] ){
+    $('#profileImage').attr('src', 
+       window.URL.createObjectURL(uploader.files[0]) );
+}
+}
+
+$("#imageUpload").change(function(){
+fasterPreview( this );
+});
+
+  </script>
+  <script>
+    function showDiv() {
+      var x = document.getElementById("myDIV");
+
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+      myFunction();
+    });
+  </script>
+  <script>
+
+    const accordionBtns = document.querySelectorAll(".accordion");
+
+    accordionBtns.forEach((accordion) => {
+      accordion.onclick = function () {
+        this.classList.toggle("is-open");
+
+        let content = this.nextElementSibling;
+        console.log(content);
+
+        if (content.style.maxHeight) {
+          //this is if the accordion is open
+          content.style.maxHeight = null;
+        } else {
+          //if the accordion is currently closed
+          content.style.maxHeight = content.scrollHeight + "px";
+          console.log(content.style.maxHeight);
+        }
+      };
+    });
+
+  </script>
+  <script>
+    $(document).ready(function () {
+
+      var current_fs, next_fs, previous_fs;
+
+      // No BACK button on first screen
+      if ($(".show").hasClass("first-screen")) {
+        $(".prev").css({ 'display': 'none' });
+      }
+
+      // Next button
+      $(".next-button").click(function () {
+
+        current_fs = $(this).parent().parent();
+        next_fs = $(this).parent().parent().next();
+
+        $(".prev").css({ 'display': 'block' });
+
+        $(current_fs).removeClass("show");
+        $(next_fs).addClass("show");
+
+        $("#progressbar li").eq($(".card2").index(next_fs)).addClass("active");
+
+        current_fs.animate({}, {
+          step: function () {
+
+            current_fs.css({
+              'display': 'none',
+              'position': 'relative'
+            });
+
+            next_fs.css({
+              'display': 'block'
+            });
+          }
+        });
+      });
+
+      // Previous button
+      $(".prev").click(function () {
+
+        current_fs = $(".show");
+        previous_fs = $(".show").prev();
+
+        $(current_fs).removeClass("show");
+        $(previous_fs).addClass("show");
+
+        $(".prev").css({ 'display': 'block' });
+
+        if ($(".show").hasClass("first-screen")) {
+          $(".prev").css({ 'display': 'none' });
+        }
+
+        $("#progressbar li").eq($(".card2").index(current_fs)).removeClass("active");
+
+        current_fs.animate({}, {
+          step: function () {
+
+            current_fs.css({
+              'display': 'none',
+              'position': 'relative'
+            });
+
+            previous_fs.css({
+              'display': 'block'
+            });
+          }
+        });
+      });
+
+    });
+  </script>
+  <script>
+    // Doughnut chart
+    var ctx3 = document.getElementById("doughnut-chart").getContext("2d");
+
+    new Chart(ctx3, {
+      type: "doughnut",
+      data: {
+        labels: ['Equifax', 'Experian', 'Transunion'],
+        datasets: [{
+          label: "Projects",
+          // weight: 9,
+          // cutout: 100,
+          // tension: 0.9,
+          // pointRadius: 2,
+          borderWidth: 10,
+          backgroundColor: ['#FFAB00', '#FF5630', '#36B37E'],
+          data: [30, 30, 30,],
+          // fill: false
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false,
+          }
+        },
+        interaction: {
+          intersect: false,
+          mode: 'index',
+        },
+        scales: {
+          y: {
+            grid: {
+              drawBorder: false,
+              display: false,
+              drawOnChartArea: false,
+              drawTicks: false,
+            },
+            ticks: {
+              display: false
+            }
+          },
+          x: {
+            grid: {
+              drawBorder: false,
+              display: false,
+              drawOnChartArea: false,
+              drawTicks: false,
+            },
+            ticks: {
+              display: false,
+            }
+          },
+        },
+      },
+    });
+
+  </script>
+  <script>
+    $(document).ready(function () {
+      var max_fields = 15;
+      var wrapper = $(".input_fields_wrap10");
+      var add_button = $(".add_field_button10");
+      var x = 1;
+      $(add_button).click(function (e) {
+        e.preventDefault();
+        if (x < max_fields) {
+          x++; $(wrapper).append('  <div class="p-3 " style="background-color: #fbfafa;"><p class="font-weight-bold">Reason</p> <div class="d-flex justify-content-between"> <div class=" "> <div for="field" class="input-group input-group-outline  "><input class="form-control" type="text" name="websites[]" for="field" id="field" id="Property"  ></div> </div><div class="px-1">   <span class="material-symbols-outlined text-danger font-weight-bolder">delete  </span> <span class="material-symbols-outlined ">   add_circle</span> </div> </div> <hr class="horizontal dark =y-0"/><div class="d-flex justify-content-between"><p class="mb-0">Sample Reason</p><span class="material-symbols-outlined text-end">  lock</span></div>  <hr class="horizontal dark my-0"/><div class="d-flex justify-content-between"><p class="mb-0">The following personal information is incorrect</p><span class="material-symbols-outlined text-end">lock</span></div> <hr class="horizontal dark my-0"/> <div class="d-flex justify-content-between"> <p class="mb-0">The following account is not mine</p><span class="material-symbols-outlined text-end">lock </span></div> <hr class="horizontal dark my-0"/> <div class="d-flex justify-content-between"><p class="mb-0">The status is incorrect for the following account</p> <span class="material-symbols-outlined text-end"> lock </span> </div>  </div> '); //add input box
+        }
+      });
+
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      var max_fields = 15;
+      var wrapper = $(".input_fields_wrap9");
+      var add_button = $(".add_field_button9");
+      var x = 1;
+      $(add_button).click(function (e) {
+        e.preventDefault();
+        if (x < max_fields) {
+          x++; $(wrapper).append(' <h6>Add Instruction</h6>  <div for="field" class="input-group input-group-outline  "> <input class="form-control" type="text" name="websites[]" for="field" id="field" id="Property"  > </div>'); //add input box
+        }
+      });
+
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      var max_fields = 15;
+      var wrapper = $(".input_fields_wrap8");
+      var add_button = $(".add_field_button8");
+      var x = 1;
+      $(add_button).click(function (e) {
+        e.preventDefault();
+        if (x < max_fields) {
+          x++; $(wrapper).append('<h6>Add Creditor/Furnisher<sup class="text-danger">*<sup></h6>     <div for="field" class="input-group input-group-outline  "> <input class="form-control" type="text" name="websites[]" for="field" id="field" id="Property"  > </div>'); //add input box
+        }
+      });
+
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      var max_fields = 15;
+      var wrapper = $(".input_fields_wrap7");
+      var add_button = $(".add_field_button7");
+      var x = 1;
+      $(add_button).click(function (e) {
+        e.preventDefault();
+        if (x < max_fields) {
+          x++; $(wrapper).append(' <div class="col-lg-8 d-flex justify-content-between"> <div class="input_fields_wrap7">  <select class="  py-2 rounded ml-9" name="cars" id="cars"  name="addmore[]" style="max-width: 346%;width: 328%;" ><option value="volvo" selected>Status</option>  <option value="saab"> Jobs</option>  <option value="opel">Jobs</option>  <option value="audi"> Jobs</option> </select></div><p class="px-6 add_field_button7" style="text-decoration: underline;color: blue;">Add new reason</p> </div>'); //add input box
+        }
+      });
+
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      var max_fields = 15;
+      var wrapper = $(".input_fields_wrap6");
+      var add_button = $(".add_field_button6");
+      var x = 1;
+      $(add_button).click(function (e) {
+        e.preventDefault();
+        if (x < max_fields) {
+          x++;
+          $(wrapper).append('<div class="col-lg-6"><div class="d-flex  "><span class="material-symbols-outlined font-weight-bolder rounded-circle  p-1 mx-2"style="background-color: #a1ccd4;color: #00AB55;"> save_as</span><span class="font-weight-bold text-secondary text-sm pt-2">Social Security Card</span> </div> </div>'); //add input box
+        }
+      });
+
+    });
+  </script>
+  <script>
+    if (document.getElementById('editor')) {
+      var quill = new Quill('#editor', {
+        theme: 'snow' // Specify theme in configuration
+      });
+    }
+
+    if (document.getElementById('choices-multiple-remove-button')) {
+      var element = document.getElementById('choices-multiple-remove-button');
+      const example = new Choices(element, {
+        removeItemButton: true
+      });
+
+      example.setChoices(
+        [{
+          value: 'One',
+          label: 'Label One',
+          disabled: true
+        },
+        {
+          value: 'Two',
+          label: 'Label Two',
+          selected: true
+        },
+        {
+          value: 'Three',
+          label: 'Label Three'
+        },
+        ],
+        'value',
+        'label',
+        false,
+      );
+    }
+
+    if (document.querySelector('.datetimepicker')) {
+      flatpickr('.datetimepicker', {
+        allowInput: true
+      }); // flatpickr
+    }
+
+    Dropzone.autoDiscover = false;
+    var drop = document.getElementById('dropzone')
+    var myDropzone = new Dropzone(drop, {
+      url: "/file/post",
+      addRemoveLinks: true
+
+    });
+  </script>
+
+  <!-- Kanban scripts -->
+  <script src="./assets/js/plugins/dragula/dragula.min.js"></script>
+  <script src="./assets/js/plugins/jkanban/jkanban.js"></script>
+
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!--   Core JS Files   -->
+  <script src="../../../assets/js/core/popper.min.js"></script>
+  <script src="../../../assets/js/core/bootstrap.min.js"></script>
+  <script src="../../../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="../../../assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="../../../assets/js/plugins/choices.min.js"></script>
+  <script src="./assets/js/plugins/multistep-form.js"></script>
+  <script>
+    if (document.getElementById('choices-state')) {
+      var element = document.getElementById('choices-state');
+      const example = new Choices(element, {
+        searchEnabled: false
+      });
+    };
+  </script>
+ 
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-dashboard.min.js?v=3.0.5"></script>
+
+  <script src="./assets/js/plugins/multistep-form.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-dashboard.min.js?v=3.0.5"></script>
+</body>
+
+</html>

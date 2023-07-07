@@ -1,0 +1,2340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/Logo (1).png">
+
+  <title>Mint</title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+  <!-- Nucleo Icons -->
+  <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link href="./assets/css/custom.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.5" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="g-sidenav-show  " style="background-color: #E5EBE6;">
+  <aside 
+    class="sidenav navbar navbar-vertical navbar-expand-xs border-0  fixed-start z-index-2 "
+    id="sidenav-main"
+    style="background-color: #38383E;box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);max-width: 18rem !important;overflow-y: hidden !important;">
+
+    <div class="sidenav-header">
+      <i class="fas fa-times px-5 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+        aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand m-0 " href="# " target="_blank">
+        <img src="./assets/img/Mint-logo.png" class="navbar-brand-img h-50 img-fluid" alt="main_logo">
+
+        <!-- <span class="ms-2   text-white"
+          style="font-size: 23px;font-family: monospace,'bolder';margin-top: 3px!important;font-weight: bolder;">MINT</span> -->
+      </a>
+    </div>
+    <hr class="horizontal dark mt-0 mb-2">
+    <div class="collapse navbar-collapse  w-auto h-auto" id="sidenav-collapse-main">
+     
+      <ul class="navbar-nav">
+        <h6 class="px-4 text-light font-weight-bold">Fact Find Analysis</h6>
+        <div class="timeline timeline-one-side">
+            <div class="timeline-block ">
+              <span class="timeline-step">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
+                  <path d="M8.93796 4.60665C9.87984 4.21607 10.9134 4 12 4C13.0866 4 14.1202 4.21607 15.062 4.60665C15.5722 4.81821 16.1573 4.57614 16.3688 4.06598C16.5804 3.55582 16.3383 2.97075 15.8281 2.7592C14.6477 2.26968 13.3541 2 12 2C10.6459 2 9.35232 2.26968 8.17186 2.7592C7.6617 2.97075 7.41963 3.55582 7.63118 4.06598C7.84274 4.57614 8.4278 4.81821 8.93796 4.60665Z" fill="#000000"/>
+                  <path d="M4.60665 8.93796C4.81821 8.4278 4.57614 7.84274 4.06598 7.63118C3.55582 7.41963 2.97075 7.6617 2.7592 8.17186C2.26968 9.35232 2 10.6459 2 12C2 13.3541 2.26968 14.6477 2.7592 15.8281C2.97075 16.3383 3.55582 16.5804 4.06598 16.3688C4.57614 16.1573 4.81821 15.5722 4.60665 15.062C4.21607 14.1202 4 13.0866 4 12C4 10.9134 4.21607 9.87984 4.60665 8.93796Z" fill="#000000"/>
+                  <path d="M21.2408 8.17186C21.0292 7.6617 20.4442 7.41963 19.934 7.63118C19.4239 7.84274 19.1818 8.4278 19.3933 8.93796C19.7839 9.87984 20 10.9134 20 12C20 13.0866 19.7839 14.1202 19.3933 15.062C19.1818 15.5722 19.4239 16.1573 19.934 16.3688C20.4442 16.5804 21.0292 16.3383 21.2408 15.8281C21.7303 14.6477 22 13.3541 22 12C22 10.6459 21.7303 9.35232 21.2408 8.17186Z" fill="#000000"/>
+                  <path d="M8.93796 19.3933C8.4278 19.1818 7.84274 19.4239 7.63118 19.934C7.41963 20.4442 7.6617 21.0292 8.17186 21.2408C9.35232 21.7303 10.6459 22 12 22C13.3541 22 14.6477 21.7303 15.8281 21.2408C16.3383 21.0292 16.5804 20.4442 16.3688 19.934C16.1573 19.4239 15.5722 19.1818 15.062 19.3933C14.1202 19.7839 13.0866 20 12 20C10.9134 20 9.87984 19.7839 8.93796 19.3933Z" fill="#000000"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8ZM10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12Z" fill="#000000"/>
+                  </svg>
+              </span>
+              <div class="timeline-content d-flex">
+                <p class=" text-sm  mb-0 js-click "   onclick="switchVisibleboard()">Scope of Service</p> 
+                <span class="material-symbols-outlined text-sm text-light" style="margin-left: 79px;">
+                  chevron_right
+                  </span>
+     
+              </div>
+              <hr class="horizontal light  "/>
+            </div>
+            <div class="timeline-block ">
+              <span class="timeline-step">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="20px" height="20px" viewBox="0 0 1024 1024"><path d="M277.675 981.521c5.657 0 10.24-4.583 10.24-10.24V499.514c0-5.651-4.588-10.24-10.24-10.24h-81.92c-5.652 0-10.24 4.589-10.24 10.24v471.767c0 5.657 4.583 10.24 10.24 10.24h81.92zm0 40.96h-81.92c-28.278 0-51.2-22.922-51.2-51.2V499.514c0-28.271 22.924-51.2 51.2-51.2h81.92c28.276 0 51.2 22.929 51.2 51.2v471.767c0 28.278-22.922 51.2-51.2 51.2zm275.456-40.96c5.657 0 10.24-4.583 10.24-10.24V408.777c0-5.657-4.583-10.24-10.24-10.24h-81.92a10.238 10.238 0 00-10.24 10.24v562.504c0 5.657 4.583 10.24 10.24 10.24h81.92zm0 40.96h-81.92c-28.278 0-51.2-22.922-51.2-51.2V408.777c0-28.278 22.922-51.2 51.2-51.2h81.92c28.278 0 51.2 22.922 51.2 51.2v562.504c0 28.278-22.922 51.2-51.2 51.2zm275.456-40.016c5.657 0 10.24-4.583 10.24-10.24V318.974c0-5.651-4.588-10.24-10.24-10.24h-81.92c-5.652 0-10.24 4.589-10.24 10.24v653.251c0 5.657 4.583 10.24 10.24 10.24h81.92zm0 40.96h-81.92c-28.278 0-51.2-22.922-51.2-51.2V318.974c0-28.271 22.924-51.2 51.2-51.2h81.92c28.276 0 51.2 22.929 51.2 51.2v653.251c0 28.278-22.922 51.2-51.2 51.2zM696.848 40.96l102.39.154c11.311.017 20.494-9.138 20.511-20.449S810.611.171 799.3.154L696.91 0c-11.311-.017-20.494 9.138-20.511 20.449s9.138 20.494 20.449 20.511z"/><path d="M778.789 20.571l-.307 101.827c-.034 11.311 9.107 20.508 20.418 20.542s20.508-9.107 20.542-20.418l.307-101.827C819.783 9.384 810.642.187 799.331.153s-20.508 9.107-20.542 20.418z"/><path d="M163.84 317.682h154.184a51.207 51.207 0 0036.211-14.999L457.208 199.71a10.263 10.263 0 017.237-3.003h159.754a51.235 51.235 0 0036.198-14.976l141.13-141.13c7.998-7.998 7.998-20.965 0-28.963s-20.965-7.998-28.963 0L631.447 152.755a10.265 10.265 0 01-7.248 2.992H464.445a51.226 51.226 0 00-36.201 14.999L325.271 273.719a10.244 10.244 0 01-7.248 3.003H163.839c-11.311 0-20.48 9.169-20.48 20.48s9.169 20.48 20.48 20.48z"/></svg>
+              </span>
+              <div class="timeline-content d-flex">
+                <p class=" text-sm  mb-0 js-click"  onclick="switchVisibleboardTwo()">Income</p>
+                <span class="material-symbols-outlined text-sm text-light" style="margin-left: 139px;">
+                  chevron_right
+                  </span>
+              </div>
+              <hr class="horizontal light  "/>
+            </div>
+            <div class="timeline-block ">
+              <span class="timeline-step">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 8H6C4.89543 8 4 8.89543 4 10V17C4 18.1046 4.89543 19 6 19H17C18.1046 19 19 18.1046 19 17V14M11 15V11C11 8.79086 12.7909 7 15 7H20M20 7L17 4M20 7L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+              </span>
+              <div class="timeline-content d-flex ">
+                <p class=" text-sm  mb-0 js-click" onclick="switchVisibleboardThree()">Outgoings Monthly</p>
+                <span class="material-symbols-outlined text-sm text-light" style="margin-left: 70px;">
+                  chevron_right
+                  </span>
+              </div>
+              <hr class="horizontal light "/>
+            </div>
+            <div class="timeline-block ">
+              <span class="timeline-step">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="20px" height="20px" viewBox="0 0 56 56"><path d="M 15.5547 53.125 L 40.4453 53.125 C 45.2969 53.125 47.7109 50.6640 47.7109 45.7890 L 47.7109 24.5078 C 47.7109 21.4844 47.3828 20.1718 45.5078 18.2500 L 32.5703 5.1015 C 30.7891 3.2734 29.3359 2.8750 26.6875 2.8750 L 15.5547 2.8750 C 10.7266 2.8750 8.2891 5.3594 8.2891 10.2344 L 8.2891 45.7890 C 8.2891 50.6875 10.7266 53.125 15.5547 53.125 Z M 15.7422 49.3515 C 13.3281 49.3515 12.0625 48.0625 12.0625 45.7187 L 12.0625 10.3047 C 12.0625 7.9844 13.3281 6.6484 15.7656 6.6484 L 26.1718 6.6484 L 26.1718 20.2656 C 26.1718 23.2187 27.6718 24.6718 30.5781 24.6718 L 43.9375 24.6718 L 43.9375 45.7187 C 43.9375 48.0625 42.6953 49.3515 40.2578 49.3515 Z M 31.0000 21.1328 C 30.0859 21.1328 29.7109 20.7578 29.7109 19.8203 L 29.7109 7.3750 L 43.2109 21.1328 Z M 36.6250 31.1172 L 18.8359 31.1172 C 17.9922 31.1172 17.3828 31.7500 17.3828 32.5469 C 17.3828 33.3672 17.9922 34.0000 18.8359 34.0000 L 36.6250 34.0000 C 37.4453 34.0000 38.0781 33.3672 38.0781 32.5469 C 38.0781 31.7500 37.4453 31.1172 36.6250 31.1172 Z M 36.6250 39.2969 L 18.8359 39.2969 C 17.9922 39.2969 17.3828 39.9531 17.3828 40.7734 C 17.3828 41.5703 17.9922 42.1797 18.8359 42.1797 L 36.6250 42.1797 C 37.4453 42.1797 38.0781 41.5703 38.0781 40.7734 C 38.0781 39.9531 37.4453 39.2969 36.6250 39.2969 Z"/></svg>
+              </span>
+              <div class="timeline-content d-flex">
+                <p class=" text-sm  mb-0 js-click" onclick="switchVisibleboardFour()">Statement Of Position</p>
+                <span class="material-symbols-outlined text-sm text-light" style="margin-left: 48px;">
+                  chevron_right
+                  </span>
+              </div>
+              <hr class="horizontal light "/>
+            </div>
+            <div class="timeline-block ">
+              <span class="timeline-step">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="20px" height="20px" viewBox="0 0 1024 1024"><path d="M594.073 170.667c0-49.013-39.737-88.75-88.75-88.75-49.011 0-88.74 39.734-88.74 88.75s39.729 88.75 88.74 88.75c49.013 0 88.75-39.737 88.75-88.75zm40.96 0c0 71.635-58.075 129.71-129.71 129.71-71.633 0-129.7-58.074-129.7-129.71s58.067-129.71 129.7-129.71c71.635 0 129.71 58.075 129.71 129.71z"/><path d="M380.407 568.32V361.81c0-33.93 27.51-61.44 61.44-61.44h119.47c33.93 0 61.44 27.51 61.44 61.44v206.51c0 11.311 9.169 20.48 20.48 20.48s20.48-9.169 20.48-20.48V361.81c0-56.551-45.849-102.4-102.4-102.4h-119.47c-56.551 0-102.4 45.849-102.4 102.4v206.51c0 11.311 9.169 20.48 20.48 20.48s20.48-9.169 20.48-20.48zm15.383 61.653H211.996l-84.759-84.749c-29.092-29.092-76.271-29.092-105.363.001-29.144 29.144-29.144 76.323-.051 105.415l106.639 106.639c14.263 14.277 33.393 21.908 53.212 21.76.121.009 158.154.028 158.154.028v192.512c0 11.311 9.169 20.48 20.48 20.48s20.48-9.169 20.48-20.48V758.587c0-11.311-9.169-20.48-20.48-20.48H182.247c-9.735.09-18.358-3.322-24.815-9.785L50.786 621.676c-13.096-13.096-13.096-34.341 0-47.438 13.148-13.148 34.392-13.148 47.489-.051l90.758 90.748a20.481 20.481 0 0014.481 5.998h191.503c.415.024.946.054 1.644.092h17.828c18.58 0 33.649 15.069 33.649 33.649v267.551c0 11.311 9.169 20.48 20.48 20.48s20.48-9.169 20.48-20.48V704.674c0-41.201-33.407-74.609-74.609-74.609h-17.054c-.415-.024-.946-.054-1.644-.092zm423.903 40.96c5.431 0 10.64-2.157 14.481-5.998l90.757-90.747c13.097-13.097 34.342-13.097 47.438-.001 13.148 13.148 13.148 34.392.051 47.489L865.781 728.315c-6.463 6.469-15.086 9.881-24.142 9.763-3.94.272-3.94.272-4.667.468.62-.173.62-.173 4.184-.439H662.898c-11.311 0-20.48 9.169-20.48 20.48v213.637c0 11.311 9.169 20.48 20.48 20.48s20.48-9.169 20.48-20.48V779.067h157.778c20.029.186 39.263-7.45 53.595-21.795l106.632-106.632c29.092-29.092 29.092-76.271 0-105.364-29.144-29.144-76.323-29.144-105.415-.051l-84.758 84.748H627.416l-1.644.092h-17.054c-41.201 0-74.609 33.407-74.609 74.609v267.551c0 11.311 9.169 20.48 20.48 20.48s20.48-9.169 20.48-20.48V704.674c0-18.58 15.069-33.649 33.649-33.649h17.828l1.644-.092h191.503z"/></svg>
+              </span>
+              <div class="timeline-content d-flex">
+                <p class=" text-sm  mb-0 js-click" onclick="switchVisibleboardFive()">Liabilities</p>
+                <span class="material-symbols-outlined text-sm text-light" style="margin-left: 127px;">
+                  chevron_right
+                  </span>
+              </div>
+              <hr class="horizontal light  "/>
+            </div>
+            <div class="timeline-block ">
+              <span class="timeline-step">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" id="_003_ECOMMERCE_03" data-name="003_ECOMMERCE_03"><title>003_094</title><path d="M18,22H6a3.00328,3.00328,0,0,1-3-3V9a.999.999,0,0,1,.3999-.7998l8-6a.99757.99757,0,0,1,1.2002,0L19,7V6a1,1,0,0,1,2,0V9a.99982.99982,0,0,1-1.6001.7998L12,4.25,5,9.5V19a1.001,1.001,0,0,0,1,1H18a1.001,1.001,0,0,0,1-1V14a1,1,0,0,1,2,0v5A3.00328,3.00328,0,0,1,18,22Z" style="fill:#333"/><path d="M9.17139,17.85723a1,1,0,0,1-.707-1.707L14.12158,10.493A.99989.99989,0,0,1,15.53564,11.907L9.87842,17.56426A.99676.99676,0,0,1,9.17139,17.85723Z" style="fill:#333"/><circle cx="9" cy="11" r="1" style="fill:#333"/><circle cx="15" cy="17" r="1" style="fill:#333"/></svg>
+              </span>
+              <div class="timeline-content d-flex">
+                <p class=" text-sm  mb-0 js-click" onclick="switchVisibleboardSix()">Existing Mortgages</p>
+                <span class="material-symbols-outlined text-sm text-light" style="margin-left: 66px;">
+                  chevron_right
+                  </span>
+              </div>
+              <hr class="horizontal light "/>
+            </div>
+            <div class="timeline-block ">
+                <span class="timeline-step">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="20px" height="20px" viewBox="-3 0 19 19" class="cf-icon-svg"><path d="M12.365 10.832a.473.473 0 0 1-.012.106q.012.179.012.37c0 3.239-5.865 5.063-5.865 5.063S.635 14.547.635 11.307q0-.19.012-.37a.473.473 0 0 1-.012-.105V3.643a.476.476 0 0 1 .475-.475h10.78a.476.476 0 0 1 .475.475zm-3.617-.387a1.653 1.653 0 0 0-.409-1.087 2.23 2.23 0 0 0-.617-.491l-.002-.001a2.599 2.599 0 0 0-.641-.232h-.002a2.797 2.797 0 0 0-.59-.062 2.196 2.196 0 0 1-.364-.028 1.405 1.405 0 0 1-.384-.123h-.001a.918.918 0 0 1-.294-.236v-.002a.596.596 0 0 1-.141-.358.604.604 0 0 1 .336-.509 1.67 1.67 0 0 1 .858-.23 1.722 1.722 0 0 1 .304.05l.036.008a1.926 1.926 0 0 1 .365.127 1.024 1.024 0 0 1 .3.206.554.554 0 1 0 .782-.785 2.145 2.145 0 0 0-.627-.431 2.961 2.961 0 0 0-.585-.2l-.036-.008h-.002v-.626a.554.554 0 0 0-1.109 0v.609a2.646 2.646 0 0 0-.878.343 1.712 1.712 0 0 0-.853 1.446 1.688 1.688 0 0 0 .39 1.058 2.01 2.01 0 0 0 .659.529 2.481 2.481 0 0 0 .697.225 3.281 3.281 0 0 0 .548.044 1.686 1.686 0 0 1 .355.036 1.47 1.47 0 0 1 .362.13 1.128 1.128 0 0 1 .3.24.552.552 0 0 1 .135.358c0 .124-.036.289-.31.466a1.69 1.69 0 0 1-.875.243 2.678 2.678 0 0 1-.38-.046 1.845 1.845 0 0 1-.354-.113.762.762 0 0 1-.284-.218.554.554 0 1 0-.838.726 1.852 1.852 0 0 0 .71.521 2.827 2.827 0 0 0 .577.176l.04.007v.625a.554.554 0 1 0 1.108 0v-.63a2.667 2.667 0 0 0 .9-.36 1.628 1.628 0 0 0 .814-1.397z"/></svg>
+                </span>
+                <div class="timeline-content d-flex">
+                  <p class=" text-sm  mb-0 js-click" onclick="switchVisibleboardSeven()">Existing Insurances</p>
+                  <span class="material-symbols-outlined text-sm text-light" style="margin-left: 62px;">
+                    chevron_right
+                    </span>
+                </div>
+                <hr class="horizontal light  "/>
+              </div>
+              <div class="timeline-block ">
+                <span class="timeline-step">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Capa_1" width="20px" height="20px" viewBox="0 0 405.272 405.272" xml:space="preserve">
+                    <g>
+                      <path d="M393.401,124.425L179.603,338.208c-15.832,15.835-41.514,15.835-57.361,0L11.878,227.836   c-15.838-15.835-15.838-41.52,0-57.358c15.841-15.841,41.521-15.841,57.355-0.006l81.698,81.699L336.037,67.064   c15.841-15.841,41.523-15.829,57.358,0C409.23,82.902,409.23,108.578,393.401,124.425z"/>
+                    </g>
+                    </svg>
+                  <!-- <i class="material-icons text-dark text-gradient text-lg">bug_report</i> -->
+                </span>
+                <div class="timeline-content d-flex">
+                  <p class=" text-sm   mb-0 js-click"  onclick="switchVisibleboardEight()">Confirmation</p>
+                  <span class="material-symbols-outlined text-sm text-light float-end" style="margin-left: 103px;">
+                    chevron_right
+                    </span>
+                </div>
+                <hr class="horizontal light  "/>
+              </div>
+          </div>
+      </ul>
+    </div>
+    </li>
+    </ul>
+    </div>
+  </aside>
+  <main class="main-content border-radius-lg ">
+    <div class="container">
+<div id="div1" style="display: block;">
+    <h5 class="text-center align-items-center mt-7">Financial Situation</h5>
+    <div class="card mt-2 ">
+        <div class="col-lg-12 p-2" style="background-color: #7FA387;border-radius: 10px !important;">
+            <h6 class="text-light font-weight-bold">Scope of Service</h6>
+        
+      </div> 
+         
+         <div class="col-lg-12 p-2 ">
+        
+            <div class="d-flex  mb-0  ">
+              <div class="form-check my-auto">
+                <input class="form-check-input" type="checkbox" id="customCheck1">
+              </div>
+              <a href="#">
+                <p class="mb-0 py-1 mx-2 font-weight-normal text-dark text-xs">Mortgage</p>
+              </a>
+            </div>
+            <div class="row my-1">
+              <div class="col-lg-9 col-md-9 col-sm-9 d-flex justify-content-between">
+                <div class="d-flex  mb-0  ">
+                  <div class="form-check my-auto">
+                    <input class="form-check-input" type="checkbox" id="customCheck1">
+                  </div>
+                  <a href="#">
+                    <strong class="mb-0 py-1 mx-2 font-weight-normal text-dark text-xs">Personal Insurance :</strong>
+                  </a>
+                </div>
+                <div class="d-flex  mb-0  ">
+                  <div class="form-check my-auto">
+                    <input class="form-check-input" type="checkbox" id="customCheck1">
+                  </div>
+                  <a href="#">
+                    <p class="mb-0 py-1 mx-2 font-weight-normal text-dark text-xs">Life</p>
+                  </a>
+                </div>
+                <div class="d-flex  mb-0  ">
+                  <div class="form-check my-auto">
+                    <input class="form-check-input" type="checkbox" id="customCheck1">
+                  </div>
+                  <a href="#">
+                    <p class="mb-0 py-1 mx-2 font-weight-normal text-dark text-xs">Truama</p>
+                  </a>
+                </div>
+                <div class="d-flex  mb-0  ">
+                  <div class="form-check my-auto">
+                    <input class="form-check-input" type="checkbox" id="customCheck1">
+                  </div>
+                  <a href="#">
+                    <p class="mb-0 py-1 mx-2 font-weight-normal text-dark text-xs">Health</p>
+                  </a>
+                </div>
+                <div class="d-flex  mb-0  ">
+                  <div class="form-check my-auto">
+                    <input class="form-check-input" type="checkbox" id="customCheck1">
+                  </div>
+                  <a href="#">
+                    <p class="mb-0 py-1 mx-2 font-weight-normal text-dark text-xs">Income/ Mortgage Protection</p>
+                  </a>
+                </div>
+              </div>
+             
+            </div>
+            <div class="d-flex  mb-0  ">
+              <div class="form-check my-auto">
+                <input class="form-check-input" type="checkbox" id="customCheck1">
+              </div>
+              <a href="#">
+                <p class="mb-0 py-1 mx-2 font-weight-normal text-dark text-xs">KiwiSaver</p>
+              </a>
+            </div>
+            <div class="row mt-1">
+              <div class="col-lg-6 col-md-9 col-sm-9 d-flex justify-content-between">
+                <div class="d-flex  mb-0  ">
+                  <div class="form-check my-auto">
+                    <input class="form-check-input" type="checkbox" id="customCheck1">
+                  </div>
+                  <a href="#">
+                    <strong class="mb-0 py-1 mx-2 font-weight-normal text-dark text-xs">House Insaurance</strong>
+                  </a>
+                </div>
+                <div class="d-flex  mb-0  ">
+                  <div class="form-check my-auto">
+                    <input class="form-check-input" type="checkbox" id="customCheck1">
+                  </div>
+                  <a href="#">
+                    <p class="mb-0 py-1 mx-2 font-weight-normal text-dark  text-xs">Vehicle Insurance</p>
+                  </a>
+                </div>
+                <div class="d-flex  mb-0  ">
+                  <div class="form-check my-auto">
+                    <input class="form-check-input" type="checkbox" id="customCheck1">
+                  </div>
+                  <a href="#">
+                    <p class="mb-0 py-1 mx-2 font-weight-normal text-dark text-xs">Contents Insurance</p>
+                  </a>
+                </div>
+              </div>
+             
+            </div>
+            <div class="col-12 mt-2">
+                <strong>Please list your key financial objectives and goals:</strong>
+                <div class="input-group input-group-outline">
+                  <textarea class="multisteps-form__textarea form-control" rows="2" placeholder="lorem ipsum is dummy text"></textarea>
+                </div>
+              </div>
+          </div>
+    
+  </div>
+  <div class=" float-end mt-2 ">
+    <button type="button" id="buttonoutline" class="btn btn-lg   text-xs bg-white text-success  mx-1">Skip</button>
+    <button type="button"  id="buttonColor" class="btn btn-lg   text-xs mx-1   ">Continue</button>
+  </div>
+</div>
+<div id="div2" style="display: none;" >
+  <h5 class="text-center align-items-center mt-5">Financial Situation</h5>
+    <div class="card mt-2  ">
+        <div class="col-lg-12 p-2" style="background-color: #7FA387;border-radius: 10px !important;">
+            <h6 class="text-light font-weight-bold">Income</h6>
+      </div> 
+      <div class="row mt-1 p-2">
+        <h6>Salary/Wages<span class="material-symbols-outlined text-sm mx-1 mt-3 " data-bs-toggle="tooltip" data-bs-placement="right" title="Base salary only.">
+          info
+          </span></h6>
+        <div class="col-12 col-sm-4">
+          <div class="input-group input-group-dynamic">
+          <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Primary Contact salary/Wages"/>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 mt-1 mt-sm-0">
+          <div class="input-group input-group-dynamic">
+            <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Secondary Contact salary/Wages"/>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 mt-1 mt-sm-0">
+          <select  name="Property" id="Property" style="border-radius:5px; width:265px; height:38px;border-color: #c2baba">
+            <option value="Select Property ">Monthly</option> 
+            <option value="Select Property ">Weekly</option>
+               <option value="Select Property ">Annual</option>
+           
+          </select>
+        </div>
+      </div>
+      <div class="row mt-1 p-2">
+        <h6>Self-Employed Income<span class="material-symbols-outlined text-sm mx-1 mt-3 " data-bs-toggle="tooltip" data-bs-placement="right" title="Net profit of business income plus drawings.">
+          info
+          </span></h6>
+        <div class="col-12 col-sm-4">
+          <div class="input-group input-group-dynamic">
+  
+            <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Primary Contact Self-Employed Income"/>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 mt-1 mt-sm-0">
+          <div class="input-group input-group-dynamic">
+            <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Secondary Contact Self-Employed Income"/>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 mt-1 mt-sm-0">
+          <select  name="Property" id="Property" style="border-radius:5px; width:265px; height:38px;border-color: #c2baba">
+            <option value="Select Property ">Monthly</option> 
+            <option value="Select Property ">Weekly</option>
+               <option value="Select Property ">Annual</option>
+           
+          </select>
+        </div>
+      </div>
+      <div class="row mt-1 p-2">
+        <h6>Commission<span class="material-symbols-outlined text-sm mx-1 mt-3 " data-bs-toggle="tooltip" data-bs-placement="right" title="Income that is in addition to your base salary. Please average out the last 12 months of commission/bonus.">
+          info
+          </span></h6>
+        <div class="col-12 col-sm-4">
+          <div class="input-group input-group-dynamic">
+  
+            <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Primary Contact Commission"/>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 mt-1 mt-sm-0">
+          <div class="input-group input-group-dynamic">
+            <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Secondary Contact Commission"/>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 mt-1 mt-sm-0">
+          <select  name="Property" id="Property" style="border-radius:5px; width:265px; height:38px;border-color: #c2baba">
+            <option value="Select Property ">Monthly</option> 
+            <option value="Select Property ">Weekly</option>
+               <option value="Select Property ">Annual</option>
+           
+          </select>
+        </div>
+      </div>
+      <div class="row mt-1 p-2">
+        <h6>Investment<span class="material-symbols-outlined text-sm mx-1 mt-3 " data-bs-toggle="tooltip" data-bs-placement="right" title="Example: dividends from shares.">
+          info
+          </span></h6>
+        <div class="col-12 col-sm-4">
+          <div class="input-group input-group-dynamic">
+  
+            <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Primary Contact Investment"/>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 mt-1 mt-sm-0">
+          <div class="input-group input-group-dynamic">
+            <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Secondary Contact Investment"/>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 mt-1 mt-sm-0">
+          <select  name="Property" id="Property" style="border-radius:5px; width:265px; height:38px;border-color: #c2baba">
+            <option value="Select Property ">Monthly</option> 
+            <option value="Select Property ">Weekly</option>
+               <option value="Select Property ">Annual</option>
+           
+          </select>
+        </div>
+      </div>
+      <div class="row mt-1 p-2">
+        <h6>Rental Income<span class="material-symbols-outlined text-sm mx-1 mt-3 " data-bs-toggle="tooltip" data-bs-placement="right" title="Combined rental income of all properties.">
+          info
+          </span></h6>
+        <div class="col-12 col-sm-4">
+          <div class="input-group input-group-dynamic">
+  
+            <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Primary Contact Rental Income"/>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 mt-1 mt-sm-0">
+          <div class="input-group input-group-dynamic">
+            <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Secondary Contact Rental Income"/>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 mt-1 mt-sm-0">
+          <select  name="Property" id="Property" style="border-radius:5px; width:265px; height:38px;border-color: #c2baba">
+            <option value="Select Property ">Monthly</option> 
+            <option value="Select Property ">Weekly</option>
+               <option value="Select Property ">Annual</option>
+           
+          </select>
+        </div>
+      </div>
+      <div class="row mt-1 p-2">
+        <h6>Other Income<span class="material-symbols-outlined text-sm mx-1 mt-3 " data-bs-toggle="tooltip" data-bs-placement="right" title="Including: a second job, contract work, part-time work.">
+          info
+          </span></h6>
+        <div class="col-12 col-sm-4">
+          <div class="input-group input-group-dynamic">
+  
+            <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Primary Contact Rental Income"/>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 mt-1 mt-sm-0">
+          <div class="input-group input-group-dynamic">
+            <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Secondary Contact Rental Income"/>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 mt-1 mt-sm-0">
+          <select  name="Property" id="Property" style="border-radius:5px; width:265px; height:38px;border-color: #c2baba">
+            <option value="Select Property ">Monthly</option> 
+            <option value="Select Property ">Weekly</option>
+               <option value="Select Property ">Annual</option>
+           
+          </select>
+        </div>
+      </div>
+      <div class="row mt-1 p-2">
+        <h6>Other Income</h6>
+        <div class="col-12 col-sm-4">
+          <div class="d-flex justify-content-between mb-0">
+            <div class="d-flex"><h6>Total :</h6>(Primary)</div>
+            <div><h6 class="font-weight-bold">$2000</h6></div>
+          </div>
+          <div class="input-group input-group-dynamic mt-0">
+  
+            <input class="multisteps-form__input form-control" type="text"  />
+          </div>
+        </div>
+        <div class="col-12 col-sm-4">
+          <div class="d-flex justify-content-between mb-0">
+            <div class="d-flex"><h6>Total :</h6>(Secondary)</div>
+            <div><h6 class="font-weight-bold">$2000</h6></div>
+          </div>
+          <div class="input-group input-group-dynamic mt-0">
+  
+            <input class="multisteps-form__input form-control" type="text"  />
+          </div>
+        </div>
+      
+      </div>
+  </div>
+  <div class=" float-end mt-2 ">
+    <button type="button" id="buttonoutline" class="btn btn-lg   text-xs bg-white text-success  mx-1">Skip</button>
+    <button type="button"  id="buttonColor" class="btn btn-lg   text-xs mx-1   ">Continue</button>
+  </div>
+</div>
+<div id="div3" style="display: none;">
+  <h5 class="text-center align-items-center mt-5">Financial Situation</h5>
+  <div class="card mt-2  ">
+    <div class="col-lg-12 p-2" style="background-color: #7FA387;border-radius: 10px !important;">
+        <h6 class="text-light font-weight-bold">Outgoings Monthly</h6>
+  </div> 
+  <div class="row mt-1 p-2">
+
+    <div class="col-12 col-sm-6">
+      <h6>Food & Groceries<span class="material-symbols-outlined text-sm mx-1 mt-3 " data-bs-toggle="tooltip" data-bs-placement="right" title="Average monthly expense at the supermarket.">
+        info
+        </span></h6>
+        </button>
+      <div class="input-group input-group-dynamic">
+
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Food / Groceries Outgoings"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 mt-1 mt-sm-0">
+      <h6>Childcare <span class="material-symbols-outlined text-sm mx-1 mt-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Daycare, after-school care, nanny/au-pair.">
+        info
+        </span></h6>
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Childcare Outgoings"/>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-1 p-2">
+    <div class="col-12 col-sm-6">
+      <h6>Takeaways <span class="material-symbols-outlined text-sm mx-1 mt-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Fast food and restaurants.">
+        info
+        </span></h6>
+      <div class="input-group input-group-dynamic">
+
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Takeaways Outgoings"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 mt-1 mt-sm-0">
+      <h6>Doctors/Dentist/Physio <span class="material-symbols-outlined text-sm mx-1 mt-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Regular ongoing average expense.">
+        info
+        </span> </h6>
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Doctors/Dentist/Physio Outgoings"/>
+      </div>
+    </div>
+  
+  </div>
+  
+    <div class="row mt-1 p-2">
+      <div class="col-12 col-sm-6">
+        <h6>Entertainment & Recreation <span class="material-symbols-outlined text-sm mx-1 mt-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Pay TV and streaming, alcohol, pubs, clubs and bars.">
+          info
+          </span></h6>
+        <div class="input-group input-group-dynamic">
+  
+          <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Entertainment & Recreation Outgoings"/>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 mt-1 mt-sm-0">
+        <h6>Personal Care/Clothing <span class="material-symbols-outlined text-sm mx-1 mt-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Clothes, footwear, personal care such as hairdressing.">
+          info
+          </span></h6>
+        <div class="input-group input-group-dynamic">
+          <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Personal Care/Clothing Outgoings"/>
+        </div>
+      </div>
+  
+    </div>
+  <div class="row mt-1 p-2">
+    <div class="col-12 col-sm-6">
+      <h6>Subscriptions<span class="material-symbols-outlined text-sm mx-1 mt-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Netflix, Sky, Spotify etc.">
+        info
+        </span></h6>
+      <div class="input-group input-group-dynamic">
+
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Subscriptions Outgoings"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 mt-1 mt-sm-0">
+      <h6>Education<span class="material-symbols-outlined text-sm mx-1 mt-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Public school donations/fees or Private school fees.">
+        info
+        </span></h6>
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Education Outgoings"/>
+      </div>
+    </div>
+   
+  </div>
+  <div class="row mt-1 p-2">
+    <div class="col-12 col-sm-6">
+      <h6>Membership<span class="material-symbols-outlined text-sm mx-1 mt-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Such as gym, clubs, sports registrations or other hobbies.">
+        info
+        </span></h6>
+      <div class="input-group input-group-dynamic">
+
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Membership Outgoings"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 mt-1 mt-sm-0">
+      <h6>Life/Health Insurance<span class="material-symbols-outlined text-sm mx-1 mt-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Total monthly expense (combined if more than one policy).">
+        info
+        </span></h6>
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Life/Health Insurance Outgoings"/>
+      </div>
+    </div>
+    <div class="row mt-1 p-2">
+      <div class="col-12 col-sm-6">
+        <h6>Power/Gas</h6>
+        <div class="input-group input-group-dynamic">
+  
+          <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Power/Gas Outgoings"/>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 mt-1 mt-sm-0">
+        <h6>Vehicle Insurance</h6>
+        <div class="input-group input-group-dynamic">
+          <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Vehicle Insurance Outgoings"/>
+        </div>
+      </div>
+     
+    </div>
+    <div class="row mt-1 p-2">
+      <div class="col-12 col-sm-6">
+        <h6>Internet</h6>
+        <div class="input-group input-group-dynamic">
+  
+          <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Internet Outgoings"/>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 mt-1 mt-sm-0">
+        <h6>House/Contents Insurance</h6>
+        <div class="input-group input-group-dynamic">
+          <input class="multisteps-form__input form-control" type="text"  placeholder="Enter House/Contents Insurance Outgoings"/>
+        </div>
+      </div>
+  </div>
+  <div class="row mt-1 p-2">
+    <div class="col-12 col-sm-6">
+      <h6>Water</h6>
+      <div class="input-group input-group-dynamic">
+
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Water Outgoings"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 mt-1 mt-sm-0">
+      <h6>Tithing/Charities</h6>
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Tithing/Charities Outgoings"/>
+      </div>
+    </div>
+   
+  </div>
+  <div class="row mt-1 p-2">
+    <div class="col-12 col-sm-6">
+      <h6>Rates</h6>
+      <div class="input-group input-group-dynamic">
+
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Rates Outgoings"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 mt-1 mt-sm-0">
+      <h6>Others</h6>
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Others Outgoings"/>
+      </div>
+    </div>
+   
+  </div>
+  <div class="row mt-1 p-2">
+    <div class="col-12 col-sm-6">
+      <h6>Gardner/Cleaner</h6>
+      <div class="input-group input-group-dynamic">
+
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Gardner/Cleaner Outgoings"/>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6">
+    <div class="d-flex justify-content-between mb-0">
+      <div class="d-flex"><h6>Total :</h6>(Primary)</div>
+      <div><h6>$2000</h6></div>
+    </div>
+    <div class="input-group input-group-dynamic mt-0">
+
+      <input class="multisteps-form__input form-control" type="text"  />
+    </div>
+  </div>
+</div>
+</div>
+<div class=" float-end mt-2 ">
+  <button type="button" id="buttonoutline" class="btn btn-lg   text-xs bg-white text-success  mx-1">Skip</button>
+  <button type="button"  id="buttonColor" class="btn btn-lg   text-xs mx-1   ">Continue</button>
+</div>
+</div>
+<div id="div4" style="display: none;" >
+  <h5 class="text-center align-items-center mt-5">Financial Situation</h5>
+  <div class="card mt-2  ">
+    <div class="col-lg-12 p-2" style="background-color: #7FA387;border-radius: 10px !important;">
+        <h6 class="text-light font-weight-bold">Statement Of Position</h6>
+  </div> 
+  <div class="row mt-1 p-2">
+    <div class="col-12 col-sm-6">
+      <h6>Savings</h6>
+      <div class="input-group input-group-dynamic">
+
+        <input class="multisteps-form__input form-control" type="text"   placeholder="Value"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 "  style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Bank Name"/>
+      </div>
+    </div>
+</div>
+  <div class="row mt-1 p-2">
+    <div class="col-12 col-sm-6  ">
+      <h6>Motor Vehicles</h6>
+      <div class="input-group input-group-dynamic">
+
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Value"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-2  " style="margin-top: 2.1rem !important;">
+       <div class="input-group input-group-dynamic" >
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Make"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic">
+       <input class="multisteps-form__input form-control" type="text"  placeholder="Model"/>
+     </div>
+   </div>
+   <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+    <div class="input-group input-group-dynamic">
+     <input class="multisteps-form__input form-control" type="text"  placeholder="Year"/>
+   </div>
+ </div>
+  </div>
+  
+    <div class="row mt-1 p-2">
+      <div class="col-12 col-sm-6">
+        <h6>Property - Family Home</h6>
+        <div class="input-group input-group-dynamic">
+  
+          <input class="multisteps-form__input form-control" type="text"  placeholder="Value"/>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6"  style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic">
+          <input class="multisteps-form__input form-control" type="text"  placeholder="Address"/>
+        </div>
+      </div>
+  
+    </div>
+  <div class="row mt-1 p-2">
+    <div class="col-12 col-sm-6">
+      <h6>Property - Investment</h6>
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Value"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6"  style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Address"/>
+      </div>
+    </div>
+   
+  </div>
+  <div class="row mt-1 p-2">
+    <div class="col-12 col-sm-6">
+      <h6>KiwiSaver</h6>
+      <div class="input-group input-group-dynamic">
+      <input class="multisteps-form__input form-control" type="text"  placeholder="Value"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 "  style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Provider"/>
+      </div>
+    </div>
+    <div class="row mt-1 p-2">
+      <div class="col-12 col-sm-6">
+        <h6>Superannuation</h6>
+        <div class="input-group input-group-dynamic">
+  
+          <input class="multisteps-form__input form-control" type="text"  placeholder="Value"/>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 "  style="margin-top: 2.1rem !important;">
+        <div class="input-group input-group-dynamic">
+          <input class="multisteps-form__input form-control" type="text" placeholder="Provider"/>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-1 p-2">
+      <div class="col-12 col-sm-6">
+        <h6>Bonds & Shares</h6>
+        <div class="input-group input-group-dynamic">
+  
+          <input class="multisteps-form__input form-control" type="text"   placeholder="Value"/>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 "  style="margin-top: 2.1rem !important;">
+        <div class="input-group input-group-dynamic">
+          <input class="multisteps-form__input form-control" type="text"  placeholder="Provider"/>
+        </div>
+      </div>
+  </div>
+  <div class="row mt-1 p-2">
+    <div class="col-12 col-sm-6">
+      <h6>Contents</h6>
+      <div class="input-group input-group-dynamic">
+    <input class="multisteps-form__input form-control" type="text"  placeholder="Value"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 "  style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Provider"/>
+      </div>
+    </div>
+   
+  </div>
+  <div class="row mt-1 p-2">
+    <div class="col-12 col-sm-6">
+      <h6>Gift</h6>
+      <div class="input-group input-group-dynamic">
+    <input class="multisteps-form__input form-control" type="text"  placeholder="Value"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6"  style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Provider"/>
+      </div>
+    </div>
+   
+   
+  </div>
+  <div class="row mt-1 p-2">
+    <div class="col-12 col-sm-6 mt-1 mt-sm-0" >
+      <h6>Others</h6>
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Others Outgoings"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6" style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Please State"/>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6">
+    <div class="d-flex justify-content-between mb-0">
+      <div class="d-flex"><h6>Total :</h6>(Primary)</div>
+      <div><h6>$2000</h6></div>
+    </div>
+    <div class="input-group input-group-dynamic mt-0">
+
+      <input class="multisteps-form__input form-control" type="text"  />
+    </div>
+  </div>
+</div>
+</div>
+<div class=" float-end mt-2 ">
+  <button type="button" id="buttonoutline" class="btn btn-lg   text-xs bg-white text-success  mx-1">Skip</button>
+  <button type="button"  id="buttonColor" class="btn btn-lg   text-xs mx-1   ">Continue</button>
+</div>
+</div>
+<div id="div5" style="display: none;">
+  <h5 class="text-center align-items-center mt-5">Financial Situation</h5>
+  <div class="card mt-2  ">
+    <div class="col-lg-12 p-2" style="background-color: #7FA387;border-radius: 10px !important;">
+        <h6 class="text-light font-weight-bold">Liabilities</h6>
+  </div> 
+  
+  <div class="row mt-1 p-2">
+    <h6>Bank Overdraft</h6>
+    <div class="col-12 col-sm-2  " style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic" >
+       <input class="multisteps-form__input form-control" type="text"  placeholder="Limit"/>
+     </div>
+   </div>
+   <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+     <div class="input-group input-group-dynamic">
+      <input class="multisteps-form__input form-control" type="text"  placeholder="Owing"/>
+    </div>
+  </div>
+  <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+   <div class="input-group input-group-dynamic">
+    <input class="multisteps-form__input form-control" type="text"  placeholder="Loan Term/Expiry"/>
+  </div>
+</div>
+    <div class="col-12 col-sm-6  ">
+
+      <div class="input-group input-group-outline pt-2">
+        <textarea class="multisteps-form__textarea form-control" rows="2"
+          placeholder="Comment"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-1 p-2">
+    <h6>Credit Card</h6>
+    <div class="col-12 col-sm-2  " style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic" >
+       <input class="multisteps-form__input form-control" type="text"  placeholder="Limit"/>
+     </div>
+   </div>
+   <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+     <div class="input-group input-group-dynamic">
+      <input class="multisteps-form__input form-control" type="text"  placeholder="Owing"/>
+    </div>
+  </div>
+  <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+   <div class="input-group input-group-dynamic">
+    <input class="multisteps-form__input form-control" type="text"  placeholder="Loan Term/Expiry"/>
+  </div>
+</div>
+    <div class="col-12 col-sm-6  ">
+
+      <div class="input-group input-group-outline pt-2">
+        <textarea class="multisteps-form__textarea form-control" rows="2"
+          placeholder="Comment"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-1 p-2">
+    <h6>Store Card<span class="material-symbols-outlined text-sm mx-1 mt-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Total monthly expense (combined if more than one policy).">
+      info
+      </span></h6>
+    <div class="col-12 col-sm-2  " style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic" >
+       <input class="multisteps-form__input form-control" type="text"  placeholder="Limit"/>
+     </div>
+   </div>
+   <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+     <div class="input-group input-group-dynamic">
+      <input class="multisteps-form__input form-control" type="text"  placeholder="Owing"/>
+    </div>
+  </div>
+  <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+   <div class="input-group input-group-dynamic">
+    <input class="multisteps-form__input form-control" type="text"  placeholder="Loan Term/Expiry"/>
+  </div>
+</div>
+    <div class="col-12 col-sm-6  ">
+
+      <div class="input-group input-group-outline pt-2">
+        <textarea class="multisteps-form__textarea form-control" rows="2"
+          placeholder="Comment"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-1 p-2">
+    <h6>Hire Purchase</h6>
+    <div class="col-12 col-sm-2  " style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic" >
+       <input class="multisteps-form__input form-control" type="text"  placeholder="Limit"/>
+     </div>
+   </div>
+   <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+     <div class="input-group input-group-dynamic">
+      <input class="multisteps-form__input form-control" type="text"  placeholder="Owing"/>
+    </div>
+  </div>
+  <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+   <div class="input-group input-group-dynamic">
+    <input class="multisteps-form__input form-control" type="text"  placeholder="Loan Term/Expiry"/>
+  </div>
+</div>
+    <div class="col-12 col-sm-6  ">
+
+      <div class="input-group input-group-outline pt-2">
+        <textarea class="multisteps-form__textarea form-control" rows="2"
+          placeholder="Comment"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-1 p-2">
+    <h6>Main Bank Home Loan</h6>
+    <div class="col-12 col-sm-2  " style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic" >
+       <input class="multisteps-form__input form-control" type="text"  placeholder="Limit"/>
+     </div>
+   </div>
+   <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+     <div class="input-group input-group-dynamic">
+      <input class="multisteps-form__input form-control" type="text"  placeholder="Owing"/>
+    </div>
+  </div>
+  <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+   <div class="input-group input-group-dynamic">
+    <input class="multisteps-form__input form-control" type="text"  placeholder="Loan Term/Expiry"/>
+  </div>
+</div>
+    <div class="col-12 col-sm-6  ">
+
+      <div class="input-group input-group-outline pt-2">
+        <textarea class="multisteps-form__textarea form-control" rows="2"
+          placeholder="Comment"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-1 p-2">
+    <h6>Other Bank Home Loan</h6>
+    <div class="col-12 col-sm-2  " style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic" >
+       <input class="multisteps-form__input form-control" type="text"  placeholder="Limit"/>
+     </div>
+   </div>
+   <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+     <div class="input-group input-group-dynamic">
+      <input class="multisteps-form__input form-control" type="text"  placeholder="Owing"/>
+    </div>
+  </div>
+  <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+   <div class="input-group input-group-dynamic">
+    <input class="multisteps-form__input form-control" type="text"  placeholder="Loan Term/Expiry"/>
+  </div>
+</div>
+    <div class="col-12 col-sm-6  ">
+
+      <div class="input-group input-group-outline pt-2">
+        <textarea class="multisteps-form__textarea form-control" rows="2"
+          placeholder="Comment"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-1 p-2">
+    <h6>Student Loan</h6>
+    <div class="col-12 col-sm-2  " style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic" >
+       <input class="multisteps-form__input form-control" type="text"  placeholder="Limit"/>
+     </div>
+   </div>
+   <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+     <div class="input-group input-group-dynamic">
+      <input class="multisteps-form__input form-control" type="text"  placeholder="Owing"/>
+    </div>
+  </div>
+  <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+   <div class="input-group input-group-dynamic">
+    <input class="multisteps-form__input form-control" type="text"  placeholder="Loan Term/Expiry"/>
+  </div>
+</div>
+    <div class="col-12 col-sm-6  ">
+
+      <div class="input-group input-group-outline pt-2">
+        <textarea class="multisteps-form__textarea form-control" rows="2"
+          placeholder="Comment"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-1 p-2">
+    <h6>Car Loan</h6>
+    <div class="col-12 col-sm-2  " style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic" >
+       <input class="multisteps-form__input form-control" type="text"  placeholder="Limit"/>
+     </div>
+   </div>
+   <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+     <div class="input-group input-group-dynamic">
+      <input class="multisteps-form__input form-control" type="text"  placeholder="Owing"/>
+    </div>
+  </div>
+  <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+   <div class="input-group input-group-dynamic">
+    <input class="multisteps-form__input form-control" type="text"  placeholder="Loan Term/Expiry"/>
+  </div>
+</div>
+    <div class="col-12 col-sm-6  ">
+
+      <div class="input-group input-group-outline pt-2">
+        <textarea class="multisteps-form__textarea form-control" rows="2"
+          placeholder="Comment"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-1 p-2">
+    <h6>Other Finance</h6>
+    <div class="col-12 col-sm-2  " style="margin-top: 2.1rem !important;">
+      <div class="input-group input-group-dynamic" >
+       <input class="multisteps-form__input form-control" type="text"  placeholder="Limit"/>
+     </div>
+   </div>
+   <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+     <div class="input-group input-group-dynamic">
+      <input class="multisteps-form__input form-control" type="text"  placeholder="Owing"/>
+    </div>
+  </div>
+  <div class="col-12 col-sm-2 " style="margin-top: 2.1rem !important;">
+   <div class="input-group input-group-dynamic">
+    <input class="multisteps-form__input form-control" type="text"  placeholder="Loan Term/Expiry"/>
+  </div>
+</div>
+    <div class="col-12 col-sm-6  ">
+
+      <div class="input-group input-group-outline pt-2">
+        <textarea class="multisteps-form__textarea form-control" rows="2"
+          placeholder="Comment"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 mb-2">
+    <div class="d-flex justify-content-between mb-0">
+      <div class="d-flex"><h6>Total :</h6>(Primary)</div>
+      <div><h6>$2000</h6></div>
+    </div>
+    <div class="input-group input-group-dynamic mt-0">
+
+      <input class="multisteps-form__input form-control" type="text"  />
+    </div>
+  </div>
+</div>
+<div class=" float-end mt-2 ">
+  <button type="button" id="buttonoutline" class="btn btn-lg   text-xs bg-white text-success  mx-1">Skip</button>
+  <button type="button"  id="buttonColor" class="btn btn-lg   text-xs mx-1   ">Continue</button>
+</div>
+</div>
+<div id="div6" style="display: none;">
+  <h5 class="text-center align-items-center mt-5">Financial Situation</h5>
+  <div class="card mt-2  ">
+    <div class="col-lg-12 p-2" style="background-color: #7FA387;border-radius: 10px !important;">
+        <h6 class="text-light font-weight-bold">Existing Mortgages</h6>
+  </div> 
+  <div class="row mt-1 p-2">
+<p class="text-end text-info text-decoration-underline">Add</p>
+    <div class="col-12 col-sm-6">
+      <h6>Security Address</h6>
+      <div class="input-group input-group-dynamic">
+
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Security Address"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 mt-1 mt-sm-0">
+      <h6>Interest Rate & Fixed Expiry </h6>
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Interest Rate & Fixed Expiry"/>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-1 p-2">
+    <div class="col-12 col-sm-6">
+      <h6>Security Value</h6>
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Security Value"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 mt-1 mt-sm-0">
+      <h6>Loan Term</h6>
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Loan Term"/>
+      </div>
+    </div>
+  
+  </div>
+  <div class="row mt-1 p-2">
+    <div class="col-12 col-sm-6">
+      <h6>Security Debt</h6>
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Security Debt"/>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 mt-1 mt-sm-0">
+      <h6>Bank</h6>
+      <div class="input-group input-group-dynamic">
+        <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Bank Name"/>
+      </div>
+    </div>
+  
+  </div>
+
+</div>
+<div class=" float-end mt-2 ">
+  <button type="button" id="buttonoutline" class="btn btn-lg   text-xs bg-white text-success  mx-1">Skip</button>
+  <button type="button"  id="buttonColor" class="btn btn-lg   text-xs mx-1   ">Continue</button>
+</div>
+</div>
+<div id="div7" style="display: none;">
+  <div class="d-flex justify-content-between mt-5"> <h5 class="text-center align-items-center ">Existing Insurances</h5><button type="button"  id="buttonColor" class="btn btn-lg   text-xs  mx-3 "><i class="fa fa-cloud-upload" aria-hidden="true"></i>Upload Policy Document</button></div>
+    <div class="card table-responsive mx-2">
+      <table class="table align-items-center mb-0">
+        <thead style="background-color: #7FA387;border-radius: 10px !important;">
+          <tr>
+            <th class="text-xs font-weight-bolder  text-light " style="text-transform: none;">Product</th>
+            <th class=" text-xs font-weight-bolder text-light  ps-2" style="text-transform: none;">Cover Amount</th>
+            <th class="text-xs font-weight-bolder  text-light ps-2" style="text-transform: none;">Cover Structure</th>
+            <th class="text-xs font-weight-bolder  text-light ps-2" style="text-transform: none;">Exclusions/Loadings</th>
+            <th class="text-xs font-weight-bolder  text-light ps-2" style="text-transform: none;">Insurer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <select  name="Property" id="Property" style="border-radius:5px; width:265px; height:38px;border-color: #c2baba">
+                <option value="Select Property ">Select Product</option> 
+                <option value="Select Property ">Select Product</option>
+                   <option value="Select Property ">Select Product</option>
+              </select>
+            </td>
+            <td class="  text-xs"> <div class="input-group input-group-outline">
+              <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Cover Amount"/>
+              </div></td>
+              <td class="  text-xs"> <div class="input-group input-group-outline">
+                <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Cover Structure"/>
+                </div></td>
+                <td class="  text-xs"> <div class="input-group input-group-outline">
+                  <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Exclusions/Loadings"/>
+                  </div></td>
+                  <td class="  text-xs"> <div class="input-group input-group-outline">
+                    <input class="multisteps-form__input form-control" type="text"  placeholder="Insurer"/>
+                    </div></td>
+          </tr>
+          <tr>
+            <td>
+              <select  name="Property" id="Property" style="border-radius:5px; width:265px; height:38px;border-color: #c2baba">
+                <option value="Select Property ">Select Product</option> 
+                <option value="Select Property ">Select Product</option>
+                   <option value="Select Property ">Select Product</option>
+              </select>
+            </td>
+            <td class="  text-xs"> <div class="input-group input-group-outline">
+              <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Cover Amount"/>
+              </div></td>
+              <td class="  text-xs"> <div class="input-group input-group-outline">
+                <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Cover Structure"/>
+                </div></td>
+                <td class="  text-xs"> <div class="input-group input-group-outline">
+                  <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Exclusions/Loadings"/>
+                  </div></td>
+                  <td class="  text-xs"> <div class="input-group input-group-outline">
+                    <input class="multisteps-form__input form-control" type="text"  placeholder="Insurer"/>
+                    </div></td>
+          </tr>
+          <tr>
+            <td>
+              <select  name="Property" id="Property" style="border-radius:5px; width:265px; height:38px;border-color: #c2baba">
+                <option value="Select Property ">Select Product</option> 
+                <option value="Select Property ">Select Product</option>
+                   <option value="Select Property ">Select Product</option>
+              </select>
+            </td>
+            <td class="  text-xs"> <div class="input-group input-group-outline">
+              <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Cover Amount"/>
+              </div></td>
+              <td class="  text-xs"> <div class="input-group input-group-outline">
+                <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Cover Structure"/>
+                </div></td>
+                <td class="  text-xs"> <div class="input-group input-group-outline">
+                  <input class="multisteps-form__input form-control" type="text"  placeholder="Enter Exclusions/Loadings"/>
+                  </div></td>
+                  <td class="  text-xs"> <div class="input-group input-group-outline">
+                    <input class="multisteps-form__input form-control" type="text"  placeholder="Insurer"/>
+                    </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="d-flex justify-content-between "> <h5 class="text-center align-items-center ">Monthly Premiums</h5></div>
+      <div class="card table-responsive mx-2">
+        <table class="table align-items-center mb-0">
+          <thead style="background-color: #7FA387;border-radius: 10px !important;">
+            <tr>
+              <th class="text-xs font-weight-bolder  text-light " style="text-transform: none;">Type Of Insurance</th>
+              <th class=" text-xs font-weight-bolder text-light  ps-2" style="text-transform: none;">Premium</th>
+              <th class="text-xs font-weight-bolder  text-light ps-2" style="text-transform: none;">Insurer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>Life & Disability Insurance</p>
+              </td>
+              <td class="  text-xs"> <div class="input-group input-group-outline">
+                <input class="multisteps-form__input form-control" type="text"  placeholder="Lorem Ipsum"/>
+                </div></td>
+                <td class="  text-xs"> <div class="input-group input-group-outline">
+                  <input class="multisteps-form__input form-control" type="text"  placeholder="Herry Gilbirt"/>
+                  </div></td>  
+            </tr>
+            <tr>
+              <td>
+                <p>Medical Insurance</p>
+              </td>
+              <td class="  text-xs"> <div class="input-group input-group-outline">
+                <input class="multisteps-form__input form-control" type="text"  placeholder="Lorem Ipsum"/>
+                </div></td>
+                <td class="  text-xs"> <div class="input-group input-group-outline">
+                  <input class="multisteps-form__input form-control" type="text"  placeholder="Ryan Sullivan"/>
+                  </div></td>  
+            </tr>
+            <tr>
+              <td>
+                <p>Medical Insurance</p>
+              </td>
+              <td class="  text-xs"> <div class="input-group input-group-outline">
+                <input class="multisteps-form__input form-control" type="text"  placeholder="Lorem Ipsum"/>
+                </div></td>
+                <td class="  text-xs"> <div class="input-group input-group-outline">
+                  <input class="multisteps-form__input form-control" type="text"  placeholder="Steve Lynch"/>
+                  </div></td>  
+            </tr>
+            <tr>
+              <td>
+                <p>Medical Insurance</p>
+              </td>
+              <td class="  text-xs"> <div class="input-group input-group-outline">
+                <input class="multisteps-form__input form-control" type="text"  placeholder="Lorem Ipsum"/>
+                </div></td>
+                <td class="  text-xs"> <div class="input-group input-group-outline">
+                  <input class="multisteps-form__input form-control" type="text"  placeholder="Randy Baker"/>
+                  </div></td>  
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class=" float-end mt-2 ">
+        <button type="button" id="buttonoutline" class="btn btn-lg   text-xs bg-white text-success  mx-1">Skip</button>
+        <button type="button"  id="buttonColor" class="btn btn-lg   text-xs mx-1   ">Continue</button>
+      </div>
+</div>
+<div id="div8" style="display: none;">
+  <h5 class="text-center align-items-center mt-5">Financial Situation</h5>
+  <h5 class="text-start align-items-center">Confirmation</h5>
+  <div class="card mt-2">
+    <div class="row ">
+      <h5 class="text-center font-weight-bolder mt-3">Facts and Analysis</h5>
+    </div>
+    <div class="col-lg-12 px-2 col-md-12">
+      <strong class="text-dark">Scope of Service</strong>
+      <div class="d-flex  mb-0  ">
+        <div class="form-check my-auto">
+          <input class="form-check-input" type="checkbox" id="customCheck1">
+        </div>
+        <a href="#">
+          <p class="mb-0 py-1 mx-2 font-weight-normal text-dark text-xs">Mortgage</p>
+        </a>
+      </div>
+      <div class="row my-1">
+        <div class="col-lg-9 col-md-9 col-sm-9 d-flex justify-content-between">
+          <div class="d-flex  mb-0  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#">
+              <strong class="mb-0 py-1 mx-2 text-dark font-weight-normal text-xs">Personal Insurance :</strong>
+            </a>
+          </div>
+          <div class="d-flex  mb-0  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#">
+              <p class="mb-0 py-1 mx-2 font-weight-normal text-dark text-xs">Life</p>
+            </a>
+          </div>
+          <div class="d-flex  mb-0  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#">
+              <p class="mb-0 py-1 mx-2 font-weight-normal text-dark text-xs">Truama</p>
+            </a>
+          </div>
+          <div class="d-flex  mb-0  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#">
+              <p class="mb-0 py-1 mx-2 font-weight-normal text-dark  text-xs">Health</p>
+            </a>
+          </div>
+          <div class="d-flex  mb-0  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#">
+              <p class="mb-0 py-1 mx-2 font-weight-normal text-dark text-xs">Income/ Mortgage Protection</p>
+            </a>
+          </div>
+        </div>
+       
+      </div>
+      <div class="d-flex  mb-0  ">
+        <div class="form-check my-auto">
+          <input class="form-check-input" type="checkbox" id="customCheck1">
+        </div>
+        <a href="#">
+          <p class="mb-0 py-1 mx-2 font-weight-normal text-dark text-xs">KiwiSaver</p>
+        </a>
+      </div>
+      <div class="row mt-1">
+        <div class="col-lg-6 col-md-9 col-sm-9 d-flex justify-content-between">
+          <div class="d-flex  mb-0  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#">
+              <strong class="mb-0 py-1 mx-2 font-weight-normal text-xs text-dark">House Insaurance</strong>
+            </a>
+          </div>
+          <div class="d-flex  mb-0  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#">
+              <p class="mb-0 py-1 mx-2 font-weight-normal text-xs text-dark">Vehicle Insurance</p>
+            </a>
+          </div>
+          <div class="d-flex  mb-0  ">
+            <div class="form-check my-auto">
+              <input class="form-check-input" type="checkbox" id="customCheck1">
+            </div>
+            <a href="#">
+              <p class="mb-0 py-1 mx-2 font-weight-normal text-xs text-dark">Contents Insurance</p>
+            </a>
+          </div>
+        </div>
+       
+      </div>
+      <div class="col-12 mt-2">
+          <strong>Please list your key financial objectives and goals:</strong>
+          <div class="input-group input-group-outline">
+            <textarea class="multisteps-form__textarea form-control" rows="2" placeholder="lorem ipsum is dummy text"></textarea>
+          </div>
+        </div>
+    </div>
+    <div class=" px-2  mt-2">
+      <h6 class="p-2 text-dark">Financial Situation</h6>
+        <div class="col-lg-12">
+          <div class="card table-responsive mx-2">
+            <table class="table align-items-center mb-0">
+              <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                <tr>
+                  <th class="text-xs font-weight-bolder  " style="text-transform: none;">Details</th>
+                  <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Johan Doe
+                    (Primary)</th>
+                  <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Joe Reynolds
+                    (Secondary)</th>
+                  <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Period</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Salary/Wages </p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$300</td>
+                  <td class="  text-xs">$300</td>
+                  <td class="  text-xs">Weekly</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Self-employed Income
+                        </p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$300</td>
+                  <td class="  text-xs">$300</td>
+                  <td class="  text-xs">Monthly</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Commission </p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$300</td>
+                  <td class="  text-xs">$300</td>
+                  <td class="  text-xs">Monthly</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Investment (dividends)
+                        </p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$300</td>
+                  <td class="  text-xs">$300</td>
+                  <td class="  text-xs">Monthly</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Rental Income (state
+                          property address and amount)</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$300</td>
+                  <td class="  text-xs">$300</td>
+                  <td class="  text-xs">Monthly</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Boarder Income</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$300</td>
+                  <td class="  text-xs">$300</td>
+                  <td class="  text-xs">Monthly</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Other Income (state
+                          source)</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$300</td>
+                  <td class="  text-xs">$300</td>
+                  <td class="  text-xs">Monthly</td>
+                </tr>
+              <tfoot>
+                <td class=" text-start px-4 text-lg font-weight-bolder">Total</td>
+                <td class="text-dark">$3,000</td>
+                <td class="text-dark">$3,000</td>
+              </tfoot>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-12  ">
+          <h6 class="p-2 text-dark">Outgoings Monthly</h6>
+          <div class="card table-responsive mx-2">
+            <table class="table align-items-center mb-0">
+              <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                <tr>
+                  <th class="text-xs font-weight-bolder  " style="text-transform: none;">Item</th>
+                  <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Johan Doe</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Food / Groceries</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$300</td>
+
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Takeaways (average)</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$200</td>
+
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Entertainment &
+                          Recreation</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$50</td>
+
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Subscriptions (Netflix,
+                          Spotify, Sky)</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$300</td>
+
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Membership (Gym, Clubs,
+                          Sports)</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$500</td>
+
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Power/Gas</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$120</td>
+
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Internet</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$345</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Water</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$56</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Rates</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$200</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Gardner/Cleaner</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$200</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Childcare
+                          (after-school, babysitting, au-pair)</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$200</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Doctors/Dentist/Physio
+                        </p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$200</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Personal Care/Clothing
+                        </p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$345</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Education
+                          (after-school, babysitting, au-pair)</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$345</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Life/Health Insurance
+                        </p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$345</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Vehicle Insurance</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$300</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">House/Contents
+                          Insurance</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$300</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex">
+                      <a href="#">
+                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Tithing/Charities</p>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="  text-xs">$300</td>
+                </tr>
+              <tfoot>
+                <td class=" text-start px-4 text-lg font-weight-bolder">Total</td>
+                <td class=" text-start px-4 text-lg font-weight-bolder">$8,000</td>
+              </tfoot>
+              </tbody>
+            </table>
+          </div>
+  </div>
+  <div class="col-lg-12 mt-2">
+    <h6 class="p-2 text-dark">Statement Of Position</h6>
+
+    <div class="card table-responsive mx-2">
+      <table class="table align-items-center mb-0">
+        <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+          <tr>
+            <th class="text-xs font-weight-bolder ps-2 " style="text-transform: none;">Assets</th>
+            <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Value</th>
+            <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Details
+            </th> </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="  text-xs">Savings</td>
+            <td class="  text-xs">$300</td>
+            <td class="  text-xs">Bank Name</td>
+           </tr>
+           <tr>
+            <td class="  text-xs">Motor Vehicles</td>
+            <td class="  text-xs">$300</td>
+            <td class="  text-xs">Make, Model, Year</td>
+           </tr>
+           <tr>
+            <td class="  text-xs">Property - Family Home</td>
+            <td class="  text-xs">$300</td>
+            <td class="  text-xs">Addresses</td>
+           </tr>
+          </tr>
+          <tr>
+            <td class="  text-xs">Property - Investment</td>
+            <td class="  text-xs">$300</td>
+            <td class="  text-xs">Addresses</td>
+           </tr>
+          </tr>
+          <tr>
+            <td class="  text-xs">KiwiSaver</td>
+            <td class="  text-xs">$300</td>
+            <td class="  text-xs">BProvider</td>
+           </tr>
+          </tr>
+
+          <tr>
+            <td class="  text-xs">Superannuation</td>
+            <td class="  text-xs">$300</td>
+            <td class="  text-xs">Provider</td>
+           </tr>
+          </tr>
+          <tr>
+            <td class="  text-xs">Bonds & Shares</td>
+            <td class="  text-xs">$300</td>
+            <td class="  text-xs">Provider</td>
+           </tr>
+          </tr>
+          <tr>
+            <td class="  text-xs">Contents</td>
+            <td class="  text-xs">$300</td>
+            <td class="  text-xs">Key items</td>
+           </tr>
+          </tr>
+          <tr>
+            <td class="  text-xs">Gift</td>
+            <td class="  text-xs">$300</td>
+            <td class="  text-xs">Received from who</td>
+           </tr>
+          </tr>
+          <tr>
+            <td class="  text-xs">Other</td>
+            <td class="  text-xs">Please state</td>
+            <td class="  text-xs">Please state</td>
+           </tr>
+          </tr>
+         
+
+        </tbody>
+
+
+      </table>
+      <h6 class="p-2 text-dark">Liabilities</h6>
+      <div class="col-lg-12 d-flex ">
+        <div class="col-lg-4">  
+            <div class="table-responsive">
+            <table class="table align-items-center mb-0">
+              <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                <tr>
+                  <th class="text-xs font-weight-bolder  " style="text-transform: none;">Liabilities</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td class="  text-xs">Bank Overdraft</td>
+                 </tr>
+                 <tr>
+                    <td class="  text-xs">Credit Card</td>
+                 </tr>
+                 <tr>
+                    <td class="  text-xs">Store Card<i class="fa fa-info-circle px-2" aria-hidden="true"></i></td>
+                 </tr>
+                 <tr>
+                    <td class="  text-xs">Hire Purchase</td>
+                 </tr>
+                 <tr>
+                    <td class="  text-xs">Main Bank Home Loan</td>
+                 </tr>
+                 <tr>
+                    <td class="  text-xs">Other Bank Home Loan</td>
+                 </tr>
+                 <tr>
+                    <td class="  text-xs">Student Loan</td>
+                 </tr>
+                 <tr>
+                    <td class="  text-xs">Car Loan</td>
+                 </tr>
+                 <tr>
+                    <td class="  text-xs">Other Finance: please state</td>
+                 </tr>
+               </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-4 px-1"> 
+             <div class="table-responsive">
+            <table class="table align-items-center mb-0">
+              <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                <tr>
+                  <th class="text-xs font-weight-bolder  px-2 " style="text-transform: none;">Limit</th>
+                  <th class="text-xs font-weight-bolder px-2 " style="text-transform: none;">Owing</th>
+                  <th class="text-xs font-weight-bolder px-2 " style="text-transform: none;">Laon Term/Expiry</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                 </tr>
+                 <tr>
+                    <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                 </tr>
+                 <tr>
+                    <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                 </tr>
+                 <tr>
+                    <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                 </tr>
+
+                 <tr>
+                    <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                 </tr>
+                 <tr>
+                    <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                 </tr>
+                 <tr>
+                    <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                 </tr>
+                 <tr>
+                    <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                 </tr>
+               </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="table-responsive">
+                <table class="table align-items-center mb-0">
+                  <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                    <tr>
+                        <th class="text-xs font-weight-bolder  px-2 " style="text-transform: none;">Limit</th>
+                        <th class="text-xs font-weight-bolder px-2 " style="text-transform: none;">Owing</th>
+                        <th class="text-xs font-weight-bolder  px-2" style="text-transform: none;">Laon Term/Expiry</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                     </tr>
+                     <tr>
+                        <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                     </tr>
+                     <tr>
+                        <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                     </tr>
+                     <tr>
+                        <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                     </tr>
+
+                     <tr>
+                        <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                     </tr>
+                     <tr>
+                        <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                     </tr>
+                     <tr>
+                        <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                     </tr>
+                     <tr>
+                        <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                     </tr>
+                   </tbody>
+                </table>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="col-lg-12">
+      <h6 class="p-2 text-dark">Your Existing Mortgages</h6>
+      <div class="card table-responsive mx-2">
+        <table class="table align-items-center mb-0">
+          <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+            <tr>
+              <th class="text-xs font-weight-bolder  ps-2 " style="text-transform: none;">Security Address
+              </th>
+              <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Security Value
+              </th>
+              <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Security Debt</th>
+              <th class="text-xs font-weight-bolder ps-2 " style="text-transform: none;">Interest Rate &
+                Fixed Expiry</th>
+              <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Loan Term</th>
+              <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Bank</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+            </tr>
+            <tr>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+            </tr>
+            <tr>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+            </tr>
+            <tr>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+            </tr>
+            <tr>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+            </tr>
+            <tr>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+            </tr>
+            <tr>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+              <td class="  text-xs">Lorem ipsum</td>
+            </tr>
+
+          </tbody>
+
+
+        </table>
+      </div>
+    </div>
+        <div class="col-lg-12 mt-2">
+          <div class="d-flex justify-content-between">    <h6 class="p-2 text-dark">Your Existing Insurances</h6><p class="text-info ttext-sm">Policydocument.Pdf</p></div>
+      
+          <div class="card table-responsive">
+            <table class="table align-items-center mb-0">
+              <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                <tr>
+                  <th class="text-xs font-weight-bolder ps-2 " style="text-transform: none;">Product</th>
+                  <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Cover Amount</th>
+                  <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Cover Structure
+                  </th>
+                  <th class="text-xs font-weight-bolder ps-2  " style="text-transform: none;">
+                    Exclusions/Loadings</th>
+                  <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Insurer</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                </tr>
+
+              </tbody>
+
+
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-12 mt-3">
+          <h6 class="p-2 text-dark  mt-4">Monthly Premiums</h6>
+          <div class="card table-responsive ">
+            <table class="table align-items-center mb-0">
+              <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                <tr>
+                  <th class="text-xs font-weight-bolder ps-2 " style="text-transform: none;">Monthly Premiums</th>
+                  <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Premium</th>
+                  <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Insurer
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="  text-xs">Life & Disability Insurance</td>
+                  <td class="  text-xs">Lorem ipsum</td>
+                  <td class="  text-xs">Lorem </td>
+                  </tr>
+                  <tr>
+                    <td class="  text-xs">Medical Insurance</td>
+                    <td class="  text-xs">Lorem ipsum</td>
+                    <td class="  text-xs">Lorem </td>
+                    </tr>
+                    <tr>
+                      <td class="  text-xs">House and Contents Insurance</td>
+                      <td class="  text-xs">Lorem ipsum</td>
+                      <td class="  text-xs">Lorem </td>
+                      </tr>
+                      <tr>
+                        <td class="  text-xs">Car Insurance</td>
+                        <td class="  text-xs">Lorem ipsum</td>
+                        <td class="  text-xs">Lorem </td>
+                        </tr>
+         
+
+              </tbody>
+
+
+            </table>
+          </div>
+        </div>
+    <p class="px-2">Is there anything else you want to add?</p>
+    <div class="px-2  col-lg-12">
+      <div class="input-group input-group-outline">
+        <textarea class="multisteps-form__textarea form-control" rows="5"
+          placeholder="lorem ipsum is dummy text"></textarea>
+      </div>
+      <div class=" float-end mt-2 ">
+        <button type="button" id="buttonoutline" class="btn btn-lg   text-xs bg-white text-success mx-1  ">Skip</button>
+       <a href="index.html"><button type="button"  id="buttonColor" class="btn btn-lg   text-xs mx-1  ">Continue</button></a> 
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+
+</div>
+ 
+    </div>
+  </main>
+ 
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap.min.js"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/choices.min.js"></script>
+  <script src="./assets/js/plugins/datatables.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./assets/js/plugins/chartjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- Kanban scripts -->
+
+  <script>
+    $( document ).ready(function() {
+  $( ".js-click" ).click(function() {
+    $( ".js-click" ).css('color', 'white');
+  });
+});
+      function switchVisibleboard() {
+     if (document.getElementById('div1').style.display == 'none') {
+          document.getElementById('div1').style.display = 'block';
+          document.getElementById('div2').style.display = 'none';
+          document.getElementById('div3').style.display = 'none';
+          document.getElementById('div4').style.display = 'none';
+          document.getElementById('div5').style.display = 'none';
+          document.getElementById('div6').style.display = 'none';
+          document.getElementById('div7').style.display = 'none';
+          document.getElementById('div8').style.display = 'none';
+  }
+      }
+      function switchVisibleboardTwo() {
+     if (document.getElementById('div2').style.display == 'none') {
+          document.getElementById('div2').style.display = 'block';
+          document.getElementById('div1').style.display = 'none';
+          document.getElementById('div3').style.display = 'none';
+          document.getElementById('div4').style.display = 'none';
+          document.getElementById('div5').style.display = 'none';
+          document.getElementById('div6').style.display = 'none';
+          document.getElementById('div7').style.display = 'none';
+          document.getElementById('div8').style.display = 'none';
+  }
+      }
+      function switchVisibleboardThree() {
+     if (document.getElementById('div3').style.display == 'none') {
+          document.getElementById('div3').style.display = 'block';
+          document.getElementById('div1').style.display = 'none';
+          document.getElementById('div2').style.display = 'none';
+          document.getElementById('div4').style.display = 'none';
+          document.getElementById('div5').style.display = 'none';
+          document.getElementById('div6').style.display = 'none';
+          document.getElementById('div7').style.display = 'none';
+          document.getElementById('div8').style.display = 'none';
+  }
+      }
+      function switchVisibleboardFour() {
+     if (document.getElementById('div4').style.display == 'none') {
+          document.getElementById('div4').style.display = 'block';
+          document.getElementById('div1').style.display = 'none';
+          document.getElementById('div3').style.display = 'none';
+          document.getElementById('div2').style.display = 'none';
+          document.getElementById('div5').style.display = 'none';
+          document.getElementById('div6').style.display = 'none';
+          document.getElementById('div7').style.display = 'none';
+          document.getElementById('div8').style.display = 'none';
+  }
+      }
+      function switchVisibleboardFive() {
+     if (document.getElementById('div5').style.display == 'none') {
+          document.getElementById('div5').style.display = 'block';
+          document.getElementById('div1').style.display = 'none';
+          document.getElementById('div3').style.display = 'none';
+          document.getElementById('div4').style.display = 'none';
+          document.getElementById('div2').style.display = 'none';
+          document.getElementById('div6').style.display = 'none';
+          document.getElementById('div7').style.display = 'none';
+          document.getElementById('div8').style.display = 'none';
+  }
+      }
+      function switchVisibleboardSix() {
+     if (document.getElementById('div6').style.display == 'none') {
+          document.getElementById('div6').style.display = 'block';
+          document.getElementById('div1').style.display = 'none';
+          document.getElementById('div3').style.display = 'none';
+          document.getElementById('div4').style.display = 'none';
+          document.getElementById('div5').style.display = 'none';
+          document.getElementById('div2').style.display = 'none';
+          document.getElementById('div7').style.display = 'none';
+          document.getElementById('div8').style.display = 'none';
+  }
+      }
+      function switchVisibleboardSeven() {
+     if (document.getElementById('div7').style.display == 'none') {
+          document.getElementById('div7').style.display = 'block';
+          document.getElementById('div1').style.display = 'none';
+          document.getElementById('div3').style.display = 'none';
+          document.getElementById('div4').style.display = 'none';
+          document.getElementById('div5').style.display = 'none';
+          document.getElementById('div6').style.display = 'none';
+          document.getElementById('div2').style.display = 'none';
+          document.getElementById('div8').style.display = 'none';
+  }
+      }
+      function switchVisibleboardEight() {
+     if (document.getElementById('div8').style.display == 'none') {
+          document.getElementById('div8').style.display = 'block';
+          document.getElementById('div1').style.display = 'none';
+          document.getElementById('div3').style.display = 'none';
+          document.getElementById('div4').style.display = 'none';
+          document.getElementById('div5').style.display = 'none';
+          document.getElementById('div6').style.display = 'none';
+          document.getElementById('div7').style.display = 'none';
+          document.getElementById('div2').style.display = 'none';
+  }
+      }
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!--   Core JS Files   -->
+  <script>
+    if (document.getElementById('choices-state')) {
+      var element = document.getElementById('choices-state');
+      const example = new Choices(element, {
+        searchEnabled: false
+      });
+    };
+  </script>
+
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-dashboard.min.js?v=3.0.5"></script>
+
+  <script src="./assets/js/plugins/multistep-form.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-dashboard.min.js?v=3.0.5"></script>
+</body>
+
+</html>
