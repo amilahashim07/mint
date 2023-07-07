@@ -1,0 +1,2654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/Logo (1).png">
+
+  <title>Mint</title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+  <!-- Nucleo Icons -->
+  <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link href="./assets/css/custom.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.5" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    #signatureCanvas {
+      border: 1px solid #000;
+    }
+    /*  */
+   
+    .circle-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .upload-label {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: lightgray;
+    }
+
+    .circle i {
+      font-size: 20px;
+      color: gray;
+    }
+
+    .circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      display: none;
+    }
+
+    .upload-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .upload-label {
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .upload-label i {
+      margin-right: 5px;
+    }
+
+    .file-list {
+
+      margin-top: 10px;
+    }
+
+    .file {
+
+
+      margin-left: 5px;
+      border-radius: 4px;
+    }
+
+    .file-name {
+      margin-right: 5px;
+    }
+
+    .remove-file {
+      cursor: pointer;
+    }
+
+    .file-name {
+      margin-right: 5px;
+      font-size: 10px;
+      color: blue;
+      text-decoration: underline;
+    }
+
+    .remove-file {
+      cursor: pointer;
+      font-size: 10px;
+      color: red;
+      text-decoration: none;
+      border: 1px solid red;
+      border-radius: 50%;
+      padding: 2px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 12px;
+      height: 12px;
+      background-color: transparent;
+    }
+  
+  </style>
+</head>
+
+<body class="g-sidenav-show  " style="background-color: #E5EBE6;">
+  <aside
+    class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 z-index-2  "
+    id="sidenav-main"
+    style="background-color: #38383E;box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);">
+    <div class="sidenav-header">
+      <i class="fas fa-times px-5 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+        aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand m-0 mx-1" href="# " target="_blank">
+        <img src="./assets/img/Mint-logo.png" class="navbar-brand-img h-90 img-fluid" alt="main_logo">
+
+        <span class="ms-2   text-white"
+          style="font-size: 23px;font-family: monospace,'bolder';margin-top: 3px!important;font-weight: bolder;">MINT</span>
+      </a>
+    </div>
+    <hr class="horizontal dark mt-0 mb-2">
+    <div class="collapse navbar-collapse  w-auto h-auto" id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item mb-2 mt-0">
+          <a data-bs-toggle="collapse" href="#ProfileNav" class="nav-link text-dark " aria-controls="ProfileNav"
+            role="button" aria-expanded="false">
+            <img src="./assets/img/kal-visuals-square.jpg" class="avatar">
+            <span class="nav-link-text ms-2 ps-1 text-white" style="font-weight: 400;">Alex Brooklyn</span>
+          </a>
+          <div class="collapse" id="ProfileNav" >
+            <ul class="nav ">
+
+              <li class="nav-item">
+                <a class="nav-link text-dark " href="Login.html">
+                  <span class="sidenav-mini-icon"> L </span>
+                  <span class="sidenav-normal  ms-3  ps-1" style="font-weight: 400;"> Logout</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </li>
+        <hr class="horizontal dark mt-0">
+
+        <li class="nav-item">
+          <a href="index.html" class="nav-link    " style="color:#3C4856 !important;">
+            <i class="material-icons-round  text-sm text-light  float-start">home</i>
+            <span class="nav-link-text  px-3 ps-0 text-light" style="font-weight: 500;">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="InformationHub.html" class="nav-link active  ">
+            <span class="material-symbols-outlined ps-2  text-sm" style="color:#2A6737!important">
+              info
+            </span>
+            <span class="nav-link-text  px-2 ps-2  " style="font-weight: 400">Information Hub</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="Insurance.html" class="nav-link  " style="color:#3C4856 !important;">
+            <i class="fa fa-file-text text-light text-sm" aria-hidden="true"></i>
+            <span class="nav-link-text text-light px-3 ps-1" style="font-weight: 400">Insurance</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="Mortagage.html" class="nav-link  " style="color:#3C4856 !important;">
+            <i class="fa fa-file-text text-light text-sm" aria-hidden="true"></i>
+            <span class="nav-link-text text-light px-2 ps-1  " style="font-weight: 400">Mortgage</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="ContactMyAdvisor.html" class="nav-link  " style="color:#3C4856 !important;">
+            <span class="material-symbols-outlined text-light text-sm ps-2">
+              contacts
+            </span>
+            <span class="nav-link-text text-light px-2 ps-2  " style="font-weight: 400">Contact My Adviser</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="inbox.html" class="nav-link  " style="color:#3C4856 !important;">
+            <span class="material-symbols-outlined text-light text-sm ps-2">
+              chat
+            </span>
+            <span class="nav-link-text text-light px-2 ps-2  " style="font-weight: 400">Inbox</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="Settings.html" class="nav-link  " style="color:#3C4856 !important;">
+            <i class="fa fa-cog  text-light text-sm" aria-hidden="true"></i>
+            <span class="nav-link-text text-light  ps-1 " style="font-weight: 400">
+              Settings</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+    </li>
+    </ul>
+    </div>
+  </aside>
+  <main class="main-content border-radius-lg ">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-main navbar-expand-lg position-sticky mt-4 top-1 px-0 mx-4 shadow-none border-radius-xl z-index-sticky"
+      id="navbarBlur" data-scroll="true">
+      <div class="container-fluid py-1 px-3">
+
+        <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
+          <a href="javascript:;" class="nav-link text-body p-0">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+            </div>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+          <div class="col-lg-11 px-4">
+            <div class="main">
+              <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control search" placeholder="Search">
+
+              </div>
+            </div>
+          </div>
+
+          <ul class="navbar-nav  justify-content-end">
+            <li class="nav-item dropdown pe-2 mt-2">
+              <a href="javascript:;" class="nav-link text-body p-0 position-relative" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="material-icons cursor-pointer">
+                  notifications
+                </i>
+                <!-- <span class="position-absolute top-5 start-100 translate-middle badge rounded-pill bg-danger border border-white small py-1 px-2">
+                <span class="small">11</span>
+                <span class="visually-hidden">unread notifications</span>
+              </span> -->
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end p-2 me-sm-n4" aria-labelledby="dropdownMenuButton">
+                <p class="text-end text-info text-decoration-underline">Clear all</p>
+                <li class="mb-2">
+                  <a class="dropdown-item border-radius-md" href="javascript:;">
+                    <div class="d-flex align-items-center py-1">
+                      <span class="material-symbols-outlined">
+                        person_add
+                      </span>
+                      <div class="ms-2">
+                        <p class="text-sm font-weight-normal my-auto">
+                          Johan Doe set up their account successfully
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a class="dropdown-item border-radius-md" href="javascript:;">
+                    <div class="d-flex align-items-center py-1">
+                      <span class="material-symbols-outlined">
+                        person_add
+                      </span>
+                      <div class="ms-2">
+                        <p class="text-sm font-weight-normal my-auto">
+                          Johan Doe set up their account successfully
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+            <img src="./assets/img/kal-visuals-square.jpg" alt="bruce" class="rounded-circle shadow-lg"
+              style="width: 50%;">
+
+            <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-body p-0">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container py-2">
+      <div class="">
+        <div class="d-flex justify-content-between">
+          <div class="col-lg-5 mb-0">
+            <h6 class="mb-0 text-dark ">Documents</h6>
+            <div class="d-flex">
+              <p class="font-weight-bolder  text-dark text-xs">Information Hub</p>
+              <ul class="d-flex justify-content-between">
+                <li class="text-xs">Documents</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12 col-md-12">
+        <div class="tabbable-line">
+          <ul class="nav nav-tabs  ">
+            <li class="active"><a href="#tab_default_1" data-toggle="tab" class="font-weight-bold text-sm"
+                onclick="changeText()">Personal Details</a> </li>
+            <li> <a href="#tab_default_2" data-toggle="tab" class="font-weight-bold text-sm">Current Application </a>
+            </li>
+            <li> <a href="#tab_default_3" data-toggle="tab" class="font-weight-bold text-sm">Financial Details</a> </li>
+            <!-- <li> <a href="#tab_default_4" data-toggle="tab" class="font-weight-bold text-sm">Documents</a> </li> -->
+            <li> <a href="#tab_default_5" data-toggle="tab" class="font-weight-bold text-sm">External Users</a> </li>
+
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane  active" id="tab_default_1" style="overflow: hidden;">
+              <div class="col-lg-12 flex-wrap d-flex justify-content-between">
+                <div class="col-lg-3 col-sm-12 px-2">
+                  <div class="card align-items-center py-2">
+                    <h6 class="text-center">Profile Photo</h6>
+                    <div id="profile-container">
+                      <image id="profileImage" src="http://lorempixel.com/100/100" />
+                    </div>
+                    <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+                    <!-- <img src="./assets/img/kal-visuals-square.jpg" class="avatar"> -->
+                    <p class="mt-2   text-dark"> <span class=" ">Choose photo</span></p>
+                    <hr class="horizontal dark " />
+
+                    <div class="nav flex-column nav-pills mx-1 py-0 my-0 v-links  py-3" id="v-pills-tab" role="tablist"
+                      aria-orientation="vertical">
+                      <button class="nav-link h-navlinks py-2 px-5 v-links my-0 active " id="v-pills-home-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
+                        aria-controls="v-pills-profile" aria-selected="false">
+                        <a class="nav-link1  d-flex align-items-center px-0 mx-0">
+                          <i class="material-icons text-sm me-2">person</i>
+                          <span class="text-xs">Primary Contact</span>
+                        </a>
+                      </button>
+                      <button class="nav-link h-navlinks py-2 px-5 v-links my-0" id="v-pills-profile-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab"
+                        aria-controls="v-pills-profile" aria-selected="false">
+                        <a class="nav-link1  d-flex align-items-center px-0 mx-0">
+                          <i class="material-icons text-sm me-2">receipt_long</i>
+                          <span class="text-xs">Partner Contact</span>
+                        </a>
+                      </button>
+                    </div>
+
+
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                      aria-labelledby="v-pills-home-tab">
+                      <div class="card mt-2">
+                        <div class="card-header d-flex align-items-center justify-content-between p-0 mt-3 mx-2">
+                          <div class="d-flex align-items-center">
+                            <!-- <span><i
+                                class="material-icons-round text-dark  text-lg position-relative ">person</i></span> -->
+                            <h6 class="ms-1 text-dark">Primary Contact Details</h6>
+                          </div>
+                          <!-- <div class="button mx-2 d-flex " onclick="switchVisibleGenDetails()">
+                            <p class="text-success">External User Access</p>
+                            <switch></switch>
+                            <i class="material-icons text-success text-lg me-2">edit</i>
+                          </div> -->
+                        </div>
+                        <div class="card-body px-3 mt-0 pt-0">
+                          <div class="row  align-items-center">
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  text-dark ">First Name:</p>
+                                  <p class="text-sm text-dark">Date of Birth :</p>
+                                  <p class="text-sm text-dark ">Gender :</p>
+                                  <p class="text-sm text-dark">Phone No :</p>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Olamide">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="15/07/1999">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Male">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="(021) 345 678">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  text-dark">Last Name :</p>
+                                  <p class="text-sm text-dark ">Smoking Status :</p>
+                                  <p class="text-sm text-dark">Mobile No :</p>
+                                  <p class="text-sm text-dark">Email :</p>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Afia">
+                                  </div>
+
+                                  <div class="form-check my-auto">
+                                    <input class="form-check-input" type="checkbox" id="customCheck1">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="number" class="form-control" placeholder="(021) 345 678">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="email" class="form-control" placeholder="Olamide@gmail.com">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <h6 class=" my-4 text-dark">General Details</h6>
+                          <div class="row  align-items-center">
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  text-dark">Physical Address :</p>
+                                  <p class="text-sm text-dark">Postal Address :</p>
+                                  <p class="text-sm text-dark">Dependents Names :</p>
+                                  <p class="text-sm text-dark ">Main Bank :</p>
+
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Street 23,New York city">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="LA">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="johan Doe">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Bank Name">
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  text-dark">Location :</p>
+                                  <p class="text-sm text-dark ">NZ Citizen/ Resident :</p>
+                                  <p class="text-sm text-dark">Dependents DOB :</p>
+                                  <p class="text-sm text-dark">Occupation :</p>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="New York city">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Yes">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="12/02/2022">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Lawyer">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row  align-items-center">
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  ">Income :</p>
+
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="$4000">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade " id="v-pills-profile" role="tabpanel"
+                      aria-labelledby="v-pills-profile-tab">
+                      <div class="card mt-2">
+                        <div class="card-header d-flex align-items-center justify-content-between p-0 mt-3 mx-2">
+                          <div class="d-flex align-items-center">
+                            <!-- <span><i
+                                class="material-icons-round text-dark  text-lg position-relative ">person</i></span> -->
+                            <h6 class="ms-1">Partner Contact detail</h6>
+                          </div>
+                          <!-- <div class="button mx-2 d-flex " onclick="switchVisibleGenDetails()">
+                            <p class="text-success">External User Access</p>
+                            <switch></switch>
+                            <i class="material-icons text-success text-lg me-2">edit</i>
+                          </div> -->
+                        </div>
+                        <div class="card-body px-3 mt-0 pt-0">
+                          <div class="row  align-items-center">
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  text-dark ">First Name:</p>
+                                  <p class="text-sm text-dark">Date of Birth :</p>
+                                  <p class="text-sm text-dark ">Gender :</p>
+                                  <p class="text-sm text-dark">Phone No :</p>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Olamide">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="15/07/1999">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Male">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="(021) 345 678">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  text-dark">Last Name :</p>
+                                  <p class="text-sm text-dark ">Smoking Status :</p>
+                                  <p class="text-sm text-dark">Mobile No :</p>
+                                  <p class="text-sm text-dark">Email :</p>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Afia">
+                                  </div>
+
+                                  <div class="form-check my-auto">
+                                    <input class="form-check-input" type="checkbox" id="customCheck1">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="number" class="form-control" placeholder="(021) 345 678">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="email" class="form-control" placeholder="Olamide@gmail.com">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <h6 class=" my-4 text-dark">General Details</h6>
+                          <div class="row  align-items-center">
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  text-dark">Physical Address :</p>
+                                  <p class="text-sm text-dark">Postal Address :</p>
+                                  <p class="text-sm text-dark">Dependents Names :</p>
+                                  <p class="text-sm text-dark ">Main Bank :</p>
+
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Street 23,New York city">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="LA">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="johan Doe">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Bank Name">
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  text-dark">Location :</p>
+                                  <p class="text-sm text-dark ">NZ Citizen/ Resident :</p>
+                                  <p class="text-sm text-dark">Dependents DOB :</p>
+                                  <p class="text-sm text-dark">Occupation :</p>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="New York city">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Yes">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="12/02/2022">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Lawyer">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row  align-items-center">
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  ">Income :</p>
+
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="$4000">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab_default_2">
+              <div class="accordion-1">
+
+                <div class="card col-md-12 px-0 mt-2 bg-light ">
+                  <div class="d-flex px-2 justify-content-between"
+                    style="background-color: #7FA387; border-radius: 5px;">
+                    <p class="text-light">Document Title</p>
+                    <p class="text-light">Action</p>
+                  </div>
+                  <div class="accordion px-2 mt-2" id="accordionRental">
+                    <div class="accordion-item mt-2">
+                      <p class="accordion-header" id="headingTwo"
+                        style="font-size: 17px;font-weight: bold;margin-top: 3px;">
+                        <button class="accordion-button border-bottom font-weight-bold" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                          aria-controls="collapseTwo" style="background-color: #FFF; border-radius: 10px;">
+                          Fact Find Analysis
+                          <i class="collapse-close fa fa-sort-desc text-xs pt-1 position-absolute end-0 me-3"
+                            aria-hidden="true"></i>
+                          <i class="collapse-open fa fa-caret-up text-xs pt-1 position-absolute end-0 me-3"
+                            aria-hidden="true"></i>
+                        </button>
+                      </p>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionRental">
+                        <div class="accordion-body text-sm">
+                          <div class="col-lg-2 mx-2" style="border: 1px solid #7E94FF;">
+                            <p class="text-center font-weight-bolder py-1 text-info">Scope of Service</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mt-2">
+                      <p class="accordion-header" id="headingThree" style="font-size: 17px;font-weight: bold;">
+                        <button class="accordion-button border-bottom font-weight-bold" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                          aria-controls="collapseThree" style="background-color: #FFF; border-radius: 10px;">
+                          Analysis & Advice
+                          <i class="collapse-close fa fa-sort-desc text-xs pt-1 position-absolute end-0 me-3"
+                            aria-hidden="true"></i>
+                          <i class="collapse-open fa fa-caret-up text-xs pt-1 position-absolute end-0 me-3"
+                            aria-hidden="true"></i>
+                        </button>
+                      </p>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionRental">
+                        <div class="accordion-body text-sm ">
+
+                          <div class="container">
+                            <div class="d-flex justify-content-between">
+                              <h6 class="text-dark ">Documents</h6>
+                              <a href="#">
+                                <p class="text-end text-info text-decoration-underline" data-bs-toggle="modal"
+                                  data-bs-target="#ScheduleMeetingModal">
+                                  <!-- <i class="fa fa-calendar "
+                                            aria-hidden="true"></i> -->
+                                  <span class="material-symbols-outlined text-sm">
+                                    calendar_month
+                                  </span>Schedule Meeting
+                                </p>
+                              </a>
+                            </div>
+                            <div class="d-flex col-lg-4 col-md-4 col-sm-12 d-flex justify-content-between"> <button
+                                data-bs-toggle="modal" data-bs-target="#AdviceDocument" type="button"
+                                class="btn btn-ls  mb-0 "
+                                style="background-color: #7E94FF; text-transform: none;margin-left: -10px;color: white !important; "><i
+                                  class="fa fa-file-text-o px-1" aria-hidden="true"></i><span class="text-light">Advice
+                                  Document</span> </button>
+
+                              <button type="button" class="btn btn-ls  mb-0 "
+                                style="background-color: #7E94FF; text-transform: none;margin-left: -10px;color: white !important; "><i
+                                  class="fa fa-file-text-o px-1" aria-hidden="true"></i><span class="text-light">Quote
+                                  Document</span></button>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mt-2">
+                      <p class="accordion-header" id="headingFour" style="font-size: 17px;font-weight: bold;">
+                        <button class="accordion-button border-bottom font-weight-bold" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                          aria-controls="collapseFour" style="background-color: #FFF; border-radius: 10px;">
+                          Application
+                          <i class="collapse-close fa fa-sort-desc text-xs pt-1 position-absolute end-0 me-3"
+                            aria-hidden="true"></i>
+                          <i class="collapse-open fa fa-caret-up text-xs pt-1 position-absolute end-0 me-3"
+                            aria-hidden="true"></i>
+                        </button>
+                      </p>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionRental">
+                        <div class="accordion-body text-sm ">
+
+                          <div class="container">
+                            <div class="col-lg-12">
+                              <div class="d-flex justify-content-between">
+                                <h6>Compliance Documents</h6>
+                              </div>
+                              <div class="d-flex ">
+                                <div class="form-check ">
+                                  <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                    id="customRadio1">
+                                  <button type="button" class="btn btn-ls mx-3 mb-0 "
+                                    style="background-color: #7E94FF; text-transform: none;margin-left: -10px; "><i
+                                      class="fa fa-file-text-o px-1 text-light" aria-hidden="true"></i><span
+                                      class="text-light text-sm">Authority & Declaration Form</span> </button><i
+                                    class="fa fa-download" aria-hidden="true"></i>
+                                </div>
+                                <div class="form-check mx-3 ">
+                                  <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                    id="customRadio1">
+                                  <button type="button" class="btn btn-ls mx-3 mb-0 "
+                                    style="background-color: #7E94FF; text-transform: none;margin-left: -10px; "><i
+                                      class="fa fa-file-text-o px-1 text-light" aria-hidden="true"></i><span
+                                      class="text-light text-sm">Terms of Engagement Form</span> </button><i
+                                    class="fa fa-download" aria-hidden="true"></i>
+                                </div>
+                              </div>
+
+                              <h6>Requested Documents</h6>
+                              <div class="table-responsive">
+                                <table class="table align-items-center mb-0">
+                                  <!-- <thead style="background-color: #7FA387;border-radius: 10px !important;">
+                                        <tr>
+                                          <th class="text-xs font-weight-bolder text-light" style="text-transform: none;"> Name</th>
+                                          <th class=" text-xs font-weight-bolder text-light ps-2" style="text-transform: none;">Email </th>
+                                          <th class="text-xs font-weight-bolder text-light ps-2" style="text-transform: none;">Contact #</th>
+                                          <th class="text-xs font-weight-bolder text-light ps-2" style="text-transform: none;">Role</th>
+                                          <th class="text-xs font-weight-bolder text-light  ps-2" style="text-transform: none;">Status</th>
+                                           <th class=" text-xs font-weight-bolder text-light ps-2" style="text-transform: none;">Action</th>
+                                        </tr>
+                                      </thead> -->
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex align-items-center">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="customCheck1">
+                                          </div>
+                                          <p class="text-sm ms-2 mb-0">Payslips</p>
+
+                                        </div>
+                                        <p class="text-sm ms-4  text-info">Payslips.pdf</p>
+                                      </td>
+                                      <td class="text-dark  text-xs">Income Evidence</td>
+                                      <td class="text-xs text-success">Accepted</td>
+                                      <td class="text-xs text-dark">Lorem Ipsum is a dummy text</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex align-items-center">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="customCheck1">
+                                          </div>
+                                          <p class="text-sm ms-2 mb-0">Bank Statements</p>
+                                          <span class="material-symbols-outlined ms-10 text-info">
+                                            cloud_upload
+                                          </span>
+                                        </div>
+                                        <p class="text-sm ms-4  text-danger">Pending</p>
+                                      </td>
+                                      <td class="text-dark  text-xs">Income Evidence</td>
+                                      <td class="text-xs text-danger">Reject</td>
+                                      <td class="text-xs text-dark">Lorem Ipsum is a dummy text</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex align-items-center">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="customCheck1">
+                                          </div>
+                                          <p class="text-sm ms-2 mb-0">Identification Documents</p>
+                                          <span class="material-symbols-outlined ms-10 text-info">
+                                            cloud_upload
+                                          </span>
+                                        </div>
+                                        <p class="text-sm ms-4  text-danger">Pending</p>
+                                      </td>
+                                      <td class="text-dark  text-xs">Income Evidence</td>
+                                      <td class="text-xs text-danger">Reject</td>
+                                      <td class="text-xs text-dark">Lorem Ipsum is a dummy text</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex align-items-center">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="customCheck1">
+                                          </div>
+                                          <p class="text-sm ms-2 mb-0">Gift Letters</p>
+
+                                        </div>
+                                        <p class="text-sm ms-4  text-info">GiftLetters.pdf</p>
+                                      </td>
+                                      <td class="text-dark  text-xs">Income Evidence</td>
+                                      <td class="text-xs text-success">Accepted</td>
+                                      <td class="text-xs text-dark">Lorem Ipsum is a dummy text</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                              <p class="text-dark font-weight-bold">Mortgage</p>
+                            </div>
+                            <div class="d-flex col-lg-12 col-md-12 col-sm-12 ">
+                              <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                  id="customRadio1">
+                                <button type="button" class="btn btn-ls mx-3 mb-0 " data-bs-toggle="modal" data-bs-target="#LendingTemplate"
+                                  style="background-color: #7E94FF; text-transform: none;margin-left: -10px; "><i
+                                    class="fa fa-file-text-o px-1 text-light" aria-hidden="true"></i><span
+                                    class="text-light text-sm">Landing Document</span> </button>
+                              </div>
+
+                            </div>
+                            <div class="d-flex">
+                              <h6>Share with external users</h6><span
+                                class="material-symbols-outlined mt-1  mx-1 text-sm"> info </span>
+                              <p class="text-sm">Select the documents to share</p>
+                            </div>
+                            <div class="d-flex"><span class="material-symbols-outlined text-warning">
+                                folder_zip
+                              </span>
+                              <p class="text-decoration-underline text-info px-1 text-sm">Select the documents to share
+                              </p><span class="material-symbols-outlined text-dark font-weight-bolder">
+                                forward
+                              </span>
+                              <p class="px-1">Share via URL</p>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-between">
+                              <div class="col-lg-6 col-md-6 col-sm-6">
+                                <p class="text-dark font-weight-bold">Insurance</p>
+                                <div class="d-flex justify-content-between">
+                                  <p class="text-decoration-underline ">Document 1.Pdf</p>
+                                  <p class="text-decoration-underline text-info">
+                                    www.Insurer.com/link-for-external-platform</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                  <p class="text-decoration-underline ">Document 2.Pdf</p>
+                                  <p class="text-decoration-underline text-info">
+                                    www.Insurer.com/link-for-external-platform</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                  <p class="text-decoration-underline ">Document 3.Pdf</p>
+                                  <p class="text-decoration-underline text-info">
+                                    www.Insurer.com/link-for-external-platform</p>
+                                </div>
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="card p-2">
+                                  <h6 class="text-start text-dark " >Insurance Documents</h6>
+                                  <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                      id="customRadio1">
+                                    <label class="custom-control-label" for="customRadio1">Test 1</label>
+                                  </div>
+                                  <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                      id="customRadio1">
+                                    <label class="custom-control-label" for="customRadio1">Test 2</label>
+                                  </div>
+                                  <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                      id="customRadio1">
+                                    <label class="custom-control-label" for="customRadio1">Test 3</label>
+                                  </div>
+                                  <button type="button" id="buttonColor" data-bs-toggle="modal"
+                                  data-bs-target="#Requesteddocument"
+                                    class="btn btn-lg  py-2 text-xs  btn-center mx-4"><span
+                                      class="material-symbols-outlined text-sm">
+                                      cloud_upload
+                                    </span> Upload</button>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="accordion-item mt-1">
+                      <p lass="accordion-header" id="headingSix" style="font-size: 17px;font-weight: bold;">
+                        <button class="accordion-button border-bottom font-weight-bold" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                          aria-controls="collapseSix" style="background-color: #FFF; border-radius: 10px;">
+                          Outcome
+                          <i class="collapse-close fa fa-sort-desc text-xs pt-1 position-absolute end-0 me-3"
+                            aria-hidden="true"></i>
+                          <i class="collapse-open fa fa-caret-up text-xs pt-1 position-absolute end-0 me-3"
+                            aria-hidden="true"></i>
+                        </button>
+                      </p>
+                      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionRental">
+                        <div class="accordion-body text-sm">
+                          <div class="d-flex mx-2 ">
+                            <div class="col-lg-8 px-2">
+                              <h6>Acceptance</h6>
+                              <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"
+                                class="btn btn-ls  mb-0 "
+                                style="background-color: #7E94FF; text-transform: none;margin-left: -10px;color: white !important; "><i
+                                  class="fa fa-file-text-o px-1" aria-hidden="true"></i><span
+                                  class="text-light">Approval Letter</span> </button>
+                              <h6>Mortagage</h6>
+                              <p class="mb-0 text-sm">Tax Certification Form</p>
+                              <button data-bs-toggle="modal" data-bs-target="#ApprovalLetter" type="button"
+                                class="btn btn-ls  mb-0 "
+                                style="background-color: #7E94FF; text-transform: none;margin-left: -10px;color: white !important; "><i
+                                  class="fa fa-file-text-o px-1" aria-hidden="true"></i><span class="text-light">Text
+                                  Certification Form</span> </button>
+                              <p class="mb-0 text-sm">Loan Structure Document</p>
+                              <button data-bs-toggle="modal" data-bs-target="#ApprovalLetter" type="button"
+                                class="btn btn-ls  mb-0 "
+                                style="background-color: #7E94FF; text-transform: none;margin-left: -10px;color: white !important; "><i
+                                  class="fa fa-file-text-o px-1" aria-hidden="true"></i><span
+                                  class="text-light">LoremIpsum</span> </button>
+                            </div>
+                            <div class="col-lg-4 d-flex ">
+                              <div class="form-check mx-1 mb-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="customRadio1">
+                                <label class="custom-control-label" for="customRadio1">Mortgage Deal</label>
+                              </div>
+                              <div class="form-check mx-1 mb-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="customRadio1">
+                                <label class="custom-control-label" for="customRadio1">Insurance Deal</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="tab-pane " id="tab_default_3">
+              <div class="card mt-2">
+                <h6 class="p-2 text-dark">Financial Situation</h6>
+                <div class="row  ">
+                  <div class="col-lg-12">
+
+                    <div class="table-responsive">
+                      <table class="table align-items-center mb-0">
+                        <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                          <tr>
+                            <th class="text-xs font-weight-bolder  " style="text-transform: none;">Details</th>
+                            <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Johan Doe
+                              (Primary)</th>
+                            <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Joe Reynolds
+                              (Secondary)</th>
+                            <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Period</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Salary/Wages </p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$300</td>
+                            <td class="  text-xs">$300</td>
+                            <td class="  text-xs">Weekly</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Self-employed Income
+                                  </p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$300</td>
+                            <td class="  text-xs">$300</td>
+                            <td class="  text-xs">Monthly</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Commission </p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$300</td>
+                            <td class="  text-xs">$300</td>
+                            <td class="  text-xs">Monthly</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Investment (dividends)
+                                  </p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$300</td>
+                            <td class="  text-xs">$300</td>
+                            <td class="  text-xs">Monthly</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Rental Income (state
+                                    property address and amount)</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$300</td>
+                            <td class="  text-xs">$300</td>
+                            <td class="  text-xs">Monthly</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Boarder Income</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$300</td>
+                            <td class="  text-xs">$300</td>
+                            <td class="  text-xs">Monthly</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Other Income (state
+                                    source)</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$300</td>
+                            <td class="  text-xs">$300</td>
+                            <td class="  text-xs">Monthly</td>
+                          </tr>
+
+                        <tfoot>
+
+                          <td class=" text-start px-4 text-lg font-weight-bolder">Total</td>
+                          <td class="text-dark">$3,000</td>
+                          <td class="text-dark">$3,000</td>
+
+                        </tfoot>
+                        </tbody>
+
+                      </table>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mt-2">
+                <div class="row  ">
+                  <div class="col-lg-12  ">
+                    <h6 class="p-2 text-dark">Outgoings Monthly</h6>
+                    <div class="table-responsive">
+                      <table class="table align-items-center mb-0">
+                        <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                          <tr>
+                            <th class="text-xs font-weight-bolder  " style="text-transform: none;">Item</th>
+                            <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Johan Doe</th>
+
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Food / Groceries</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$300</td>
+
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Takeaways (average)</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$200</td>
+
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Entertainment &
+                                    Recreation</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$50</td>
+
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Subscriptions (Netflix,
+                                    Spotify, Sky)</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$300</td>
+
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Membership (Gym, Clubs,
+                                    Sports)</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$500</td>
+
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Power/Gas</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$120</td>
+
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Internet</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$345</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Water</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$56</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Rates</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$200</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Gardner/Cleaner</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$200</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Childcare
+                                    (after-school, babysitting, au-pair)</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$200</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Doctors/Dentist/Physio
+                                  </p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$200</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Personal Care/Clothing
+                                  </p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$345</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Education
+                                    (after-school, babysitting, au-pair)</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$345</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Life/Health Insurance
+                                  </p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$345</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Vehicle Insurance</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$300</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">House/Contents
+                                    Insurance</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$300</td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="d-flex">
+                                <a href="#">
+                                  <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Tithing/Charities</p>
+                                </a>
+                              </div>
+                            </td>
+                            <td class="  text-xs">$300</td>
+                          </tr>
+                        <tfoot>
+
+                          <td class=" text-start px-4 text-lg font-weight-bolder">Total</td>
+                          <td class=" text-start px-4 text-lg font-weight-bolder">$8,000</td>
+                        </tfoot>
+                        </tbody>
+
+
+                      </table>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="card mt-2">
+                <div class="row  ">
+                  <div class="col-lg-12">
+                    <h6 class="p-2 text-dark">Your Existing Mortgages</h6>
+                    <div class="table-responsive">
+                      <table class="table align-items-center mb-0">
+                        <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                          <tr>
+                            <th class="text-xs font-weight-bolder  ps-2 " style="text-transform: none;">Security Address
+                            </th>
+                            <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Security Value
+                            </th>
+                            <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Security Debt</th>
+                            <th class="text-xs font-weight-bolder ps-2 " style="text-transform: none;">Interest Rate &
+                              Fixed Expiry</th>
+                            <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Loan Term</th>
+                            <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Bank</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                          </tr>
+                          <tr>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                          </tr>
+                          <tr>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                          </tr>
+                          <tr>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                          </tr>
+                          <tr>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                          </tr>
+                          <tr>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                          </tr>
+                          <tr>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                          </tr>
+
+                        </tbody>
+
+
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mt-2">
+                <div class="row  ">
+                  <div class="col-lg-12">
+                    <h6 class="p-2 text-dark">Your Existing Insurances</h6>
+                    <div class="table-responsive">
+                      <table class="table align-items-center mb-0">
+                        <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                          <tr>
+                            <th class="text-xs font-weight-bolder ps-2 " style="text-transform: none;">Product</th>
+                            <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Cover Amount</th>
+                            <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Cover Structure
+                            </th>
+                            <th class="text-xs font-weight-bolder ps-2  " style="text-transform: none;">
+                              Exclusions/Loadings</th>
+                            <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Insurer</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                          </tr>
+                          <tr>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                          </tr>
+                          <tr>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                          </tr>
+                          <tr>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                          </tr>
+                          <tr>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                          </tr>
+                          <tr>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                          </tr>
+                          <tr>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                            <td class="  text-xs">Lorem ipsum</td>
+                          </tr>
+
+                        </tbody>
+
+
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h6>Additional Information :</h6>
+              <div class=" card col-lg-12">
+                <div class="input-group input-group-outline">
+                  <textarea class="multisteps-form__textarea form-control" rows="5"
+                    placeholder="lorem ipsum is dummy text"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="tab_default_5">
+
+              <div class="row ">
+                <div class="d-flex justify-content-between">
+                  <div class="col-lg-8"></div>
+                  <div class="col-md-4 col-sm-12 py-2 d-flex  ">
+                      <div class="col-lg-6">
+                        <div class=" pe-md-3 d-flex ">
+                          <div class="input-group input-group-outline">
+                            <label class="form-label">Search here</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 ">
+                        <button type="button" id="buttonColor" class="btn btn-ls  mb-0 " data-bs-toggle="modal"
+                          data-bs-target="#myModal">Add User</button>
+                      </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card">
+                    <div class="col-lg-12">
+                      <div class="table-responsive">
+                        <table class="table align-items-center mb-0">
+                          <thead style="background-color: #7FA387;border-radius: 10px !important;">
+                            <tr>
+                              <th class="text-xs font-weight-bolder text-light" style="text-transform: none;"> Name</th>
+                              <th class=" text-xs font-weight-bolder text-light ps-2" style="text-transform: none;">
+                                Email </th>
+                              <th class="text-xs font-weight-bolder text-light ps-2" style="text-transform: none;">
+                                Contact #</th>
+                              <th class="text-xs font-weight-bolder text-light ps-2" style="text-transform: none;">Role
+                              </th>
+                              <th class="text-xs font-weight-bolder text-light  ps-2" style="text-transform: none;">
+                                Status</th>
+                              <th class=" text-xs font-weight-bolder text-light ps-2" style="text-transform: none;">
+                                Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div>
+                                  <a href="ClientView.html">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Eugene Elliot</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-dark  text-xs">Eugene@gmail.com</td>
+                              <td class="text-xs text-dark">(123) 456 7890</td>
+                              <td class="text-xs text-dark">Bank Manager</td>
+                              <td class="text-left">
+                                <span class="badge badge-success  font-weight-bolder text-center "
+                                  style="text-transform: none;opacity: 0.8;">Active</span>
+                              </td>
+                              <td class="align-middle text-center">
+                                <div class="d-flex align-items-center py-1">
+                                  <span class="material-symbols-outlined text-sm text-secondary font-weight-bolder">
+                                    visibility
+                                  </span>
+                                  <span class="material-symbols-outlined text-sm  text-danger font-weight-bolder">
+                                    Delete
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div>
+                                  <a href="ClientView.html">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Eugene Elliot</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class=" text-dark  text-xs">Eugene@gmail.com</td>
+                              <td class="text-xs text-dark">(123) 456 7890</td>
+                              <td class="text-xs text-dark">Bank Manager</td>
+                              <td class="text-left">
+                                <span class="badge badge-danger  font-weight-bolder text-center "
+                                  style="text-transform: none;opacity: 0.8;">Inactive</span>
+                              </td>
+                              <td class="align-middle text-center">
+                                <div class="d-flex align-items-center py-1">
+                                  <span class="material-symbols-outlined text-sm text-secondary font-weight-bolder">
+                                    visibility
+                                  </span>
+                                  <span class="material-symbols-outlined text-sm  text-danger font-weight-bolder">
+                                    Delete
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div>
+                                  <a href="ClientView.html">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Eugene Elliot</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-dark text-xs">Eugene@gmail.com</td>
+                              <td class="text-xs text-dark">(123) 456 7890</td>
+                              <td class="text-xs text-dark">Bank Manager</td>
+                              <td class="text-left">
+                                <span class="badge badge-info  font-weight-bolder text-center "
+                                  style="text-transform: none;opacity: 0.8;">Invited</span>
+                              </td>
+                              <td class="align-middle text-center">
+                                <div class="d-flex align-items-center py-1">
+                                  <span class="material-symbols-outlined text-sm text-secondary font-weight-bolder">
+                                    visibility
+                                  </span>
+                                  <span class="material-symbols-outlined text-sm  text-danger font-weight-bolder">
+                                    Delete
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- 1st modal -->
+  <div class="modal fade" id="ScheduleMeetingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sl  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header d-flex">
+
+          <p class="modal-title float-start" id="ScheduleMeetingModal">
+            <span class="material-symbols-outlined">
+              event
+            </span>
+            <Strong class="text-dark">Schedule Meeting</Strong>
+          </p>
+        </div>
+
+        <div class="modal-body">
+          <div class="col-lg-10 d-flex justify-content-between">
+            <div class="col-lg-3">
+              <p class="mb-0">Meeting Title</p>
+              <p class="mb-0">Location</p>
+              <p class="mb-0">Date</p>
+              <p class="mb-0">Time</p>
+              <p class="mb-0">Purpose</p>
+            </div>
+            <div class="col-lg-8">
+              <p class="text-dark mb-0">Lets discuss advice document</p>
+              <p class="text-dark mb-0">xyz</p>
+              <p class="text-dark mb-0">11/02/2023</p>
+              <p class="text-dark mb-0">11:00 AM</p>
+              <p class="text-dark mb-0">I need you to share some documents so I can complete the advice document. Need
+                to discuss the things.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 2nd modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sl  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header d-flex">
+
+          <p class="modal-title float-start" id="myModalLabel">
+            <i class="fa fa-users  text-sm text-dark" aria-hidden="true"></i>
+            <Strong class="text-dark">Add User</Strong>
+          </p>
+        </div>
+
+        <div class="modal-body">
+          <form role="form" action='#' method="post">
+            <!-- <label class="form-label text-dark">Email<sup class="text-danger">*</sup></label> -->
+            <div class="input-group input-group-outline mb-3" style="border-color: #384B6B !important;">
+              <input type="name" class="form-control" placeholder="Name">
+            </div>
+            <div class="input-group input-group-outline mb-3" style="border-color: #384B6B !important;">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <!-- <label class="form-label py-0 my-0 text-dark">Insurance</label> -->
+            <select name="Property" id="Property"
+              style="border-radius:5px; width:465px; height:38px;border-color: #c2baba">
+              <option value="Select Property ">Role</option>
+              <option value="Select Property ">Spouse/Partner</option>
+              <option value="Select Property ">Real Estate Agent</option>
+              <option value="Select Property ">Solicitor/Conveyancer </option>
+              <option value="Select Property ">Accountant</option>
+              <option value="Select Property ">Bank Manager</option>
+            </select>
+
+            <button type="button" id="buttonColor" class="btn btn-default float-end mt-3" id="signin"
+              data-dismiss="myModal">Add User</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 3rd modal -->
+  <div class="modal fade" id="AdviceDocument" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg  modal-dialog-centered">
+      <div class="modal-content">
+        <h6 class="text-center py-2">Advice Document (Sample)</h6>
+
+        <div class="modal-body p-4">
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,<br /> sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit ame<br /> no sea takimata sanctus est Lorem ipsum dolor
+            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,<br /> sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit ame<br /> no sea takimata sanctus est Lorem ipsum dolor
+            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+          <div class="col-lg-8">
+            <label class="custom-control-label text-dark" for="customRadio1">Date</label>
+            <div class="input-group input-group-outline mb-1">
+              <input type="date" class="form-control" placeholder="Date of Birth">
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex justify-content-between">
+            <div class="col-lg-6 col-md-4 mx-1">
+              <label class="custom-control-label text-dark" for="customRadio1">Client Full Name (Primary)</label>
+              <div class="input-group input-group-outline mb-1">
+                <input type="text" class="form-control" placeholder="Johan Doe">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-4 mx-1">
+              <label class="custom-control-label text-dark" for="customRadio1">Client Full Name (Secondary)</label>
+              <div class="input-group input-group-outline mb-1">
+                <input type="text" class="form-control" placeholder="Johan Doe">
+              </div>
+            </div>
+
+          </div>
+          <div class="tabbable-line">
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a href="#tab_default_7" data-toggle="tab" class="font-weight-bold text-sm">
+                  Sample</a>
+              </li>
+              <li> <a href="#tab_default_6" data-toggle="tab" class="font-weight-bold text-sm">Draw</a>
+              </li>
+
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane  active" id="tab_default_7">
+                <h6 class="text-dark">Signature</h6>
+                <p class="text-sm my-0">preview</p>
+                <div class="col-lg-8 col-md-12 d-flex justify-content-between">
+                  <div class="col-lg-5">
+                    <div class="px-5 py-3" style="border: 1px solid;border-style: dashed;">
+                      <img src="./assets/img/Image 4.png" class="h-5 text-center">
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="px-5 py-3" style="border: 1px solid;border-style: dashed;">
+                      <img src="./assets/img/Image 4.png" class="h-5 text-center">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="tab-pane" id="tab_default_6">
+                <div>
+                  <canvas id="signatureCanvas" width="300" height="100"></canvas>
+                </div>
+                <button id="clearButton" class="btn btn-lg btn-outline mt-1 font-weight-bold text-xs  mx-3 ">Clear
+                  Signature</button>
+                <!-- <button id="downloadButton" >Download</button> -->
+              </div>
+            </div>
+
+            <div class=" text-end">
+              <a href="onboarding.html"> <button type="button" id="buttonColor"
+                  class="btn btn-lg  mt-1 font-weight-bold text-xs  mx-3 ">Agree</button></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--4th  -->
+  <div class="modal fade" id="ApprovalLetter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg  modal-dialog-centered">
+      <div class="modal-content">
+        <h6 class="text-center py-3">Approval Letter (Sample)</h6>
+
+        <div class="modal-body p-4">
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,<br /> sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit ame<br /> no sea takimata sanctus est Lorem ipsum dolor
+            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,<br /> sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit ame<br /> no sea takimata sanctus est Lorem ipsum dolor
+            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+          <div class="col-lg-8">
+            <label class="custom-control-label text-dark" for="customRadio1">Date</label>
+            <div class="input-group input-group-outline mb-1">
+              <input type="date" class="form-control" placeholder="Date of Birth">
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex justify-content-between">
+            <div class="col-lg-6 col-md-4 mx-1">
+              <label class="custom-control-label text-dark" for="customRadio1">Client Full Name (Primary)</label>
+              <div class="input-group input-group-outline mb-1">
+                <input type="text" class="form-control" placeholder="Johan Doe">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-4 mx-1">
+              <label class="custom-control-label text-dark" for="customRadio1">Client Full Name (Secondary)</label>
+              <div class="input-group input-group-outline mb-1">
+                <input type="text" class="form-control" placeholder="Johan Doe">
+              </div>
+            </div>
+
+          </div>
+          <div class="tabbable-line">
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a href="#tab_default_7" data-toggle="tab" class="font-weight-bold text-sm">
+                  Sample</a>
+              </li>
+              <li> <a href="#tab_default_6" data-toggle="tab" class="font-weight-bold text-sm">Draw</a>
+              </li>
+
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane  active" id="tab_default_7">
+                <h6 class="text-dark">Signature</h6>
+                <p class="text-sm my-0">preview</p>
+                <div class="col-lg-8 col-md-12 d-flex justify-content-between">
+                  <div class="col-lg-5">
+                    <div class="px-5 py-3" style="border: 1px solid;border-style: dashed;">
+                      <img src="./assets/img/Image 4.png" class="h-5 text-center">
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="px-5 py-3" style="border: 1px solid;border-style: dashed;">
+                      <img src="./assets/img/Image 4.png" class="h-5 text-center">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="tab-pane" id="tab_default_6">
+                <div>
+                  <canvas id="signatureCanvas" width="300" height="100"></canvas>
+                </div>
+                <button id="clearButton" class="btn btn-lg btn-outline mt-1 font-weight-bold text-xs  mx-3 ">Clear
+                  Signature</button>
+                <!-- <button id="downloadButton" >Download</button> -->
+              </div>
+            </div>
+
+            <div class=" text-end">
+              <a href="onboarding.html"> <button type="button" id="buttonColor"
+                  class="btn btn-lg  mt-1 font-weight-bold text-xs  mx-3 ">Agree</button></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 5th -->
+  <div class="modal fade" id="LendingTemplate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg  modal-dialog-centered">
+    <div class="modal-content">
+      <h6 class="text-center py-3">Lending Template (Sample)</h6>
+
+      <div class="modal-body p-4">
+       <h6 class="font-weight-bolder" style="color: #BAE0C9;">Form Title: Lending Template</h6>
+        <div class="col-lg-12">
+          <div class="input-group input-group-outline mb-2">
+            <input type="text" class="form-control" placeholder="Sample Field">
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="input-group input-group-outline mb-2">
+            <input type="text" class="form-control" placeholder="Sample Field">
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="input-group input-group-outline mb-2">
+            <input type="text" class="form-control" placeholder="Sample Field">
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="input-group input-group-outline mb-2">
+            <input type="text" class="form-control" placeholder="Sample Field">
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="input-group input-group-outline mb-2">
+            <input type="text" class="form-control" placeholder="Sample Field">
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="input-group input-group-outline mb-2">
+            <input type="text" class="form-control" placeholder="Sample Field">
+          </div>
+        </div>
+        <div class="tabbable-line">
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a href="#tab_default_7" data-toggle="tab" class="font-weight-bold text-sm">
+                Sample</a>
+            </li>
+            <li> <a href="#tab_default_6" data-toggle="tab" class="font-weight-bold text-sm">Draw</a>
+            </li>
+
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane  active" id="tab_default_7">
+              <h6 class="text-dark">Signature</h6>
+              <p class="text-sm my-0">preview</p>
+              <div class="col-lg-12 col-md-12 d-flex justify-content-between">
+                <div class="col-lg-5">
+                  <div class="px-5 py-3" style="border: 1px solid;border-style: dashed;">
+                    <img src="./assets/img/Image 4.png" class="h-5 text-center">
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="px-5 py-3" style="border: 1px solid;border-style: dashed;">
+                    <img src="./assets/img/Image 4.png" class="h-5 text-center">
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between"></div>
+              <button id="clearButton" class="btn btn-lg btn-outline mt-1 font-weight-bold text-xs  mx-3 ">Clear
+                Signature</button>
+               
+            </div>
+            <div class="tab-pane" id="tab_default_6">
+              <div>
+                <canvas id="signatureCanvas" width="300" height="100"></canvas>
+              </div>
+              
+              <!-- <button id="downloadButton" >Download</button> -->
+            </div>
+          </div>
+
+          <div class=" text-end">
+            <a href="#"> <button type="button" id="buttonColor"
+                class="btn btn-lg  mt-1 font-weight-bold text-xs  mx-3 ">Submit</button></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 6th modal -->
+<div class="modal fade" id="Requesteddocument" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-sl  modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header d-flex">
+
+      <p class="modal-title float-start" id="Requesteddocument">
+        <i class="fa fa-file" aria-hidden="true"></i>
+        <Strong class="text-dark">Required Documents</Strong>
+      </p>
+    </div>
+
+    <div class="modal-body">
+      <div class="col-lg-12 d-flex justify-content-between">
+        <div class="col-lg-5">
+          <p class="mb-0">Document Type :</p>
+          <p class="mb-0">Document Name :</p>
+          <p class="mb-0">Comment :</p>
+          <div class="upload-container">
+            <input type="file" id="file-input-2" multiple style="display: none;">
+            <label for="file-input-2" class="btn bg-gradient-grey" style="background-color: #00000029;">
+              <i class="fas fa-upload"></i>
+              Choose File
+            </label>
+            <div id="file-list-2" class="file-list"></div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <p class="text-dark mb-0">Income Evidence</p>
+          <p class="text-dark mb-0">Payslips</p>
+          <p class="text-dark mb-0">Lorem ipsum</p>
+          <p class=" mb-0 text-info">Payslip.pdf</p>
+     
+        </div>
+
+      </div>
+      <div class="col-lg-12 d-flex justify-content-between">
+        <div class="col-lg-5">
+          <p class="mb-0">Document Type :</p>
+          <p class="mb-0">Document Name :</p>
+          <p class="mb-0">Comment :</p>
+          <div class="upload-container">
+            <input type="file" id="file-input-2" multiple style="display: none;">
+            <label for="file-input-2" class="btn bg-grey" style="background-color: #00000029;">
+              <i class="fas fa-upload"></i>
+              Choose File
+            </label>
+            <div id="file-list-2" class="file-list"></div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <p class="text-dark mb-0">Income Evidence</p>
+          <p class="text-dark mb-0">Payslips</p>
+          <p class="text-dark mb-0">Lorem ipsum</p>
+          <p class=" mb-0 text-info">Bank Statement.pdf</p>
+     
+        </div>
+
+      </div>
+      <div class="col-lg-12 d-flex justify-content-between">
+        <div class="col-lg-5">
+          <p class="mb-0">Document Type :</p>
+          <p class="mb-0">Document Name :</p>
+          <p class="mb-0">Comment :</p>
+          <div class="upload-container">
+            <input type="file" id="file-input-2" multiple style="display: none;">
+            <label for="file-input-2" class="btn bg-grey" style="background-color: #00000029;">
+              <i class="fas fa-upload"></i>
+              Choose File
+            </label>
+            <div id="file-list-2" class="file-list"></div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <p class="text-dark mb-0">Income Evidence</p>
+          <p class="text-dark mb-0">Payslips</p>
+          <p class="text-dark mb-0">Lorem ipsum</p>
+          <p class=" mb-0 text-info">Identification Documents.pdf</p>
+        </div>
+
+      </div>
+      <button type="button" id="buttonColor" class="btn btn-default float-end mt-3" id="signin"
+              data-dismiss="myModal">Add </button>
+    </div>
+  </div>
+</div>
+</div>
+<!--  -->
+<!-- <script>
+  document.getElementById('image-upload').addEventListener('change', function (event) {
+    var input = event.target;
+    var reader = new FileReader();
+
+    reader.onload = function () {
+      var dataURL = reader.result;
+      var uploadedImage = document.getElementById('uploaded-image');
+
+      uploadedImage.src = dataURL;
+      uploadedImage.style.display = 'block';
+
+      var cameraIcon = input.previousElementSibling.querySelector('i');
+      cameraIcon.style.display = 'none';
+    };
+
+    reader.readAsDataURL(input.files[0]);
+  }); -->
+</script>
+ <!-- Modal Add -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-flex align-items-center">
+            <i class="material-icons-round opacity-10 text-lg text-dark mt-1">people</i>
+            <h5 class="modal-title font-weight-normal text-sm mt-1 ms-1 font-weight-bold" id="exampleModalLabel">Add
+              New Sales Rep</h5>
+            <button type="button" class="btn-close text-dark " data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row py-0 my-0">
+              <div class="col-md-6">
+                <label class="form-label py-0 my-0 font-weight-bold text-dark">Image</label>
+                <div class="circle-container">
+                  <label for="image-upload" class="btn ">
+                    <div class="circle">
+                      <i class="fas fa-camera"></i>
+                      <img id="uploaded-image" src="#" alt="Uploaded Image">
+                    </div>
+                  </label>
+                  <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label py-0 my-0 font-weight-bold text-dark text-xs">Name</label>
+                <div class="input-group input-group-outline ">
+
+                  <input type="email" placeholder="Larry Jordan" class="form-control ">
+                </div>
+
+                <label class="form-label py-0 my-0 font-weight-bold text-dark text-xs">Email</label>
+                <div class="input-group input-group-outline ">
+
+                  <input type="email" placeholder="Larry@gmail.com" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="row py-0 my-0">
+              <div class="col-md-6">
+                <label class="form-label py-0 my-0 font-weight-bold text-dark text-xs">Contact #</label>
+                <div class="input-group input-group-outline ">
+
+                  <input type="email" placeholder="(012) 345 6789" class="form-control ">
+                </div>
+
+                <label class="form-label py-0 my-0 font-weight-bold text-dark text-xs">Sales Channel</label>
+                <select class="text-grey text-sm" border-select="" name="Property" id="Property"
+                  style="border-radius:5px; width:220px; height:38px;border-color: #d0d0d0;">
+                  <option value="Select Property " class=" text-xs" selected="" class="text-light text-xs">Select
+                    Sales Channel</option>
+                  <option value="Select Property " class=" text-xs">Employee</option>
+                  <option value="Select Property " class=" text-xs">External Company</option>
+
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label py-0 my-0 font-weight-bold text-dark text-xs">SSN</label>
+                <div class="input-group input-group-outline ">
+
+                  <input type="email" placeholder="000 000 000" class="form-control ">
+                </div>
+
+                <label class="form-label py-0 my-0 font-weight-bold text-dark text-xs">Address</label>
+                <div class="input-group input-group-outline ">
+
+                  <input type="email" placeholder="52 Street, California" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <label class="form-label py-0 my-0 font-weight-bold text-dark text-xs mt-2">Documents</label>
+              <div class="upload-container">
+                <input type="file" id="file-input-2" multiple style="display: none;">
+                <label for="file-input-2" class="btn bg-grey" style="background-color: #00000029;">
+                  <i class="fas fa-upload"></i>
+                  Choose Documents
+                </label>
+                <div id="file-list-2" class="file-list"></div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="modal-footer">
+            <a href="javascript:;" class="btn btn-icon mb-0 ms-2 bg-gradient-primary" >
+              Add
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+
+    function getOption() {
+      selectElement = document.querySelector('#select1');
+      output = selectElement.options[selectElement.selectedIndex].value;
+      document.querySelector('.output').textContent = output;
+    }
+  </script>
+
+
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap.min.js"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/choices.min.js"></script>
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/plugins/datatables.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script>
+// file upload
+
+    document.getElementById('image-upload').addEventListener('change', function (event) {
+      var input = event.target;
+      var reader = new FileReader();
+
+      reader.onload = function () {
+        var dataURL = reader.result;
+        var uploadedImage = document.getElementById('uploaded-image');
+
+        uploadedImage.src = dataURL;
+        uploadedImage.style.display = 'block';
+
+        var cameraIcon = input.previousElementSibling.querySelector('i');
+        cameraIcon.style.display = 'none';
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    });
+  // 
+    // Get the canvas element and create a drawing context
+    const canvas = document.getElementById('signatureCanvas');
+    const context = canvas.getContext('2d');
+
+    let isDrawing = false;
+    let lastX = 0;
+    let lastY = 0;
+
+    // Add event listeners to track mouse movements
+    canvas.addEventListener('mousedown', startDrawing);
+    canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener('mouseup', stopDrawing);
+    canvas.addEventListener('mouseout', stopDrawing);
+    canvas.addEventListener('touchstart', startDrawing);
+    canvas.addEventListener('touchmove', draw);
+    canvas.addEventListener('touchend', stopDrawing);
+    canvas.addEventListener('touchcancel', stopDrawing);
+
+
+    // Function to start drawing
+    function startDrawing(event) {
+      var isTouch = event.type.startsWith('touch'); // Check if it's a touch event
+
+      if (isTouch) {
+        var touch = event.touches[0]; // Get the first touch point
+        lastX = touch.clientX;
+        lastY = touch.clientY;
+      } else {
+        lastX = event.offsetX;
+        lastY = event.offsetY;
+      }
+
+      isDrawing = true;
+      // [lastX, lastY] = [event.offsetX, event.offsetY];
+    }
+
+    // Function to draw
+    function draw(event) {
+      if (!isDrawing) return;
+
+      var isTouch = event.type.startsWith('touch'); // Check if it's a touch event
+
+      var x, y;
+
+      if (isTouch) {
+        var touch = event.touches[0]; // Get the first touch point
+        x = touch.clientX;
+        y = touch.clientY;
+      } else {
+        x = event.offsetX;
+        y = event.offsetY;
+      }
+
+      context.beginPath();
+      context.moveTo(lastX, lastY);
+      context.lineTo(x, y);
+      context.stroke();
+
+      lastX = x;
+      lastY = y;
+    }
+
+    // Function to stop drawing
+    function stopDrawing() {
+      isDrawing = false;
+    }
+
+    // Clear the canvas when the clear button is clicked
+    const clearButton = document.getElementById('clearButton');
+    clearButton.addEventListener('click', clearCanvas);
+
+    function clearCanvas() {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+
+
+
+
+
+    // Function to convert canvas to JPEG image
+    function convertCanvasToJPEG() {
+      // Get the data URL of the canvas as a JPEG image
+      const dataURL = canvas.toDataURL('image/jpg');
+
+      // Create a link element and set the data URL as its href
+      const link = document.createElement('a');
+      link.href = dataURL;
+
+      // Set the download attribute to specify the filename
+      link.download = 'signature.jpeg';
+
+      // Programmatically trigger a click event on the link element
+      link.click();
+    }
+
+
+
+    // Clear the canvas when the clear button is clicked
+    const downloadButton = document.getElementById('downloadButton');
+    downloadButton.addEventListener('click', downloadSignature);
+
+    function downloadSignature() {
+      convertCanvasToJPEG();
+    }
+
+  </script>
+
+  <script>
+    $("#profileImage").click(function (e) {
+      $("#imageUpload").click();
+    });
+
+    function fasterPreview(uploader) {
+      if (uploader.files && uploader.files[0]) {
+        $('#profileImage').attr('src',
+          window.URL.createObjectURL(uploader.files[0]));
+      }
+    }
+
+    $("#imageUpload").change(function () {
+      fasterPreview(this);
+    });
+
+  </script>
+
+  <script>
+
+    const accordionBtns = document.querySelectorAll(".accordion");
+
+    accordionBtns.forEach((accordion) => {
+      accordion.onclick = function () {
+        this.classList.toggle("is-open");
+
+        let content = this.nextElementSibling;
+        console.log(content);
+
+        if (content.style.maxHeight) {
+          //this is if the accordion is open
+          content.style.maxHeight = null;
+        } else {
+          //if the accordion is currently closed
+          content.style.maxHeight = content.scrollHeight + "px";
+          console.log(content.style.maxHeight);
+        }
+      };
+    });
+
+  </script>
+  <script>
+    $(document).ready(function () {
+
+      var current_fs, next_fs, previous_fs;
+
+      // No BACK button on first screen
+      if ($(".show").hasClass("first-screen")) {
+        $(".prev").css({ 'display': 'none' });
+      }
+
+      // Next button
+      $(".next-button").click(function () {
+
+        current_fs = $(this).parent().parent();
+        next_fs = $(this).parent().parent().next();
+
+        $(".prev").css({ 'display': 'block' });
+
+        $(current_fs).removeClass("show");
+        $(next_fs).addClass("show");
+
+        $("#progressbar li").eq($(".card2").index(next_fs)).addClass("active");
+
+        current_fs.animate({}, {
+          step: function () {
+
+            current_fs.css({
+              'display': 'none',
+              'position': 'relative'
+            });
+
+            next_fs.css({
+              'display': 'block'
+            });
+          }
+        });
+      });
+
+      // Previous button
+      $(".prev").click(function () {
+
+        current_fs = $(".show");
+        previous_fs = $(".show").prev();
+
+        $(current_fs).removeClass("show");
+        $(previous_fs).addClass("show");
+
+        $(".prev").css({ 'display': 'block' });
+
+        if ($(".show").hasClass("first-screen")) {
+          $(".prev").css({ 'display': 'none' });
+        }
+
+        $("#progressbar li").eq($(".card2").index(current_fs)).removeClass("active");
+
+        current_fs.animate({}, {
+          step: function () {
+
+            current_fs.css({
+              'display': 'none',
+              'position': 'relative'
+            });
+
+            previous_fs.css({
+              'display': 'block'
+            });
+          }
+        });
+      });
+
+    });
+  </script>
+
+
+  <script>
+    if (document.getElementById('editor')) {
+      var quill = new Quill('#editor', {
+        theme: 'snow' // Specify theme in configuration
+      });
+    }
+
+    if (document.getElementById('choices-multiple-remove-button')) {
+      var element = document.getElementById('choices-multiple-remove-button');
+      const example = new Choices(element, {
+        removeItemButton: true
+      });
+
+      example.setChoices(
+        [{
+          value: 'One',
+          label: 'Label One',
+          disabled: true
+        },
+        {
+          value: 'Two',
+          label: 'Label Two',
+          selected: true
+        },
+        {
+          value: 'Three',
+          label: 'Label Three'
+        },
+        ],
+        'value',
+        'label',
+        false,
+      );
+    }
+
+    if (document.querySelector('.datetimepicker')) {
+      flatpickr('.datetimepicker', {
+        allowInput: true
+      }); // flatpickr
+    }
+
+    Dropzone.autoDiscover = false;
+    var drop = document.getElementById('dropzone')
+    var myDropzone = new Dropzone(drop, {
+      url: "/file/post",
+      addRemoveLinks: true
+
+    });
+  </script>
+
+  <!-- Kanban scripts -->
+  <script src="./assets/js/plugins/dragula/dragula.min.js"></script>
+  <script src="./assets/js/plugins/jkanban/jkanban.js"></script>
+
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!--   Core JS Files   -->
+
+  <script>
+    if (document.getElementById('choices-state')) {
+      var element = document.getElementById('choices-state');
+      const example = new Choices(element, {
+        searchEnabled: false
+      });
+    };
+  </script>
+
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-dashboard.min.js?v=3.0.5"></script>
+
+  <script src="./assets/js/plugins/multistep-form.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-dashboard.min.js?v=3.0.5"></script>
+</body>
+
+</html>
