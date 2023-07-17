@@ -559,13 +559,13 @@
 }
 
 .tabbable-line>.nav-tabs>li {
-  margin: 10px;
+  margin: 20px;
 }
 
 .tabbable-line>.nav-tabs>li>a {
   border: 0;
   margin-right: 0;
-  color: #737373;
+  color: #9c9898;
 }
 
 .tabbable-line>.nav-tabs>li>a>i {
