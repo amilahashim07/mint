@@ -51,10 +51,10 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: , 128, 154;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Open Sans, Regular";
+  --bs-font-sans-serif: "DM Sans, Regular";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family:"Open Sans, Semibold";
+  --bs-body-font-family:"DM Sans, Semibold";
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -128,7 +128,13 @@ h6,
   line-height: 1.2;
   color: #000000;
 }
-
+@font-face {
+	font-family: 'DM Sans';
+		src: url("fonts/DMSans-Bold");
+		src: url("fonts/DMSans-MediumItalic.tff") format("embedded-opentype"), url("fonts/DMSans-Medium.tff") format("woff"), url("fonts/DMSans-Regular.tff") format("truetype"), url("fonts/DMSans-Bold.tff") format("svg");
+		font-weight: normal;
+		font-style: normal;
+}
 h1,
 .h1 {
   font-size: calc(1.425rem + 2.1vw);
@@ -389,7 +395,7 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: inherit;
+  font-family: DM Sans;
   font-size: inherit;
   line-height: inherit;
 }
@@ -3597,7 +3603,7 @@ textarea.form-control.is-invalid {
 .btn {
   --bs-btn-padding-x: 1.5rem;
   --bs-btn-padding-y: 0.625rem;
-  --bs-btn-font-family: ;
+  --bs-btn-font-family:DM Sans;
   --bs-btn-font-size: 0.75rem;
   --bs-btn-font-weight: 700;
   --bs-btn-line-height: 1.667;
@@ -4622,7 +4628,9 @@ fieldset:disabled .btn {
   background-color: transparent;
   border-color: transparent;
 }
-
+.sidenav {
+  background-color: #262646 !important;
+}
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
 
@@ -4630,9 +4638,9 @@ fieldset:disabled .btn {
     border-radius: 7px;
     /* color: #2A6737!important; */
     border-radius: 7px;
-    color: #2A6737 !important;
+    color: #262646 !important;
   /* color: var(--bs-nav-pills-link-active-color); */
-  background-color:#BAE0C9 !important;
+  background-color:#3FD6D4 !important;
 }
 
 .nav-fill>.nav-link,
@@ -6868,7 +6876,7 @@ fieldset:disabled .btn {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: var(--bs-font-Open Sans);
+  font-family: var(--bs-font-DM Sans);
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -21036,7 +21044,7 @@ fieldset:disabled .btn {
 }
 
 .card .card-body {
-  font-family: "Roboto", Helvetica, Arial, Open Sans;
+  font-family: "DM Sans",;
   padding: 1.5rem;
 }
 
@@ -21709,7 +21717,7 @@ body.dark-version {
   }
 
   .dropdown .dropdown-menu:before {
-    font-family: "FontAwesome";
+    font-family: "DM Sans";
     content: "\f0d8";
     position: absolute;
     top: 0;
@@ -21745,7 +21753,7 @@ body.dark-version {
   }
 
   .navbar-toggler+.navbar-collapse .dropdown:not(.nav-item) .dropdown-menu:before {
-    font-family: "FontAwesome";
+    font-family: "DM Sans";
     content: "\f0d8";
     position: absolute;
     top: 0;
@@ -21791,7 +21799,7 @@ body.dark-version {
   }
 
   .dropdown .dropdown-menu:before {
-    font-family: "FontAwesome";
+    font-family: "DM Sans";
     content: "\f0d8";
     position: absolute;
     top: 0;
@@ -21930,7 +21938,7 @@ body.dark-version {
 }
 
 .dropup .dropdown-menu:after {
-  font-family: "FontAwesome";
+  font-family: "DM Sans";
   content: "\f0d7";
   position: absolute;
   z-index: -1;
@@ -22370,7 +22378,7 @@ body.dark-version {
 
 .form-check:not(.form-switch) .form-check-input[type="checkbox"]:after {
   transition: opacity 0.25s ease-in-out;
-  font-family: "FontAwesome";
+  font-family: "DM Sans";
   content: "\f00c";
   width: 100%;
   height: 100%;
@@ -24296,10 +24304,10 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 }
 
 .navbar-vertical .navbar-nav>.nav-item .nav-link.active {
-  color: #fff;
+  color: #262646 !important;
   border-right-width: 0;
   border-bottom-width: 0;
-  background-color: #BAE0C9;
+  background-color: #3FD6D4;
 }
 
 .navbar-vertical .navbar-nav>.nav-item .nav-link.active+.collapse .nav-item.active .nav-link.active,
@@ -24340,7 +24348,7 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'DM Sans';
   font-weight: 700;
   content: "\f107";
   margin-left: auto;
@@ -25840,7 +25848,7 @@ h3,
 .h3,
 .h3 {
   font-weight: 600;
-  font-family: Open Sans,bold;
+  font-family: DM Sans,bold;
 }
 
 h4,
@@ -25852,7 +25860,7 @@ h5,
 h6,
 .h6,
 .h6 {
-  font-family: Open Sans,bold;
+  font-family: DM Sans,bold;
   font-weight: 600;
 }
 
@@ -25868,7 +25876,7 @@ h3,
 h4,
 .h4,
 .h4 {
-  font-family: Open Sans,bold;
+  font-family: DM Sans,bold;
   letter-spacing: -0.05rem;
 }
 
@@ -25917,15 +25925,15 @@ p,
 p {
   line-height: 1.625;
   font-weight: 300;
-  font-family: Open Sans,bold !important;
+  font-family: DM Sans,bold !important;
 }
 
 .text-sans-serif {
-  font-family: "Roboto", Helvetica, Arial, Open Sans !important;
+  font-family: "DM Sans" !important;
 }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-family:DM Sans !important;
 }
 
 .text-justify {
@@ -26474,7 +26482,7 @@ p {
 }
 
 .flatpickr-current-month span.cur-month {
-  font-family: inherit;
+  font-family: DM Sans;
   font-weight: 700;
   color: inherit;
   display: inline-block;
@@ -26510,7 +26518,7 @@ p {
   margin: 0;
   display: inline-block;
   font-size: inherit;
-  font-family: inherit;
+  font-family: DM Sans;
   font-weight: 300;
   line-height: inherit;
   height: auto;
@@ -26543,7 +26551,7 @@ p {
   color: inherit;
   cursor: pointer;
   font-size: inherit;
-  font-family: inherit;
+  font-family: DM Sans;
   font-weight: 300;
   height: auto;
   line-height: inherit;
@@ -27430,7 +27438,7 @@ pre[class*="language-"] {
   color: black;
   background: none;
   text-shadow: 0 1px white;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: DM Sans;
   font-size: 1em;
   text-align: left;
   white-space: pre;
@@ -27602,11 +27610,11 @@ pre[class*="language-"] {
   position: absolute;
 }
 
-.ps--active-x>.ps__rail-x,
+/* .ps--active-x>.ps__rail-x,
 .ps--active-y>.ps__rail-y {
   display: block;
   background-color: transparent;
-}
+} */
 
 .ps:hover>.ps__rail-x,
 .ps:hover>.ps__rail-y,
@@ -27617,7 +27625,7 @@ pre[class*="language-"] {
   opacity: 0.6;
 }
 
-.ps .ps__rail-x:hover,
+/* .ps .ps__rail-x:hover,
 .ps .ps__rail-y:hover,
 .ps .ps__rail-x:focus,
 .ps .ps__rail-y:focus,
@@ -27625,7 +27633,7 @@ pre[class*="language-"] {
 .ps .ps__rail-y.ps--clicking {
   background-color: #eee;
   opacity: 0.9;
-}
+} */
 
 /*
  * Scrollbar thumb styles
@@ -27654,12 +27662,12 @@ pre[class*="language-"] {
   position: absolute;
 }
 
-.ps__rail-x:hover>.ps__thumb-x,
+/* .ps__rail-x:hover>.ps__thumb-x,
 .ps__rail-x:focus>.ps__thumb-x,
 .ps__rail-x.ps--clicking .ps__thumb-x {
   background-color: #999;
   height: 11px;
-}
+} */
 
 .ps__rail-y:hover>.ps__thumb-y,
 .ps__rail-y:focus>.ps__thumb-y,
@@ -29815,7 +29823,7 @@ pre[class*="language-"] {
   color: black;
   background: none;
   text-shadow: 0 1px white;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family:DM Sans;
   font-size: 1em;
   text-align: left;
   white-space: pre;
@@ -29987,11 +29995,11 @@ pre[class*="language-"] {
   position: absolute;
 }
 
-.ps--active-x>.ps__rail-x,
+/* .ps--active-x>.ps__rail-x,
 .ps--active-y>.ps__rail-y {
   display: block;
   background-color: transparent;
-}
+} */
 
 .ps:hover>.ps__rail-x,
 .ps:hover>.ps__rail-y,
@@ -30002,7 +30010,7 @@ pre[class*="language-"] {
   opacity: 0.6;
 }
 
-.ps .ps__rail-x:hover,
+/* .ps .ps__rail-x:hover,
 .ps .ps__rail-y:hover,
 .ps .ps__rail-x:focus,
 .ps .ps__rail-y:focus,
@@ -30010,7 +30018,7 @@ pre[class*="language-"] {
 .ps .ps__rail-y.ps--clicking {
   background-color: #eee;
   opacity: 0.9;
-}
+} */
 
 /*
  * Scrollbar thumb styles
@@ -30039,12 +30047,12 @@ pre[class*="language-"] {
   position: absolute;
 }
 
-.ps__rail-x:hover>.ps__thumb-x,
+/* .ps__rail-x:hover>.ps__thumb-x,
 .ps__rail-x:focus>.ps__thumb-x,
 .ps__rail-x.ps--clicking .ps__thumb-x {
   background-color: #999;
   height: 11px;
-}
+} */
 
 .ps__rail-y:hover>.ps__thumb-y,
 .ps__rail-y:focus>.ps__thumb-y,
@@ -30804,7 +30812,7 @@ Docs & License: https://fullcalendar.io/
 }
 
 @font-face {
-  font-family: Open Sans, Regular !important;
+  font-family: DM Sans !important;
   /* font-family: 'Montserrat, Medium'; */
   src: url("data:application/x-font-ttf;charset=utf-8;base64,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") format("truetype");
   font-weight: normal;
@@ -30877,7 +30885,7 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
   overflow: visible;
   text-transform: none;
   margin: 0;
-  font-family: inherit;
+  font-family: DM Sans;
   font-size: inherit;
   line-height: inherit;
 }
@@ -33324,7 +33332,7 @@ Github: https://github.com/fiduswriter/Simple-DataTables
   border: none;
   border-radius: 5px;
   background: #fff;
-  font-family: inherit;
+  font-family: DM Sans;
   font-size: 1rem;
 }
 
@@ -33499,8 +33507,8 @@ Github: https://github.com/fiduswriter/Simple-DataTables
   border-radius: 5px;
   background: transparent;
   color: #ccc;
-  font-family: Open Sans, Regular;
-  font-family: Open Sans, Regular;
+  font-family: DM Sans, Regular;
+  font-family: DM Sans, Regular;
   /* font-family: "Open Sans, Semibold"; */
   font-size: 2.5em;
   cursor: pointer;
@@ -33710,7 +33718,7 @@ Github: https://github.com/fiduswriter/Simple-DataTables
   border: 0.25em solid transparent;
   border-radius: 50%;
   border-color: #000;
-  font-family: "Open Sans, Semibold";
+  font-family: "DM Sans, Semibold";
   line-height: 5em;
   cursor: default;
   -webkit-user-select: none;
@@ -35253,7 +35261,7 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-right {
  */
 .ql-container {
   box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: DM Sans;
   font-size: 13px;
   height: 100%;
   margin: 0px;
@@ -35718,7 +35726,7 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-right {
 }
 
 .ql-editor .ql-font-monospace {
-  font-family: Monaco, Courier New, monospace;
+  font-family: DM Sans;
 }
 
 .ql-editor .ql-size-small {
@@ -36257,11 +36265,11 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-right {
 }
 
 .ql-snow .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
-  font-family: Georgia, Times New Roman, serif;
+  font-family: DM Sans;
 }
 
 .ql-snow .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
-  font-family:"Open Sans, Semibold";
+  font-family:"DM Sans, Semibold";
 }
 
 .ql-snow .ql-picker.ql-size {
@@ -36313,7 +36321,7 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-right {
   border-top-right-radius: 0.375rem;
   border-top-left-radius: 0.375rem;
   box-sizing: border-box;
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', Open Sans, Regular;
+  font-family: 'DM Sans', 
   padding: 8px;
 }
 
@@ -36844,7 +36852,7 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-right {
 }
 
 .choices__list--dropdown:before {
-  font-family: "Open Sans, Semibold";
+  font-family: "DM Sans, Semibold";
   content: "\f0d8";
   position: absolute;
   top: 0;
@@ -37144,7 +37152,7 @@ ul li.editMode label {
 .rating>label:before {
   margin: 5px;
   font-size: 1.25em;
-  font-family: FontAwesome;
+  font-family: DM Sans;
   display: inline-block;
   content: "\f005";
 }
@@ -38114,7 +38122,7 @@ text,
 .jvm-tooltip {
   border-radius: 3px;
   background-color: #5c5cff;
-  font-family: Open Sans, Regular;
+  font-family: DM Sans, Regular;
   font-size: smaller;
   box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.2);
   padding: 3px 5px;

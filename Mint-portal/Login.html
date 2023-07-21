@@ -6,12 +6,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/png" href="./assets/img/Logo (1).png">
-  
-  <title>
-Mint
-  </title>
+  <title>bluemint</title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Nucleo Icons -->
   <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
   <!-- <link href=".../assets/css/nucleo-icons.css" rel="stylesheet" /> -->
@@ -36,7 +35,7 @@ Mint
     <nav class=" navbar-expand-lg  border-radius-lg top-0 z-index-3  position-absolute mt-4 py-2 start-0 end-0 mx-4">
         <div class="container-fluid ps-2 pe-0 ">
           <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3" href="#">
-          <img src="./assets/img/Logo (1).png"  class="h-60 ">
+            <img src="./assets/img/Logo (1).png"  class="w-20 position-absolute" style="margin-block: -99px">
           </a>
       
 
@@ -60,7 +59,7 @@ Mint
             <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">
               <div class="card " style="box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);">
                 <div class="  mb-0 text-center mt-2">
-                  <h6 class="font-weight-bolder " style="color:#2A6737">SIGN UP</h6>
+                  <h6 class="font-weight-bolder " style="color:#262646">SIGN UP</h6>
                   <span class="font-weigth-bolder text-sm" >Already have an account?<a href="signin.html"><span class="font-weight-bold px-2" style="color: #0C76A4;">Sign In</span></a></span></div>
                 <div class="card-body px-3 py-1 ">
                   <form role="form">
@@ -93,16 +92,29 @@ Mint
                               <input type="text" class="form-control" placeholder="Zip Code" style="margin-left: 2px;">
                                </div>
                          </div>
-                          <div class="input-group input-group-outline mb-1">
-                            <input type="password" class="form-control" placeholder="Password">
-                             </div>
-                             <div class="input-group input-group-outline mb-1">
-                              <input type="password" class="form-control" placeholder="Confirm Password">
-                               </div>
+                         <!-- <div class="input-group input-group-outline my-2">
+                          <input type="password" class="form-control" placeholder="Password">
+                          <div class="input-group-append">
+                            <span class="input-group-text">
+                              <i class="fas fa-eye"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="input-group input-group-outline my-2">
+                          <input type="password" class="form-control" placeholder="Confirm Password">
+                          <div class="input-group-append">
+                            <span class="input-group-text">
+                              <i class="fas fa-eye"></i>
+                            </span>
+                          </div>
+                        </div> -->
                      
                     <div class="input-group input-group-outline mb-1">
                   <input type="password" class="form-control" placeholder="Password">
                       </div>
+                      <div class="input-group input-group-outline mb-1">
+                        <input type="password" class="form-control" placeholder="Confirm Password">
+                            </div>
                       <p class="font-weigth-bolder text-center text-xs">By signing up, I agree the Terms of Services</p></div>
                     <div class=" text-center">
                         <a href="Plans.html"> <button type="button"  id="buttonColor" class="btn btn-lg w-60 mt-1  text-xs  mx-3 ">Next</button></a>
@@ -123,7 +135,22 @@ Mint
   <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
   <!-- Kanban scripts -->
-
+  <script>
+    const passwordInput = document.querySelector('input[type="password"]');
+    const eyeIcon = document.querySelector('.fas.fa-eye');
+  
+    eyeIcon.addEventListener('click', () => {
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        eyeIcon.classList.remove('fa-eye');
+        eyeIcon.classList.add('fa-eye-slash');
+      } else {
+        passwordInput.type = 'password';
+        eyeIcon.classList.remove('fa-eye-slash');
+        eyeIcon.classList.add('fa-eye');
+      }
+    });
+  </script>
   <script>
     var win = navigator.platform.indexOf('Win') > -1;
     if (win && document.querySelector('#sidenav-scrollbar')) {

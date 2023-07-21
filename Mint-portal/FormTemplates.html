@@ -9,8 +9,7 @@
 
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="./assets/img/Logo (1).png">
-
-  <title>Mint</title>
+  <title>bluemint</title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css"
     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -49,8 +48,7 @@
     <a class="navbar-brand m-0 mx-1" href="# " target="_blank">
       <img src="./assets/img/Mint-logo.png" class="navbar-brand-img h-90 img-fluid" alt="main_logo"  >
  
-      <span class="ms-2   text-white" style="font-size: 23px;font-family: monospace,'bolder';margin-top: 3px!important;font-weight: bolder;">MINT</span>
-    </a>
+      </a>
   </div>
   <hr class="horizontal dark mt-0 mb-2">
   <div class="collapse navbar-collapse  w-auto h-auto" id="sidenav-collapse-main">
@@ -66,8 +64,8 @@
 
             <li class="nav-item">
               <a class="nav-link text-dark " href="Login.html">
-                <span class="sidenav-mini-icon"> L </span>
-                <span class="sidenav-normal  ms-3  ps-1" style="font-weight: 400;"> Logout</span>
+                <span class="sidenav-mini-icon text-light"> L </span>
+                <span class="sidenav-normal  ms-3 text-light ps-1" style="font-weight: 400;"> Logout</span>
               </a>
             </li>
 
@@ -76,14 +74,14 @@
       </li>
       <hr class="horizontal dark mt-0">
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a href="index.html" class="nav-link text-light  " >
           <i class="material-icons-round  text-light  float-start" >dashboard</i>
           <span class="nav-link-text  px-3 " style="font-weight: 500;">Dashboard</span>
         </a>
-      </li>
+      </li> -->
       <li class="nav-item">
-        <a href="Clients.html" class="nav-link text-light" >
+        <a href="index.html" class="nav-link text-light" >
             <i class="fa fa-users  text-light  text-sm" aria-hidden="true" ></i>
           <span class="nav-link-text  px-2 ps-3  "
             style="font-weight: 400">Clients</span>
@@ -98,7 +96,7 @@
       </li>
       <li class="nav-item">
         <a href="FormTemplates.html" class="nav-link  active" >
-          <i class="fa fa-file-text text-sm" aria-hidden="true" style="color:#2A6737!important;"></i>
+          <i class="fa fa-file-text text-sm" aria-hidden="true" style="color:#262646!important;"></i>
           <span class="nav-link-text  px-2 ps-3"
             style="font-weight: 500">Resources</span>
         </a>
@@ -206,15 +204,15 @@
     </div>
   </nav>
     <!-- End Navbar -->
-    <div class="container py-2">
+    <div class="container-fluid  mx-3 py-2">
       <div class="">
         <div class="d-flex justify-content-between">
           <div class="col-lg-5 mb-0">
-            <h6 class="mb-0">Settings</h6>
+            <h6 class="mb-0">Template Forms</h6>
             <div class="d-flex">
-              <p class="font-weight-bolder text-xs">Settings</p>
+              <p class="font-weight-bolder text-xs">Resources</p>
               <ul class="d-flex justify-content-between">
-                <li class="text-xs">Personal Details</li>
+                <li class="text-xs">List</li>
             
               </ul>
             </div>
@@ -222,11 +220,11 @@
         </div>
       </div>
 
-      <div class="container px-0 col-md-12" style="border-radius: 10%;box-shadow:none; ">
+      <div class="container-fluid px-0 col-md-12" style="border-radius: 10%;box-shadow:none; ">
         <div class="tabbable-line">
           <ul class="nav nav-tabs  ">
-            <li class="active">
-              <a href="#tab_default_1" data-toggle="tab" class="font-weight-bold text-sm" onclick="changeText()">
+            <li class="active ms-0 ps-0">
+              <a href="#tab_default_1" data-toggle="tab" class="font-weight-bold text-sm ms-0 ps-0" onclick="changeText()">
                 Form Templates</a>
             </li>
             <li> <a href="#tab_default_2" data-toggle="tab" class="font-weight-bold text-sm" id="btn1">Create Form</a>
@@ -241,7 +239,7 @@
        <div class="" id="Div5">
               <div class="d-flex justify-content-end">
                
-                <div class="col-lg-4 d-flex">
+                <div class="col-lg-3 d-flex">
                   <div class="col-lg-6">
                    <div class=" pe-md-3 d-flex ">
                      <div class="input-group input-group-outline">
@@ -260,42 +258,42 @@
                    </div>
                  </div>
               </div>   
-            <div class="card mt-2">
-              <div class="col-lg-12">
+            <div class="col-lg-12 pe-4 mt-2">
+              <div class=" card">
                 <div class="table-responsive">
                <table class="table align-items-center mb-0">
                  <thead style="background-color: #F4F6F8;border-radius: 10px !important;">
                    <tr>
-                     <th class="text-xs font-weight-bolder ps-2 " style="text-transform: none;">Form Title    </th>
-                     <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Date Created
+                     <th class=" font-weight-bolder ps-2 " style="text-transform: none;">Form Title    </th>
+                     <th class="  font-weight-bolder ps-2" style="text-transform: none;">Date Created
                      </th>
-                     <th class="text-xs font-weight-bolder  ps-2" style="text-transform: none;">Type</th>
-                     <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Assigned User</th>
-                     <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Status</th>
+                     <th class=" font-weight-bolder  ps-2" style="text-transform: none;">Type</th>
+                     <th class=" font-weight-bolder ps-2" style="text-transform: none;">Assigned User</th>
+                     <th class=" font-weight-bolder ps-2" style="text-transform: none;">Status</th>
   
         
-                     <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Action</th>
+                     <th class="  font-weight-bolder ps-2" style="text-transform: none;">Action</th>
                    </tr>
                  </thead>
                  <tbody>
                    <tr>
-                    <td class="  text-xs">Contract</td>
-                     <td class="  text-xs">11/02/2023</td>
-                     <td class="text-xs text-dark">Template</td>
+                    <td class="  ">Contract</td>
+                     <td class="  ">11/02/2023</td>
+                     <td class=" ">Template</td>
                         
-                     <td class="text-xs text-dark">4</td>
+                     <td class=" ">4</td>
                      <td class="text-left">
                       <div class="form-check form-switch ms-2 my-auto">
                           <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault23" checked onchange="visible()">
                         </div>
                      </td>
                        <td >
-                        <div class="d-flex  py-1">
-                               <span class="material-symbols-outlined text-sm text-dark my-2 font-weight-bold">
+                        <div class="d-flex  ">
+                               <span class="material-symbols-outlined  text-dark font-weight-bold">
                                  visibility
                                  </span>
-                               <div class="ms-2">
-                                <span class="material-symbols-outlined text-sm text-danger font-weight-bold ">
+                               <div class="ms-2 ">
+                                <span class="material-symbols-outlined  text-danger font-weight-bold ">
                                  delete
                                   </span>
                                </div>
@@ -303,29 +301,29 @@
                      </td>
                    </tr>
                    <tr>
-                      <td class="  text-xs">Contract</td>
-                       <td class="  text-xs">11/02/2023</td>
-                       <td class="text-xs text-dark">Template</td>
-                          
-                       <td class="text-xs text-dark">4</td>
-                       <td class="text-left">
-                        <div class="form-check form-switch ms-2 my-auto">
-                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault23" checked onchange="visible()">
-                          </div>
-                       </td>
-                         <td >
-                          <div class="d-flex  py-1">
-                                 <span class="material-symbols-outlined text-sm text-dark my-2 font-weight-bold">
-                                   visibility
-                                   </span>
-                                 <div class="ms-2">
-                                  <span class="material-symbols-outlined text-sm text-danger font-weight-bold ">
-                                   delete
-                                    </span>
-                                 </div>
+                    <td class="  ">Contract</td>
+                     <td class="  ">11/02/2023</td>
+                     <td class=" ">Template</td>
+                        
+                     <td class=" ">4</td>
+                     <td class="text-left">
+                      <div class="form-check form-switch ms-2 my-auto">
+                          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault23" checked onchange="visible()">
+                        </div>
+                     </td>
+                       <td >
+                        <div class="d-flex  ">
+                               <span class="material-symbols-outlined  text-dark  font-weight-bold">
+                                 visibility
+                                 </span>
+                               <div class="ms-2">
+                                <span class="material-symbols-outlined  text-danger font-weight-bold ">
+                                 delete
+                                  </span>
                                </div>
-                       </td>
-                     </tr>
+                             </div>
+                     </td>
+                   </tr>
                  </tbody>
                </table>
              </div>
@@ -369,36 +367,36 @@
              <table class="table align-items-center mb-0">
                <thead style="background-color: #F4F6F8;border-radius: 10px !important;">
                  <tr>
-                   <th class="text-xs font-weight-bolder ps-2 " style="text-transform: none;">Form Title    </th>
-                   <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Date Created
+                   <th class=" font-weight-bolder ps-2 " style="text-transform: none;">Form Title    </th>
+                   <th class="  font-weight-bolder ps-2" style="text-transform: none;">Date Created
                    </th>
-                   <th class="text-xs font-weight-bolder  ps-2" style="text-transform: none;">Type</th>
-                   <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Assigned User</th>
-                   <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Status</th>
+                   <th class=" font-weight-bolder  ps-2" style="text-transform: none;">Type</th>
+                   <th class=" font-weight-bolder ps-2" style="text-transform: none;">Assigned User</th>
+                   <th class=" font-weight-bolder ps-2" style="text-transform: none;">Status</th>
 
       
-                   <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Action</th>
+                   <th class="  font-weight-bolder ps-2" style="text-transform: none;">Action</th>
                  </tr>
                </thead>
                <tbody>
                  <tr>
-                  <td class="  text-xs">Contract</td>
-                   <td class="  text-xs">11/02/2023</td>
-                   <td class="text-xs text-dark">Template</td>
+                  <td class="  ">Contract</td>
+                   <td class="  ">11/02/2023</td>
+                   <td >Template</td>
                       
-                   <td class="text-xs text-dark">4</td>
+                   <td >4</td>
                    <td class="text-left">
                     <div class="form-check form-switch ms-2 my-auto">
                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault23" checked onchange="visible()">
                       </div>
                    </td>
                      <td >
-                      <div class="d-flex  py-1">
-                             <span class="material-symbols-outlined text-sm text-dark my-2 font-weight-bold">
+                      <div class="d-flex  ">
+                             <span class="material-symbols-outlined text-dark  font-weight-bold">
                                visibility
                                </span>
                              <div class="ms-2">
-                              <span class="material-symbols-outlined text-sm text-danger font-weight-bold ">
+                              <span class="material-symbols-outlined  text-danger font-weight-bold ">
                                delete
                                 </span>
                              </div>
@@ -406,23 +404,23 @@
                    </td>
                  </tr>
                  <tr>
-                    <td class="  text-xs">Contract</td>
-                     <td class="  text-xs">11/02/2023</td>
-                     <td class="text-xs text-dark">Template</td>
+                    <td class="  ">Contract</td>
+                     <td class="  ">11/02/2023</td>
+                     <td >Template</td>
                         
-                     <td class="text-xs text-dark">4</td>
+                     <td >4</td>
                      <td class="text-left">
                       <div class="form-check form-switch ms-2 my-auto">
                           <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault23" checked onchange="visible()">
                         </div>
                      </td>
                        <td >
-                        <div class="d-flex  py-1">
-                               <span class="material-symbols-outlined text-sm text-dark my-2 font-weight-bold">
+                        <div class="d-flex  ">
+                               <span class="material-symbols-outlined text-dark  font-weight-bold">
                                  visibility
                                  </span>
                                <div class="ms-2">
-                                <span class="material-symbols-outlined text-sm text-danger font-weight-bold ">
+                                <span class="material-symbols-outlined  text-danger font-weight-bold ">
                                  delete
                                   </span>
                                </div>
@@ -443,7 +441,7 @@
             </div>
           </div>
                    <div class="tab-pane" id="tab_default_3">
-                    <div class="container col-lg-12 col-md-12 d-flex justify-content-between my-2"> <h6 class="text-dark">Insurance</h6>
+                    <div class=" col-lg-12 col-md-12 d-flex justify-content-between my-2"> <h6 class="text-dark">Insurance</h6>
       
                       <div class="col-lg-3">
                         <div class=" pe-md-3 d-flex ">
@@ -454,18 +452,19 @@
                         </div>
                        </div>
                       </div>
-                    <div class="accordion-1">
+                    <div class="accordion-1 mx-3">
                      
                       <div class="row">
-                          <div class=" card col-md-12 mx-auto" style="background-color: #f6f6f6;">
-                            <div class="d-flex justify-content-between">
+                          <div class=" card col-md-12  px-0 mx-0" style="background-color: white;">
+                            <div class="d-flex justify-content-between px-2 py-1" style="background-color: #262646;    border-radius: 10px;
+                            color: white;">
                               <p>Document Title</p>
                               <p>Action</p>
                             </div>
-                            <div class="accordion" id="accordionRental">
+                            <div class="accordion mt-4 mx-2" id="accordionRental">
                               <div class="accordion-item mb-3">
                                 <p class="accordion-header" id="headingOne" style="font-size: 17px;font-weight: bold;">
-                                  <button class="accordion-button border-bottom font-weight-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background-color: #FFF;
+                                  <button class="accordion-button border-bottom font-weight-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background-color: #F6F6F6; ;
                                   border-radius: 10px;">
                                     <span class="material-symbols-outlined font-weight-bolder px-4" style="color:#FFC351" >
                                       folder_open
@@ -487,10 +486,10 @@
                               </div>
                               </div>
                               </div>
-                              <div class="accordion-item mt-2">
+                              <div class="accordion-item mt-4">
                                 <p class="accordion-header" id="headingTwo"  style="font-size: 17px;font-weight: bold;margin-top: 3px;">
                                   <button class="accordion-button border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
-                                   style="background-color: #FFF; border-radius: 10px;">
+                                   style="background-color: #F6F6F6; border-radius: 10px;">
                                    <span class="material-symbols-outlined font-weight-bolder px-4" style="color:#FFC351" >
                                     folder_open
                                     </span>Insurer 2
@@ -532,18 +531,22 @@
                             </div>
                            </div>
                           </div>
-                        <div class="accordion-1">
+                        <div class="accordion-1 mx-3">
                          
                           <div class="row">
-                              <div class=" card col-md-12 mx-auto" style="background-color: #f6f6f6;">
-                                <div class="d-flex justify-content-between">
+                              <div class=" card col-md-12  px-0 mx-0" style="background-color: white;">
+                                <div class="d-flex justify-content-between"  style="background-color: #262646;
+                                border-radius: 10px;
+                                color: white;
+                                padding-inline: 12px;
+                                padding-block: 2px;">
                                   <p>Document Title</p>
                                   <p>Action</p>
                                 </div>
-                                <div class="accordion" id="accordionRental">
+                                <div class="accordion  mt-3 mx-2" id="accordionRental">
                                   <div class="accordion-item mb-3">
                                     <p class="accordion-header" id="headingOne" style="font-size: 17px;font-weight: bold;">
-                                      <button class="accordion-button border-bottom font-weight-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background-color: #FFF;
+                                      <button class="accordion-button border-bottom font-weight-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background-color: #F6F6F6;
                                       border-radius: 10px;">
                                         <span class="material-symbols-outlined font-weight-bolder px-4" style="color:#FFC351" >
                                           folder_open
@@ -569,7 +572,7 @@
                                   <div class="accordion-item mt-2">
                                     <p class="accordion-header" id="headingTwo"  style="font-size: 17px;font-weight: bold;margin-top: 3px;">
                                       <button class="accordion-button border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
-                                       style="background-color: #FFF; border-radius: 10px;">
+                                       style="background-color: #F6F6F6; border-radius: 10px;">
                                        <span class="material-symbols-outlined font-weight-bolder px-4" style="color:#FFC351" >
                                         folder_open
                                         </span> Mortgage 2
@@ -660,16 +663,18 @@
           <div class="input-group input-group-outline mb-1" style="border-color: #384B6B !important;">
                 <input type="text" class="form-control" placeholder="Title">
               </div>
-            <div class="col-lg-12 ">
+            <div class="col-lg-12 mt-2 ">
            <p class="mb-0">Upload Document</p>
 
-            <div action="/file-upload" class="form-control border dropzone" id="productImg"></div>
+            <div action="/file-upload" class="form-control border dropzone" id="productImg" style="border: 1px solid #b9b9b9!important;
+            border-style: dashed !important;"></div>
         
         
           </div>
-      
-          <button type="button" id="buttonColor" class="btn btn-ls  mb-0 "   
-          >Add</button> 
+      <div class="d-flex justify-content-end mt-3">
+        <button type="button" id="buttonColor" class="btn btn-ls  mb-0 "    >Add</button> 
+      </div>
+       
         </div>
       </div>
     </div>

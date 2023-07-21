@@ -7,8 +7,7 @@
 
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="./assets/img/Logo (1).png">
-
-  <title>Mint</title>
+  <title>bluemint</title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> 
   <link rel="stylesheet" type="text/css"
@@ -50,21 +49,29 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link id="pagestyle" href="./assets/css/material-dashboard.css" rel="stylesheet" />
   <link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.5" rel="stylesheet" />
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 
 <body class="g-sidenav-show  " style="background-color: #E5EBE6;">
-  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3  "
+  <aside
+  class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 z-index-2 "
   id="sidenav-main"
   style="background-color: #38383E;box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);">
 
   <div class="sidenav-header">
-    <i class="fas fa-times px-5 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+    <i class="fas fa-times px-5 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+      aria-hidden="true" id="iconSidenav"></i>
     <a class="navbar-brand m-0 mx-1" href="# " target="_blank">
-      <img src="./assets/img/Mint-logo.png" class="navbar-brand-img h-90 img-fluid" alt="main_logo"  >
- 
-      <span class="ms-2   text-white" style="font-size: 23px;font-family: monospace,'bolder';margin-top: 3px!important;font-weight: bolder;">MINT</span>
+      <img src="./assets/img/Mint-logo.png" class="navbar-brand-img h-90 img-fluid" alt="main_logo">
+
+    
     </a>
   </div>
   <hr class="horizontal dark mt-0 mb-2">
@@ -81,8 +88,8 @@
 
             <li class="nav-item">
               <a class="nav-link text-dark " href="Login.html">
-                <span class="sidenav-mini-icon"> L </span>
-                <span class="sidenav-normal  ms-3  ps-1" style="font-weight: 400;"> Logout</span>
+                <span class="sidenav-mini-icon  text-light"> L </span>
+                <span class="sidenav-normal  ms-3  text-light  ps-1" style="font-weight: 400;"> Logout</span>
               </a>
             </li>
 
@@ -92,44 +99,35 @@
       <hr class="horizontal dark mt-0">
 
       <li class="nav-item">
-        <a href="index.html" class="nav-link text-light  " >
-          <i class="material-icons-round  text-light  float-start" >dashboard</i>
-          <span class="nav-link-text  px-3 " style="font-weight: 500;">Dashboard</span>
+        <a href="index.html" class="nav-link  active">
+          <i class="fa fa-users  text-sm" aria-hidden="true" style="color:#262646!important;"></i>
+          <span class="nav-link-text  px-2 ps-3  " style="font-weight: 400">Clients</span>
         </a>
       </li>
       <li class="nav-item">
-        <a href="Clients.html" class="nav-link  active" >
-            <i class="fa fa-users  text-sm" aria-hidden="true" style="color:#2A6737!important;"></i>
-          <span class="nav-link-text  px-2 ps-3  "
-            style="font-weight: 400">Clients</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="Tickets.html" class="nav-link text-dark " >
-          <i class="fa fa-ticket text-light text-sm" aria-hidden="true"></i>
-          <span class="nav-link-text text-light px-3 "
-            style="font-weight: 400">Inbox</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="FormTemplates.html" class="nav-link text-dark " >
+        <a href="Tickets.html" class="nav-link text-dark ">
           <i class="fa fa-file-text text-light text-sm" aria-hidden="true"></i>
-          <span class="nav-link-text text-light px-2 ps-3  "
-            style="font-weight: 400">Resources</span>
+          <span class="nav-link-text text-light px-3 " style="font-weight: 400">Inbox</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="FormTemplates.html" class="nav-link text-dark ">
+          <i class="fa fa-file-text text-light text-sm" aria-hidden="true"></i>
+          <span class="nav-link-text text-light px-2 ps-3  " style="font-weight: 400">Resources</span>
         </a>
       </li>
       <li class="nav-item">
         <a href="Settings.html" class="nav-link text-dark ">
-          <i class="fa fa-cog  text-light text-sm" ></i>
+          <i class="fa fa-cog  text-light text-sm" aria-hidden="true"></i>
           <span class="nav-link-text text-light  px-3  " style="font-weight: 400">
             Settings</span>
         </a>
       </li>
- 
-          </ul>
-        </div>
-      </li>
+
     </ul>
+  </div>
+  </li>
+  </ul>
   </div>
 </aside>
   <main class="main-content border-radius-lg ">
@@ -227,11 +225,11 @@
                 <div class="row">
                     <div class=" card  p-3  col-md-12 mx-auto">
                       <div class="row d-flex">
-                        <h5 class="text-center font-weight-bolder">Facts and Analysis</h5>
-                        <p class="text-end text-info text-decoration-underline">Edit</p>
+                        <h5 class="text-center font-weight-bolder " style="color: #262646;">Facts and Analysis</h5>
+                    
                       </div>
                       <div class="col-lg-12  col-md-12">
-                        <strong class="text-dark">Scope of Service</strong>
+                        <strong class="text-dark text-lg font-weight-bolder">Scope of Service</strong>
                         <div class="d-flex  mb-0  ">
                           <div class="form-check my-auto">
                             <input class="form-check-input" type="checkbox" id="customCheck1">
@@ -247,7 +245,7 @@
                                 <input class="form-check-input" type="checkbox" id="customCheck1">
                               </div>
                               <a href="#">
-                                <strong class="mb-0 py-1 mx-2 font-weight-normal text-xs">Personal Insurance :</strong>
+                                <strong class=" mx-2 font-weight-normal text-xs">Personal Insurance :</strong>
                               </a>
                             </div>
                             <div class="d-flex  mb-0  ">
@@ -255,7 +253,7 @@
                                 <input class="form-check-input" type="checkbox" id="customCheck1">
                               </div>
                               <a href="#">
-                                <p class="mb-0 py-1 mx-2 font-weight-normal text-xs">Life</p>
+                                <p class="mb-0 py-2 mx-2 font-weight-normal text-xs">Life</p>
                               </a>
                             </div>
                             <div class="d-flex  mb-0  ">
@@ -263,7 +261,7 @@
                                 <input class="form-check-input" type="checkbox" id="customCheck1">
                               </div>
                               <a href="#">
-                                <p class="mb-0 py-1 mx-2 font-weight-normal text-xs">Truama</p>
+                                <p class="mb-0 py-2 mx-2 font-weight-normal text-xs">Truama</p>
                               </a>
                             </div>
                             <div class="d-flex  mb-0  ">
@@ -271,7 +269,7 @@
                                 <input class="form-check-input" type="checkbox" id="customCheck1">
                               </div>
                               <a href="#">
-                                <p class="mb-0 py-1 mx-2 font-weight-normal text-xs">Health</p>
+                                <p class="mb-0 py-2 mx-2 font-weight-normal text-xs">Health</p>
                               </a>
                             </div>
                             <div class="d-flex  mb-0  ">
@@ -279,7 +277,7 @@
                                 <input class="form-check-input" type="checkbox" id="customCheck1">
                               </div>
                               <a href="#">
-                                <p class="mb-0 py-1 mx-2 font-weight-normal text-xs">Income/ Mortgage Protection</p>
+                                <p class="mb-0 py-2 mx-2 font-weight-normal text-xs ">Income/ Mortgage Protection</p>
                               </a>
                             </div>
                           </div>
@@ -290,7 +288,7 @@
                             <input class="form-check-input" type="checkbox" id="customCheck1">
                           </div>
                           <a href="#">
-                            <p class="mb-0 py-1 mx-2 font-weight-normal text-xs">KiwiSaver</p>
+                            <p class="mb-0 py-2 mx-2 font-weight-normal text-xs">KiwiSaver</p>
                           </a>
                         </div>
                         <div class="row mt-1">
@@ -300,7 +298,7 @@
                                 <input class="form-check-input" type="checkbox" id="customCheck1">
                               </div>
                               <a href="#">
-                                <strong class="mb-0 py-1 mx-2 font-weight-normal text-xs">House Insaurance</strong>
+                                <strong class="mb-0 py-2 mx-2 font-weight-normal text-xs">House Insaurance</strong>
                               </a>
                             </div>
                             <div class="d-flex  mb-0  ">
@@ -308,7 +306,7 @@
                                 <input class="form-check-input" type="checkbox" id="customCheck1">
                               </div>
                               <a href="#">
-                                <p class="mb-0 py-1 mx-2 font-weight-normal text-xs">Vehicle Insurance</p>
+                                <p class="mb-0 py-2 mx-2 font-weight-normal text-xs">Vehicle Insurance</p>
                               </a>
                             </div>
                             <div class="d-flex  mb-0  ">
@@ -316,123 +314,901 @@
                                 <input class="form-check-input" type="checkbox" id="customCheck1">
                               </div>
                               <a href="#">
-                                <p class="mb-0 py-1 mx-2 font-weight-normal text-xs">Contents Insurance</p>
+                                <p class="mb-0 py-2 mx-2 font-weight-normal text-xs">Contents Insurance</p>
                               </a>
                             </div>
                           </div>
                          
                         </div>
                         <div class="col-12 mt-2">
-                            <strong>Please list your key financial objectives and goals:</strong>
+                            <strong class="my-1">Please list your key financial objectives and goals:</strong>
                             <div class="input-group input-group-outline">
                               <textarea class="multisteps-form__textarea form-control" rows="2" placeholder="lorem ipsum is dummy text"></textarea>
                             </div>
                           </div>
                       </div>
-                      <div class="accordion mt-2" id="accordionRental">
+                      <div class="card px-3 py-3">
+                        <div class="card mt-2">
+                          <h6 class="p-2 text-dark">Financial Situation</h6>
+                          <div class="row  ">
+                            <div class="col-lg-12">
+        
+                              <div class="table-responsive">
+                                <table class="table align-items-center mb-0">
+                                  <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                                    <tr>
+                                      <th class="text-xs font-weight-bolder  " style="text-transform: none;">Details</th>
+                                      <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Johan Doe
+                                        (Primary)</th>
+                                      <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Joe Reynolds
+                                        (Secondary)</th>
+                                      <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Period</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Salary/Wages </p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$300</td>
+                                      <td class="  text-xs">$300</td>
+                                      <td class="  text-xs">Weekly</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Self-employed Income
+                                            </p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$300</td>
+                                      <td class="  text-xs">$300</td>
+                                      <td class="  text-xs">Monthly</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Commission </p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$300</td>
+                                      <td class="  text-xs">$300</td>
+                                      <td class="  text-xs">Monthly</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Investment
+                                              (dividends)
+                                            </p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$300</td>
+                                      <td class="  text-xs">$300</td>
+                                      <td class="  text-xs">Monthly</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Rental Income (state
+                                              property address and amount)</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$300</td>
+                                      <td class="  text-xs">$300</td>
+                                      <td class="  text-xs">Monthly</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Boarder Income</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$300</td>
+                                      <td class="  text-xs">$300</td>
+                                      <td class="  text-xs">Monthly</td>
+                                    </tr>
+        
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Other Income (state
+                                              source)</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$300</td>
+                                      <td class="  text-xs">$300</td>
+                                      <td class="  text-xs">Monthly</td>
+                                    </tr>
+        
+                                  <tfoot>
+        
+                                    <td class=" text-start px-4 text-lg font-weight-bolder">Total</td>
+                                    <td class="text-dark">$3,000</td>
+                                    <td class="text-dark">$3,000</td>
+        
+                                  </tfoot>
+                                  </tbody>
+        
+                                </table>
+                              </div>
+        
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card mt-2">
+                          <div class="row  ">
+                            <div class="col-lg-12  ">
+                              <h6 class="p-2 text-dark">Outgoings Monthly</h6>
+                              <div class="table-responsive">
+                                <table class="table align-items-center mb-0">
+                                  <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                                    <tr>
+                                      <th class="text-xs font-weight-bolder  " style="text-transform: none;">Item</th>
+                                      <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Johan Doe</th>
+        
+                                    </tr>
+                                  </thead>
+        
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Food / Groceries</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$300</td>
+        
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Takeaways (average)
+                                            </p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$200</td>
+        
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Entertainment &
+                                              Recreation</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$50</td>
+        
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Subscriptions
+                                              (Netflix,
+                                              Spotify, Sky)</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$300</td>
+        
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Membership (Gym,
+                                              Clubs,
+                                              Sports)</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$500</td>
+        
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Power/Gas</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$120</td>
+        
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Internet</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$345</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Water</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$56</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Rates</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$200</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Gardner/Cleaner</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$200</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Childcare
+                                              (after-school, babysitting, au-pair)</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$200</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">
+                                              Doctors/Dentist/Physio
+                                            </p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$200</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Personal
+                                              Care/Clothing
+                                            </p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$345</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Education
+                                              (after-school, babysitting, au-pair)</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$345</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Life/Health Insurance
+                                            </p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$345</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Vehicle Insurance</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$300</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">House/Contents
+                                              Insurance</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$300</td>
+                                    </tr>
+        
+                                    <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                          <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Tithing/Charities</p>
+                                          </a>
+                                        </div>
+                                      </td>
+                                      <td class="  text-xs">$300</td>
+                                    </tr>
+                                  <tfoot>
+        
+                                    <td class=" text-start px-4 text-lg font-weight-bolder">Total</td>
+                                    <td class=" text-start px-4 text-lg font-weight-bolder">$8,000</td>
+                                  </tfoot>
+                                  </tbody>
+        
+        
+                                </table>
+                              </div>
+        
+        
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card mt-2 ">
+                          <div class="col-lg-12">
+            <h6 class="">Statement Of Position</h6>
+                            <div class="table-responsive">
+                              <table class="table align-items-center mb-0">
+                                <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                                  <tr>
+                                    <th class="text-xs font-weight-bolder  " style="text-transform: none;">Assets</th>
+                                    <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Value</th>
+                                    <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Details</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <div class="d-flex">
+                                       <a href="#">
+                                            <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Savings</p>
+                                          </a>
+                                         </div>
+                                    </td>
+                                    <td class="  text-xs">Lorem ipsum</td>
+                                    <td class="  text-xs">Bank Name</td>
+                                   </tr>
+                                   <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                         <a href="#">
+                                              <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Motor Vehicles</p>
+                                            </a>
+                                           </div>
+                                      </td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Make, Model, Year</td>
+                                     </tr>
+                                   <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                         <a href="#">
+                                              <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Property - Family Home</p>
+                                            </a>
+                                           </div>
+                                      </td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Address</td>
+                                     </tr>
+                               
+                                     <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                         <a href="#">
+                                              <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Property - Investment</p>
+                                            </a>
+                                           </div>
+                                      </td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Addresses</td>
+                                     </tr>
+                                     <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                         <a href="#">
+                                              <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">KiwiSaver</p>
+                                            </a>
+                                           </div>
+                                      </td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Provider</td>
+                                     </tr>
+                                     <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                         <a href="#">
+                                              <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Superannuation</p>
+                                            </a>
+                                           </div>
+                                      </td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Provider</td>
+                                     </tr>
+                                     <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                         <a href="#">
+                                              <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Bonds & Shares</p>
+                                            </a>
+                                           </div>
+                                      </td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Provider</td>
+                                     </tr>
+                                     <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                         <a href="#">
+                                              <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Contents</p>
+                                            </a>
+                                           </div>
+                                      </td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Key items</td>
+                                     </tr>
+                                     <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                         <a href="#">
+                                              <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Gift</p>
+                                            </a>
+                                           </div>
+                                      </td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Received from who</td>
+                                     </tr>
+                                     <tr>
+                                      <td>
+                                        <div class="d-flex">
+                                         <a href="#">
+                                              <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Other</p>
+                                            </a>
+                                           </div>
+                                      </td>
+                                      <td class="  text-xs">Please state</td>
+                                      <td class="  text-xs">Please state</td>
+                                     </tr>
+                                     <tfoot>
+                                     
+                                          <td class=" text-start px-4 text-lg font-weight-bolder">Total</td>
+                                     
+                                     </tfoot>
+                                 </tbody>
+                                
+                                
+                              </table>
+                            </div>
+                            <div class="col-lg-12 d-flex ">
+                              <div class="col-lg-4">  
+                                  <div class="table-responsive">
+                                  <table class="table align-items-center mb-0">
+                                    <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                                      <tr>
+                                        <th class="text-xs font-weight-bolder  " style="text-transform: none;">Liabilities</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                          <td class="  text-xs">Bank Overdraft</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="  text-xs">Credit Card</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="  text-xs">Store Card<i class="fa fa-info-circle px-2" aria-hidden="true"></i></td>
+                                       </tr>
+                                       <tr>
+                                          <td class="  text-xs">Hire Purchase</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="  text-xs">Main Bank Home Loan</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="  text-xs">Other Bank Home Loan</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="  text-xs">Student Loan</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="  text-xs">Car Loan</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="  text-xs">Other Finance: please state</td>
+                                       </tr>
+                                     </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 px-1"> 
+                                   <div class="table-responsive">
+                                  <table class="table align-items-center mb-0">
+                                    <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                                      <tr>
+                                        <th class="text-xs font-weight-bolder  px-2 " style="text-transform: none;">Limit</th>
+                                        <th class="text-xs font-weight-bolder px-2 " style="text-transform: none;">Owing</th>
+                                        <th class="text-xs font-weight-bolder px-2 " style="text-transform: none;">Laon Term/Expiry</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                          <td class="  text-xs">Lorem ipsum</td>
+                                        <td class="  text-xs">Lorem ipsum</td>
+                                        <td class="  text-xs">Lorem ipsum</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="  text-xs">Lorem ipsum</td>
+                                        <td class="  text-xs">Lorem ipsum</td>
+                                        <td class="  text-xs">Lorem ipsum</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="  text-xs">Lorem ipsum</td>
+                                        <td class="  text-xs">Lorem ipsum</td>
+                                        <td class="  text-xs">Lorem ipsum</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="  text-xs">Lorem ipsum</td>
+                                        <td class="  text-xs">Lorem ipsum</td>
+                                        <td class="  text-xs">Lorem ipsum</td>
+                                       </tr>
+
+                                       <tr>
+                                          <td class="  text-xs">Lorem ipsum</td>
+                                        <td class="  text-xs">Lorem ipsum</td>
+                                        <td class="  text-xs">Lorem ipsum</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="  text-xs">Lorem ipsum</td>
+                                        <td class="  text-xs">Lorem ipsum</td>
+                                        <td class="  text-xs">Lorem ipsum</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="  text-xs">Lorem ipsum</td>
+                                        <td class="  text-xs">Lorem ipsum</td>
+                                        <td class="  text-xs">Lorem ipsum</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="  text-xs">Lorem ipsum</td>
+                                        <td class="  text-xs">Lorem ipsum</td>
+                                        <td class="  text-xs">Lorem ipsum</td>
+                                       </tr>
+                                     </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                  <div class="table-responsive">
+                                      <table class="table align-items-center mb-0">
+                                        <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                                          <tr>
+                                              <th class="text-xs font-weight-bolder  px-2 " style="text-transform: none;">Limit</th>
+                                              <th class="text-xs font-weight-bolder px-2 " style="text-transform: none;">Owing</th>
+                                              <th class="text-xs font-weight-bolder  px-2" style="text-transform: none;">Laon Term/Expiry</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                              <td class="  text-xs">Lorem ipsum</td>
+                                            <td class="  text-xs">Lorem ipsum</td>
+                                            <td class="  text-xs">Lorem ipsum</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="  text-xs">Lorem ipsum</td>
+                                            <td class="  text-xs">Lorem ipsum</td>
+                                            <td class="  text-xs">Lorem ipsum</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="  text-xs">Lorem ipsum</td>
+                                            <td class="  text-xs">Lorem ipsum</td>
+                                            <td class="  text-xs">Lorem ipsum</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="  text-xs">Lorem ipsum</td>
+                                            <td class="  text-xs">Lorem ipsum</td>
+                                            <td class="  text-xs">Lorem ipsum</td>
+                                           </tr>
+
+                                           <tr>
+                                              <td class="  text-xs">Lorem ipsum</td>
+                                            <td class="  text-xs">Lorem ipsum</td>
+                                            <td class="  text-xs">Lorem ipsum</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="  text-xs">Lorem ipsum</td>
+                                            <td class="  text-xs">Lorem ipsum</td>
+                                            <td class="  text-xs">Lorem ipsum</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="  text-xs">Lorem ipsum</td>
+                                            <td class="  text-xs">Lorem ipsum</td>
+                                            <td class="  text-xs">Lorem ipsum</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="  text-xs">Lorem ipsum</td>
+                                            <td class="  text-xs">Lorem ipsum</td>
+                                            <td class="  text-xs">Lorem ipsum</td>
+                                           </tr>
+                                         </tbody>
+                                      </table>
+                                    </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card mt-2">
+                          <div class="row  ">
+                            <div class="col-lg-12">
+                              <h6 class="p-2 text-dark font-weight-bolder">Your Existing Mortgages</h6>
+                              <div class="table-responsive">
+                                <table class="table align-items-center mb-0">
+                                  <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                                    <tr>
+                                      <th class="text-xs font-weight-bolder  ps-2 " style="text-transform: none;">Security
+                                        Address
+                                      </th>
+                                      <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Security Value
+                                      </th>
+                                      <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Security Debt
+                                      </th>
+                                      <th class="text-xs font-weight-bolder ps-2 " style="text-transform: none;">Interest Rate &
+                                        Fixed Expiry</th>
+                                      <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Loan Term</th>
+                                      <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Bank</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                    </tr>
+        
+                                  </tbody>
+        
+        
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card mt-2">
+                          <div class="row  ">
+                            <div class="col-lg-12">
+                              <div class="d-flex justify-content-between">
+                                <h6 class="p-2 text-dark font-weight-bolder">Your Existing Insurances</h6>
+                                <p class="p-2 text-info text-decoration-underline">Policydocument.Pdf</p>
+                              </div>
+        
+                              <div class="table-responsive">
+                                <table class="table align-items-center mb-0">
+                                  <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                                    <tr>
+                                      <th class="text-xs font-weight-bolder ps-2 " style="text-transform: none;">Product</th>
+                                      <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Cover Amount
+                                      </th>
+                                      <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Cover Structure
+                                      </th>
+                                      <th class="text-xs font-weight-bolder ps-2  " style="text-transform: none;">
+                                        Exclusions/Loadings</th>
+                                      <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Insurer</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                    </tr>
+        
+                                  </tbody>
+        
+        
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row  mt-3 ">
+                            <div class="col-lg-12">
+                              <div class="d-flex justify-content-between">
+                                <h6 class="p-2 text-dark font-weight-bolder">Monthly Premiums</h6>
+                            
+                              </div>
+        
+                              <div class="table-responsive">
+                                <table class="table align-items-center mb-0">
+                                  <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                                    <tr>
+                                      <th class="text-xs font-weight-bolder ps-2 " style="text-transform: none;">Monthly
+                                        Premiums</th>
+                                      <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Premium</th>
+                                      <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Insurer </th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td class="  text-xs">Life & Disability Insurance</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="  text-xs">Life & Disability Insurance</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="  text-xs">Life & Disability Insurance</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="  text-xs">Life & Disability Insurance</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="  text-xs">Life & Disability Insurance</td>
+                                      <td class="  text-xs">Lorem ipsum</td>
+                                      <td class="  text-xs">Lorem </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="mt-3 font-weight-bold">Is there anything else you want to add?</p>
+                        <div class=" card col-lg-12">
+                          <div class="input-group input-group-outline">
+                            <textarea class="multisteps-form__textarea form-control" rows="5" placeholder="Comment"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <div class="accordion mt-2" id="accordionRental">
                         <div class="card  accordion-item mb-3">
                           <p class="accordion-header" id="headingOne" style="font-size: 17px;font-weight: bold; font-family: Open Sans, Bold !important;">
                             <button class="accordion-button border-bottom font-weight-bold collapsed px-4 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background-color: #FFFF;
                             border-radius: 10px;">
-                    Income
+                    
                               <i class="collapse-close fa fa-sort-desc text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
                               <i class="collapse-open fa fa-caret-up text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
                             </button>
                           </p>
                           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionRental" style="">
                             <div class="accordion-body text-sm ">
-                               <div class="row  ">
-                                    <div class="col-lg-12">
-                      
-                                      <div class="table-responsive">
-                                        <table class="table align-items-center mb-0">
-                                          <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
-                                            <tr>
-                                              <th class="text-xs font-weight-bolder  " style="text-transform: none;">Types Of Income</th>
-                                              <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Primary Contact Name</th>
-                                              <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Secondary Contact Name</th>
-                                            </tr>
-                                          </thead>
-                                          <tbody>
-                                            <tr>
-                                              <td>
-                                                <div class="d-flex">
-                                                 <a href="#">
-                                                      <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Salary/Wages<i class="fa fa-info-circle px-2   " aria-hidden="true"></i> </p>
-                                                    </a>
-                                                   </div>
-                                              </td>
-                                              <td class="  text-xs">Lorem ipsum</td>
-                                              <td class="  text-xs">Lorem ipsum</td>
-                                             </tr>
-                                             <tr>
-                                                <td>
-                                                  <div class="d-flex">
-                                                   <a href="#">
-                                                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Self-employed Income</p>
-                                                      </a>
-                                                     </div>
-                                                </td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                               </tr>
-                                             <tr>
-                                                <td>
-                                                  <div class="d-flex">
-                                                   <a href="#">
-                                                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Boarder Income</p>
-                                                      </a>
-                                                     </div>
-                                                </td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                               </tr>
-                                             <tr>
-                                                <td>
-                                                  <div class="d-flex">
-                                                   <a href="#">
-                                                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Self-employed Income<i class="fa fa-info-circle px-2   " aria-hidden="true"></i>(state property address and amount) </p>
-                                                      </a>
-                                                     </div>
-                                                </td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                               </tr>
-                                               <tr>
-                                                <td>
-                                                  <div class="d-flex">
-                                                   <a href="#">
-                                                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Self-employed Income</p>
-                                                      </a>
-                                                     </div>
-                                                </td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                               </tr>
-                                               <tr>
-                                                <td>
-                                                  <div class="d-flex">
-                                                   <a href="#">
-                                                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Commission<i class="fa fa-info-circle px-2   " aria-hidden="true"></i>(dividends) </p>
-                                                      </a>
-                                                     </div>
-                                                </td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                               </tr>
-                                              
-                                               <tfoot>
-                                               
-                                                    <td class=" text-start px-4 text-lg font-weight-bolder">Total</td>
-                                               
-                                               </tfoot>
-                                           </tbody>
-                                          
-                                        </table>
-                                      </div>
-                      
-                                    </div>
-                                  </div>
+                              
                           
                         </div>
                         </div>
@@ -688,296 +1464,7 @@
                               </strong>
                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionRental">
                             <div class="accordion-body text-sm ">
-                                <div class="row  ">
-                                    <div class="col-lg-12">
-                      
-                                      <div class="table-responsive">
-                                        <table class="table align-items-center mb-0">
-                                          <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
-                                            <tr>
-                                              <th class="text-xs font-weight-bolder  " style="text-transform: none;">Assets</th>
-                                              <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Value</th>
-                                              <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Details</th>
-                                            </tr>
-                                          </thead>
-                                          <tbody>
-                                            <tr>
-                                              <td>
-                                                <div class="d-flex">
-                                                 <a href="#">
-                                                      <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Savings</p>
-                                                    </a>
-                                                   </div>
-                                              </td>
-                                              <td class="  text-xs">Lorem ipsum</td>
-                                              <td class="  text-xs">Bank Name</td>
-                                             </tr>
-                                             <tr>
-                                                <td>
-                                                  <div class="d-flex">
-                                                   <a href="#">
-                                                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Motor Vehicles</p>
-                                                      </a>
-                                                     </div>
-                                                </td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                                <td class="  text-xs">Make, Model, Year</td>
-                                               </tr>
-                                             <tr>
-                                                <td>
-                                                  <div class="d-flex">
-                                                   <a href="#">
-                                                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Property - Family Home</p>
-                                                      </a>
-                                                     </div>
-                                                </td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                                <td class="  text-xs">Address</td>
-                                               </tr>
-                                         
-                                               <tr>
-                                                <td>
-                                                  <div class="d-flex">
-                                                   <a href="#">
-                                                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Property - Investment</p>
-                                                      </a>
-                                                     </div>
-                                                </td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                                <td class="  text-xs">Addresses</td>
-                                               </tr>
-                                               <tr>
-                                                <td>
-                                                  <div class="d-flex">
-                                                   <a href="#">
-                                                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">KiwiSaver</p>
-                                                      </a>
-                                                     </div>
-                                                </td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                                <td class="  text-xs">Provider</td>
-                                               </tr>
-                                               <tr>
-                                                <td>
-                                                  <div class="d-flex">
-                                                   <a href="#">
-                                                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Superannuation</p>
-                                                      </a>
-                                                     </div>
-                                                </td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                                <td class="  text-xs">Provider</td>
-                                               </tr>
-                                               <tr>
-                                                <td>
-                                                  <div class="d-flex">
-                                                   <a href="#">
-                                                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Bonds & Shares</p>
-                                                      </a>
-                                                     </div>
-                                                </td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                                <td class="  text-xs">Provider</td>
-                                               </tr>
-                                               <tr>
-                                                <td>
-                                                  <div class="d-flex">
-                                                   <a href="#">
-                                                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Contents</p>
-                                                      </a>
-                                                     </div>
-                                                </td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                                <td class="  text-xs">Key items</td>
-                                               </tr>
-                                               <tr>
-                                                <td>
-                                                  <div class="d-flex">
-                                                   <a href="#">
-                                                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Gift</p>
-                                                      </a>
-                                                     </div>
-                                                </td>
-                                                <td class="  text-xs">Lorem ipsum</td>
-                                                <td class="  text-xs">Received from who</td>
-                                               </tr>
-                                               <tr>
-                                                <td>
-                                                  <div class="d-flex">
-                                                   <a href="#">
-                                                        <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Other</p>
-                                                      </a>
-                                                     </div>
-                                                </td>
-                                                <td class="  text-xs">Please state</td>
-                                                <td class="  text-xs">Please state</td>
-                                               </tr>
-                                               <tfoot>
-                                               
-                                                    <td class=" text-start px-4 text-lg font-weight-bolder">Total</td>
-                                               
-                                               </tfoot>
-                                           </tbody>
-                                          
-                                          
-                                        </table>
-                                      </div>
-                                      <div class="col-lg-12 d-flex ">
-                                        <div class="col-lg-4">  
-                                            <div class="table-responsive">
-                                            <table class="table align-items-center mb-0">
-                                              <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
-                                                <tr>
-                                                  <th class="text-xs font-weight-bolder  " style="text-transform: none;">Liabilities</th>
-                                                </tr>
-                                              </thead>
-                                              <tbody>
-                                                <tr>
-                                                    <td class="  text-xs">Bank Overdraft</td>
-                                                 </tr>
-                                                 <tr>
-                                                    <td class="  text-xs">Credit Card</td>
-                                                 </tr>
-                                                 <tr>
-                                                    <td class="  text-xs">Store Card<i class="fa fa-info-circle px-2" aria-hidden="true"></i></td>
-                                                 </tr>
-                                                 <tr>
-                                                    <td class="  text-xs">Hire Purchase</td>
-                                                 </tr>
-                                                 <tr>
-                                                    <td class="  text-xs">Main Bank Home Loan</td>
-                                                 </tr>
-                                                 <tr>
-                                                    <td class="  text-xs">Other Bank Home Loan</td>
-                                                 </tr>
-                                                 <tr>
-                                                    <td class="  text-xs">Student Loan</td>
-                                                 </tr>
-                                                 <tr>
-                                                    <td class="  text-xs">Car Loan</td>
-                                                 </tr>
-                                                 <tr>
-                                                    <td class="  text-xs">Other Finance: please state</td>
-                                                 </tr>
-                                               </tbody>
-                                            </table>
-                                          </div>
-                                        </div>
-                                        <div class="col-lg-4 px-1"> 
-                                             <div class="table-responsive">
-                                            <table class="table align-items-center mb-0">
-                                              <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
-                                                <tr>
-                                                  <th class="text-xs font-weight-bolder  px-2 " style="text-transform: none;">Limit</th>
-                                                  <th class="text-xs font-weight-bolder px-2 " style="text-transform: none;">Owing</th>
-                                                  <th class="text-xs font-weight-bolder px-2 " style="text-transform: none;">Laon Term/Expiry</th>
-                                                </tr>
-                                              </thead>
-                                              <tbody>
-                                                <tr>
-                                                    <td class="  text-xs">Lorem ipsum</td>
-                                                  <td class="  text-xs">Lorem ipsum</td>
-                                                  <td class="  text-xs">Lorem ipsum</td>
-                                                 </tr>
-                                                 <tr>
-                                                    <td class="  text-xs">Lorem ipsum</td>
-                                                  <td class="  text-xs">Lorem ipsum</td>
-                                                  <td class="  text-xs">Lorem ipsum</td>
-                                                 </tr>
-                                                 <tr>
-                                                    <td class="  text-xs">Lorem ipsum</td>
-                                                  <td class="  text-xs">Lorem ipsum</td>
-                                                  <td class="  text-xs">Lorem ipsum</td>
-                                                 </tr>
-                                                 <tr>
-                                                    <td class="  text-xs">Lorem ipsum</td>
-                                                  <td class="  text-xs">Lorem ipsum</td>
-                                                  <td class="  text-xs">Lorem ipsum</td>
-                                                 </tr>
-
-                                                 <tr>
-                                                    <td class="  text-xs">Lorem ipsum</td>
-                                                  <td class="  text-xs">Lorem ipsum</td>
-                                                  <td class="  text-xs">Lorem ipsum</td>
-                                                 </tr>
-                                                 <tr>
-                                                    <td class="  text-xs">Lorem ipsum</td>
-                                                  <td class="  text-xs">Lorem ipsum</td>
-                                                  <td class="  text-xs">Lorem ipsum</td>
-                                                 </tr>
-                                                 <tr>
-                                                    <td class="  text-xs">Lorem ipsum</td>
-                                                  <td class="  text-xs">Lorem ipsum</td>
-                                                  <td class="  text-xs">Lorem ipsum</td>
-                                                 </tr>
-                                                 <tr>
-                                                    <td class="  text-xs">Lorem ipsum</td>
-                                                  <td class="  text-xs">Lorem ipsum</td>
-                                                  <td class="  text-xs">Lorem ipsum</td>
-                                                 </tr>
-                                               </tbody>
-                                            </table>
-                                          </div>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div class="table-responsive">
-                                                <table class="table align-items-center mb-0">
-                                                  <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
-                                                    <tr>
-                                                        <th class="text-xs font-weight-bolder  px-2 " style="text-transform: none;">Limit</th>
-                                                        <th class="text-xs font-weight-bolder px-2 " style="text-transform: none;">Owing</th>
-                                                        <th class="text-xs font-weight-bolder  px-2" style="text-transform: none;">Laon Term/Expiry</th>
-                                                      </tr>
-                                                  </thead>
-                                                  <tbody>
-                                                    <tr>
-                                                        <td class="  text-xs">Lorem ipsum</td>
-                                                      <td class="  text-xs">Lorem ipsum</td>
-                                                      <td class="  text-xs">Lorem ipsum</td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td class="  text-xs">Lorem ipsum</td>
-                                                      <td class="  text-xs">Lorem ipsum</td>
-                                                      <td class="  text-xs">Lorem ipsum</td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td class="  text-xs">Lorem ipsum</td>
-                                                      <td class="  text-xs">Lorem ipsum</td>
-                                                      <td class="  text-xs">Lorem ipsum</td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td class="  text-xs">Lorem ipsum</td>
-                                                      <td class="  text-xs">Lorem ipsum</td>
-                                                      <td class="  text-xs">Lorem ipsum</td>
-                                                     </tr>
-    
-                                                     <tr>
-                                                        <td class="  text-xs">Lorem ipsum</td>
-                                                      <td class="  text-xs">Lorem ipsum</td>
-                                                      <td class="  text-xs">Lorem ipsum</td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td class="  text-xs">Lorem ipsum</td>
-                                                      <td class="  text-xs">Lorem ipsum</td>
-                                                      <td class="  text-xs">Lorem ipsum</td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td class="  text-xs">Lorem ipsum</td>
-                                                      <td class="  text-xs">Lorem ipsum</td>
-                                                      <td class="  text-xs">Lorem ipsum</td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td class="  text-xs">Lorem ipsum</td>
-                                                      <td class="  text-xs">Lorem ipsum</td>
-                                                      <td class="  text-xs">Lorem ipsum</td>
-                                                     </tr>
-                                                   </tbody>
-                                                </table>
-                                              </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
+                                
                             </div>
                           </div>
                         </div>
@@ -1198,7 +1685,7 @@
                            </div>
                             </div>
                           </div>
-                    </div>
+                    </div> -->
                   </div>
               
               </div>

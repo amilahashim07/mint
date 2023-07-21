@@ -523,7 +523,9 @@
   max-width: 200px;
   width: 200px;
 }
-
+.sidenav{
+  background-color: #262646 !important;
+}
 .has-search .form-control {
   padding-left: 2.375rem;
 }
@@ -560,6 +562,7 @@
 
 .tabbable-line>.nav-tabs>li {
   margin: 10px;
+  margin-inline: 28px
 }
 
 .tabbable-line>.nav-tabs>li>a {
@@ -593,13 +596,13 @@
 }
 
 .tabbable-line>.nav-tabs>li.active {
-  border-bottom: 4px solid #26B86E;
-  position: relative;
+  border-bottom: 4px solid #3FD6D4;
+  position: relative
 }
 
 .tabbable-line>.nav-tabs>li.active>a {
   border: 0;
-  color: #333333;
+  color: #262646
 }
 
 .tabbable-line>.nav-tabs>li.active>a>i {
@@ -623,10 +626,11 @@
 }
 
 #buttonColor{
-  background-color: #BAE0C9;
-    text-transform: none;
-    margin-left: -10px;
-    color: #2A6737;
+  background-color: #3fd6d4;
+  text-transform: none;
+  margin-left: -10px;
+  color: #262646 !important;
+  font-weight: bolder;
 }
 
 button.accordion {
