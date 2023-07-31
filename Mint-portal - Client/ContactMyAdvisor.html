@@ -222,8 +222,8 @@
         
         <div class="card col-lg-11">
           <h5 class="text-center my-4">Contact My Adviser</h5>
-       <div class="row justify-content-center  d-flex mx-10">
-        <div class="nav justify-content-around nav-pills px-0 mx-0 py-0 my-0 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+       <div class="row justify-content-center  d-flex " style="margin-right: 25rem !important; margin-left: 25rem !important;" >
+        <div class="nav justify-content-around nav-pills  px-0 mx-0 py-0 my-0 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button class="nav-link h-navlinks mx-0 btn btn-ls btn-tab   px-0 py-2 my-0  bg-chat" 
             id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"   role="tab"  style="text-transform: none;color: black; font-weight: bolde; font-size: 20px;justify-content: center;background-color: #88888B;opacity: 0.9;    padding-inline: 40px !important"
             role="tab" aria-controls="v-pills-home" aria-selected="false">
@@ -249,17 +249,19 @@
                 aria-labelledby="v-pills-home-tab">
                
                 <h6 class="text-sm">I would like to...</h6>
-                <button type="button" class="btn  btn-main  btn-sm btn-round">Apply for more cover</button>
-                <button type="button" class="btn  btn-main    text-transform-none btn-sm btn-round">Make a claim</button>
-                <button type="button" class="btn  btn-main   text-transform-none btn-sm btn-round">Make an alternation to my cover</button>
-                <button type="button" class="btn btn-main    text-transform-none btn-sm btn-round">Update my address</button>
-                <button type="button" class="btn   btn-main    text-transform-none btn-sm btn-round">Update my payment details</button>
-                 <button type="button" class="btn  btn-main    text-transform-none btn-sm btn-round">Update my contact details</button>
-                 <button type="button" class="btn  btn-main   text-transform-none btn-sm btn-round">Review my exclusion</button>
+                <!-- <button onclick="showValue('Button 1')">Button 1</button> -->
+                <button   onclick="showValue('Apply for more cover')" type="button" class="btn  btn-main  btn-sm btn-round">Apply for more cover</button>
+                <button  onclick="showValue('Make a claim')" type="button" class="btn  btn-main    text-transform-none btn-sm btn-round">Make a claim</button>
+                <button  onclick="showValue('Make an alternation to my cover')" type="button" class="btn  btn-main   text-transform-none btn-sm btn-round">Make an alternation to my cover</button>
+                <button    onclick="showValue('Update my address')"  type="button" class="btn btn-main    text-transform-none btn-sm btn-round">Update my address</button>
+                <button  onclick="showValue('Update my payment details')"  type="button" class="btn   btn-main    text-transform-none btn-sm btn-round">Update my payment details</button>
+                 <button  onclick="showValue('Update my contact details')"  type="button" class="btn  btn-main    text-transform-none btn-sm btn-round">Update my contact details</button>
+                 <button  onclick="showValue('Review my exclusion')"  type="button" class="btn  btn-main   text-transform-none btn-sm btn-round">Review my exclusion</button>
                  <h6 class="text-sm">Subject</h6>
+                 
                  <div class="col-lg-11 col-md-12">
                   <div class="input-group input-group-outline my-1">
-                    <input type="text" class="form-control" placeholder="Olamide">
+                    <input type="text" class="form-control"  id="value-textbox" readonly>
                 </div>
                  </div>
                  <div class="col-lg-11 col-sm-12 col-md-12">
@@ -279,17 +281,17 @@
               <div class="tab-pane fade show p-3" id="v-pills-profile" role="tabpanel"
                 aria-labelledby="v-pills-profile-tab">
                 <h6 class="text-sm">I would like to...</h6>
-                <button type="button" class="btn  btn-main  btn-sm btn-round">Apply for more cover</button>
-                <button type="button" class="btn  btn-main    text-transform-none btn-sm btn-round">Make a claim</button>
-                <button type="button" class="btn  btn-main   text-transform-none btn-sm btn-round">Make an alternation to my cover</button>
-                <button type="button" class="btn btn-main    text-transform-none btn-sm btn-round">Update my address</button>
-                <button type="button" class="btn   btn-main    text-transform-none btn-sm btn-round">Update my payment details</button>
-                 <button type="button" class="btn  btn-main    text-transform-none btn-sm btn-round">Update my contact details</button>
-                 <button type="button" class="btn  btn-main   text-transform-none btn-sm btn-round">Review my exclusion</button>
+                <button onclick="showData('Apply for more cover')" type="button" class="btn  btn-main  btn-sm btn-round">Apply for more cover</button>
+                <button onclick="showData('Make a claim')" type="button" class="btn  btn-main    text-transform-none btn-sm btn-round">Make a claim</button>
+                <button onclick="showData('Make an alternation to my cover')" type="button" class="btn  btn-main   text-transform-none btn-sm btn-round">Make an alternation to my cover</button>
+                <button onclick="showData('Update my address')" type="button" class="btn btn-main    text-transform-none btn-sm btn-round">Update my address</button>
+                <button onclick="showData('Update my payment details')" type="button" class="btn   btn-main    text-transform-none btn-sm btn-round">Update my payment details</button>
+                 <button onclick="showData('Update my contact details')" type="button" class="btn  btn-main    text-transform-none btn-sm btn-round">Update my contact details</button>
+                 <button onclick="showData('Review my exclusion')" type="button" class="btn  btn-main   text-transform-none btn-sm btn-round">Review my exclusion</button>
                  <h6 class="text-sm">Subject</h6>
                  <div class="col-lg-11 col-md-12">
                   <div class="input-group input-group-outline my-1">
-                    <input type="text" class="form-control" placeholder="Apply for more cover,Make a claim">
+                    <input type="text" class="form-control" id="value-text" readonly>
                 </div>
                  </div>
                  <div class="col-lg-11 col-sm-12 col-md-12">
@@ -359,6 +361,12 @@
 
 
 <script>
+  function showValue(value) {
+  document.getElementById('value-textbox').value = value;
+}
+function showData(value) {
+  document.getElementById('value-text').value = value;
+}
             $("#profileImage").click(function(e) {
 $("#imageUpload").click();
 });
