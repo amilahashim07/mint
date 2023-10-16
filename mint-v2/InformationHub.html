@@ -1,0 +1,2396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/Logo (1).png">
+  <title>bluemint</title>
+  <!--     Fonts and icons     -->
+  <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+  <!-- Nucleo Icons -->
+  <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link href="./assets/css/custom.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.5" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+    .circle-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .upload-label {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: lightgray;
+    }
+
+    .circle i {
+      font-size: 20px;
+      color: gray;
+    }
+
+    .circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      display: none;
+    }
+
+    .upload-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .upload-label {
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .upload-label i {
+      margin-right: 5px;
+    }
+
+    .file-list {
+
+      margin-top: 10px;
+    }
+
+    .file {
+
+
+      margin-left: 5px;
+      border-radius: 4px;
+    }
+
+    .file-name {
+      margin-right: 5px;
+    }
+
+    .remove-file {
+      cursor: pointer;
+    }
+
+    .file-name {
+      margin-right: 5px;
+      font-size: 10px;
+      color: blue;
+      text-decoration: underline;
+    }
+
+    .remove-file {
+      cursor: pointer;
+      font-size: 10px;
+      color: red;
+      text-decoration: none;
+      border: 1px solid red;
+      border-radius: 50%;
+      padding: 2px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 12px;
+      height: 12px;
+      background-color: transparent;
+    }
+  
+
+
+
+
+    #signatureCanvas {
+      border: 1px solid #000;
+    }
+
+    /*  */
+
+    .circle-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .upload-label {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: lightgray;
+    }
+
+    .circle i {
+      font-size: 20px;
+      color: gray;
+    }
+
+    .circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      display: none;
+    }
+
+    .upload-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .upload-label {
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .upload-label i {
+      margin-right: 5px;
+    }
+
+    .file-list {
+
+      margin-top: 10px;
+    }
+
+    .file {
+
+
+      margin-left: 5px;
+      border-radius: 4px;
+    }
+
+    .file-name {
+      margin-right: 5px;
+    }
+
+    .remove-file {
+      cursor: pointer;
+    }
+
+    .file-name {
+      margin-right: 5px;
+      font-size: 10px;
+      color: blue;
+      text-decoration: underline;
+    }
+
+    .card {
+      box-shadow: 0px 3px 6px #00000029;
+    }
+
+    .remove-file {
+      cursor: pointer;
+      font-size: 10px;
+      color: red;
+      text-decoration: none;
+      border: 1px solid red;
+      border-radius: 50%;
+      padding: 2px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 12px;
+      height: 12px;
+      background-color: transparent;
+    }
+  </style>
+</head>
+
+<body class="g-sidenav-show  " style="background-color: #E5EBE6;">
+  <aside
+    class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 z-index-2  "
+    id="sidenav-main"
+    style="background-color: #38383E;box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);">
+    <div class="sidenav-header">
+      <i class="fas fa-times px-5 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+        aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand m-0 mx-1" href="# " target="_blank">
+        <img src="./assets/img/Mint-logo.png" class="navbar-brand-img h-90 img-fluid" alt="main_logo">
+
+
+      </a>
+    </div>
+    <hr class="horizontal dark mt-0 mb-2">
+    <div class="collapse navbar-collapse  w-auto h-auto" id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item mb-2 mt-0">
+          <a data-bs-toggle="collapse" href="#ProfileNav" class="nav-link text-dark " aria-controls="ProfileNav"
+            role="button" aria-expanded="false">
+            <img src="./assets/img/kal-visuals-square.jpg" class="avatar">
+            <span class="nav-link-text ms-2 ps-1 text-white" style="font-weight: 400;">Alex Brooklyn</span>
+          </a>
+          <div class="collapse" id="ProfileNav">
+            <ul class="nav ">
+
+              <li class="nav-item">
+                <a class="nav-link text-dark " href="Login.html">
+                  <span class="sidenav-mini-icon text-light"> L </span>
+                  <span class="sidenav-normal  ms-3 text-light  ps-1" style="font-weight: 400;"> Logout</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </li>
+        <hr class="horizontal dark mt-0">
+
+        <li class="nav-item">
+          <a href="dashboard.html" class="nav-link    " style="color:#3C4856 !important;">
+            <i class="material-icons-round  text-sm text-light  float-start">home</i>
+            <span class="nav-link-text  px-3 ps-0 text-light" style="font-weight: 500;">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="InformationHub.html" class="nav-link active  ">
+            <span class="material-symbols-outlined ps-2  text-sm" style="color:#262646!important">
+              info
+            </span>
+            <span class="nav-link-text  px-2 ps-2  " style="font-weight: 400">Information Hub</span>
+          </a>
+        </li>
+       
+        <li class="nav-item">
+          <a href="inbox.html" class="nav-link  " style="color:#3C4856 !important;">
+            <span class="material-symbols-outlined text-light text-sm ps-2">
+              chat
+            </span>
+            <span class="nav-link-text text-light px-2 ps-2  " style="font-weight: 400">Inbox</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="Settings.html" class="nav-link  " style="color:#3C4856 !important;">
+            <i class="fa fa-cog  text-light text-sm" aria-hidden="true"></i>
+            <span class="nav-link-text text-light  ps-1 " style="font-weight: 400">
+              Settings</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+    </li>
+    </ul>
+    </div>
+  </aside>
+  <main class="main-content border-radius-lg " style="overflow-x: hidden !important;">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-main navbar-expand-lg position-sticky mt-4 top-1 px-0 mx-4 shadow-none border-radius-xl z-index-sticky"
+      id="navbarBlur" data-scroll="true">
+      <div class="container-fluid py-1 px-3">
+
+        <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
+          <a href="javascript:;" class="nav-link text-body p-0">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+            </div>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+          <div class="col-lg-11 px-4">
+            <div class="main">
+              <!-- <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control search" placeholder="Search">
+
+              </div> -->
+            </div>
+          </div>
+
+          <ul class="navbar-nav  justify-content-end">
+            <li class="nav-item dropdown pe-2 mt-2">
+              <a href="javascript:;" class="nav-link text-body p-0 position-relative" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="material-icons cursor-pointer">
+                  notifications
+                </i>
+                <!-- <span class="position-absolute top-5 start-100 translate-middle badge rounded-pill bg-danger border border-white small py-1 px-2">
+                <span class="small">11</span>
+                <span class="visually-hidden">unread notifications</span>
+              </span> -->
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end p-2 me-sm-n4" aria-labelledby="dropdownMenuButton">
+                <p class="text-end text-info text-decoration-underline">Clear all</p>
+                <li class="mb-2">
+                  <a class="dropdown-item border-radius-md" href="javascript:;">
+                    <div class="d-flex align-items-center py-1">
+                      <span class="material-symbols-outlined">
+                        person_add
+                      </span>
+                      <div class="ms-2">
+                        <p class="text-sm font-weight-normal my-auto">
+                          Johan Doe set up their account successfully
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a class="dropdown-item border-radius-md" href="javascript:;">
+                    <div class="d-flex align-items-center py-1">
+                      <span class="material-symbols-outlined">
+                        person_add
+                      </span>
+                      <div class="ms-2">
+                        <p class="text-sm font-weight-normal my-auto">
+                          Johan Doe set up their account successfully
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+            <img src="./assets/img/kal-visuals-square.jpg" alt="bruce" class="rounded-circle shadow-lg"
+              style="width: 50%;">
+
+            <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-body p-0">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container-fluid py-2 mx-3">
+      <div class="">
+        <div class="d-flex justify-content-between">
+          <div class="col-lg-5 mb-0">
+            <h6 class="mb-0 text-dark ">Documents</h6>
+            <div class="d-flex">
+              <p class="font-weight-bolder  text-dark text-xs">Information Hub</p>
+              <ul class="d-flex justify-content-between">
+                <li class="text-xs">Documents</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12 col-md-12 mx-0 px-0">
+        <div class="tabbable-line">
+          <ul class="nav nav-tabs  ">
+            <li class="active ms-0"><a href="#tab_default_1" data-toggle="tab" class="font-weight-bold text-sm"
+                onclick="changeText()">Personal Details</a> </li>
+            <li> <a href="#tab_default_2" data-toggle="tab" class="font-weight-bold text-sm">Latest Application </a>
+            </li>
+            <li> <a href="#tab_default_3" data-toggle="tab" class="font-weight-bold text-sm">Current Application </a>
+            </li>
+            <li> <a href="#tab_default_4" data-toggle="tab" class="font-weight-bold text-sm">Previous Applications</a>
+            </li>
+            <li> <a href="#tab_default_5" data-toggle="tab" class="font-weight-bold text-sm">Boards</a> </li>
+            <li> <a href="#tab_default_6" data-toggle="tab" class="font-weight-bold text-sm">Insurance</a> </li>
+            <li> <a href="#tab_default_7" data-toggle="tab" class="font-weight-bold text-sm">Mortgage</a> </li>
+          </ul>
+          <div class="tab-content mt-3">
+            <!-- personal application -->
+            <div class="tab-pane  active" id="tab_default_1" style="overflow: hidden;">
+              <div class="col-lg-12 flex-wrap d-flex justify-content-between">
+                <div class="col-lg-3 col-sm-12 px-2">
+                  <div class="card align-items-center py-2">
+                    <h6 class="text-center">Profile Photo</h6>
+                    <div class="circle-container">
+                      <label for="image-upload" class="btn ">
+                        <div class="circle">
+                          <i class="fas fa-camera"></i>
+                          <img id="uploaded-image" src="#" alt="Uploaded Image">
+                        </div>
+                      </label>
+                      <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                    </div>
+                    <!-- <img src="./assets/img/kal-visuals-square.jpg" class="avatar"> -->
+                    <p class="mt-2   text-dark"> <span class=" ">Choose photo</span></p>
+                    <hr class="horizontal dark " />
+
+                    <div class="nav flex-column nav-pills mx-1 py-0 my-0 v-links  py-3" id="v-pills-tab" role="tablist"
+                      aria-orientation="vertical">
+                      <button class="nav-link h-navlinks py-2 px-5 v-links my-0 active " id="v-pills-home-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
+                        aria-controls="v-pills-profile" aria-selected="false">
+                        <a class="nav-link1  d-flex align-items-center px-0 mx-0">
+                          <i class="material-icons text-sm me-2">person</i>
+                          <span class="text-xs">Primary Contact</span>
+                        </a>
+                      </button>
+                      <button class="nav-link h-navlinks py-2 px-5 v-links my-0" id="v-pills-profile-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab"
+                        aria-controls="v-pills-profile" aria-selected="false">
+                        <a class="nav-link1  d-flex align-items-center px-0 mx-0">
+                          <i class="material-icons text-sm me-2">receipt_long</i>
+                          <span class="text-xs">Partner Contact</span>
+                        </a>
+                      </button>
+                    </div>
+
+
+                  </div>
+                </div>
+                <div class="col-lg-9 col-sm-12 col-md-12 " style="overflow-x: hidden !important;">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                      aria-labelledby="v-pills-home-tab">
+                      <div class="card ">
+                        <div class="card-header d-flex align-items-center justify-content-between p-0 mt-3 mx-2">
+                          <div class="d-flex align-items-center">
+                            <!-- <span><i
+                                class="material-icons-round text-dark  text-lg position-relative ">person</i></span> -->
+                            <h6 class="ms-1 text-dark">Primary Contact Details</h6>
+                          </div>
+                          <!-- <div class="button mx-2 d-flex " onclick="switchVisibleGenDetails()">
+                            <p class="text-success">External User Access</p>
+                            <switch></switch>
+                            <i class="material-icons text-success text-lg me-2">edit</i>
+                          </div> -->
+                        </div>
+                        <div class="card-body px-3 mt-0 pt-0">
+                          <div class="row  align-items-center">
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  text-dark ">First Name:</p>
+                                  <p class="text-sm text-dark">Date of Birth :</p>
+                                  <p class="text-sm text-dark ">Gender :</p>
+                                  <p class="text-sm text-dark">Phone No :</p>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Olamide">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="15/07/1999">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Male">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="(021) 345 678">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  text-dark">Last Name :</p>
+                                  <p class="text-sm text-dark ">Smoking Status :</p>
+                                  <p class="text-sm text-dark">Mobile No :</p>
+                                  <p class="text-sm text-dark">Email :</p>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Afia">
+                                  </div>
+
+                                  <div class="form-check my-auto">
+                                    <input class="form-check-input" type="checkbox" id="customCheck1">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="number" class="form-control" placeholder="(021) 345 678">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="email" class="form-control" placeholder="Olamide@gmail.com">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <h6 class=" my-4 text-dark">General Details</h6>
+                          <div class="row  align-items-center">
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  text-dark">Physical Address :</p>
+                                  <p class="text-sm text-dark">Postal Address :</p>
+                                  <p class="text-sm text-dark">Dependents Names :</p>
+                                  <p class="text-sm text-dark ">Main Bank :</p>
+
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Street 23,New York city">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="LA">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="johan Doe">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Bank Name">
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  text-dark">Location :</p>
+                                  <p class="text-sm text-dark ">NZ Citizen/ Resident :</p>
+                                  <p class="text-sm text-dark">Dependents DOB :</p>
+                                  <p class="text-sm text-dark">Occupation :</p>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="New York city">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Yes">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="12/02/2022">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Lawyer">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row  align-items-center">
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  ">Income :</p>
+
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="$4000">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade " id="v-pills-profile" role="tabpanel"
+                      aria-labelledby="v-pills-profile-tab">
+                      <div class="card mt-2">
+                        <div class="card-header d-flex align-items-center justify-content-between p-0 mt-3 mx-2">
+                          <div class="d-flex align-items-center">
+                            <!-- <span><i
+                                class="material-icons-round text-dark  text-lg position-relative ">person</i></span> -->
+                            <h6 class="ms-1">Partner Contact detail</h6>
+                          </div>
+                          <!-- <div class="button mx-2 d-flex " onclick="switchVisibleGenDetails()">
+                            <p class="text-success">External User Access</p>
+                            <switch></switch>
+                            <i class="material-icons text-success text-lg me-2">edit</i>
+                          </div> -->
+                        </div>
+                        <div class="card-body px-3 mt-0 pt-0">
+                          <div class="row  align-items-center">
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  text-dark ">First Name:</p>
+                                  <p class="text-sm text-dark">Date of Birth :</p>
+                                  <p class="text-sm text-dark ">Gender :</p>
+                                  <p class="text-sm text-dark">Phone No :</p>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Olamide">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="15/07/1999">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Male">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="(021) 345 678">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  text-dark">Last Name :</p>
+                                  <p class="text-sm text-dark ">Smoking Status :</p>
+                                  <p class="text-sm text-dark">Mobile No :</p>
+                                  <p class="text-sm text-dark">Email :</p>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Afia">
+                                  </div>
+
+                                  <div class="form-check my-auto">
+                                    <input class="form-check-input" type="checkbox" id="customCheck1">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="number" class="form-control" placeholder="(021) 345 678">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="email" class="form-control" placeholder="Olamide@gmail.com">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <h6 class=" my-4 text-dark">General Details</h6>
+                          <div class="row  align-items-center">
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  text-dark">Physical Address :</p>
+                                  <p class="text-sm text-dark">Postal Address :</p>
+                                  <p class="text-sm text-dark">Dependents Names :</p>
+                                  <p class="text-sm text-dark ">Main Bank :</p>
+
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Street 23,New York city">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="LA">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="johan Doe">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Bank Name">
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  text-dark">Location :</p>
+                                  <p class="text-sm text-dark ">NZ Citizen/ Resident :</p>
+                                  <p class="text-sm text-dark">Dependents DOB :</p>
+                                  <p class="text-sm text-dark">Occupation :</p>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="New York city">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Yes">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="12/02/2022">
+                                  </div>
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="Lawyer">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row  align-items-center">
+                            <div class="col-md-6">
+                              <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                  <p class="text-sm  ">Income :</p>
+
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-group input-group-outline mb-1"
+                                    style="border-color: #384B6B !important;">
+                                    <input type="text" class="form-control" placeholder="$4000">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- latest application -->
+            <div class="card tab-pane" id="tab_default_2">
+              <div class="card px-3 py-3">
+                <div class="card mt-2">
+                  <h6 class="p-2 text-dark">Financial Situation</h6>
+                  <div class="row  ">
+                    <div class="col-lg-12">
+
+                      <div class="table-responsive">
+                        <table class="table align-items-center mb-0">
+                          <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                            <tr>
+                              <th class="text-xs font-weight-bolder  " style="text-transform: none;">Details</th>
+                              <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Johan Doe
+                                (Primary)</th>
+                              <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Joe Reynolds
+                                (Secondary)</th>
+                              <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Period</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Salary/Wages </p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$300</td>
+                              <td class="  text-xs">$300</td>
+                              <td class="  text-xs">Weekly</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Self-employed Income
+                                    </p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$300</td>
+                              <td class="  text-xs">$300</td>
+                              <td class="  text-xs">Monthly</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Commission </p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$300</td>
+                              <td class="  text-xs">$300</td>
+                              <td class="  text-xs">Monthly</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Investment
+                                      (dividends)
+                                    </p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$300</td>
+                              <td class="  text-xs">$300</td>
+                              <td class="  text-xs">Monthly</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Rental Income (state
+                                      property address and amount)</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$300</td>
+                              <td class="  text-xs">$300</td>
+                              <td class="  text-xs">Monthly</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Boarder Income</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$300</td>
+                              <td class="  text-xs">$300</td>
+                              <td class="  text-xs">Monthly</td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Other Income (state
+                                      source)</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$300</td>
+                              <td class="  text-xs">$300</td>
+                              <td class="  text-xs">Monthly</td>
+                            </tr>
+
+                          <tfoot>
+
+                            <td class=" text-start px-4 text-lg font-weight-bolder">Total</td>
+                            <td class="text-dark">$3,000</td>
+                            <td class="text-dark">$3,000</td>
+
+                          </tfoot>
+                          </tbody>
+
+                        </table>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-2">
+                  <div class="row  ">
+                    <div class="col-lg-12  ">
+                      <h6 class="p-2 text-dark">Outgoings Monthly</h6>
+                      <div class="table-responsive">
+                        <table class="table align-items-center mb-0">
+                          <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                            <tr>
+                              <th class="text-xs font-weight-bolder  " style="text-transform: none;">Item</th>
+                              <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Johan Doe</th>
+
+                            </tr>
+                          </thead>
+
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Food / Groceries</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$300</td>
+
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Takeaways (average)
+                                    </p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$200</td>
+
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Entertainment &
+                                      Recreation</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$50</td>
+
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Subscriptions
+                                      (Netflix,
+                                      Spotify, Sky)</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$300</td>
+
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Membership (Gym,
+                                      Clubs,
+                                      Sports)</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$500</td>
+
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Power/Gas</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$120</td>
+
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Internet</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$345</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Water</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$56</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Rates</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$200</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Gardner/Cleaner</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$200</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Childcare
+                                      (after-school, babysitting, au-pair)</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$200</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">
+                                      Doctors/Dentist/Physio
+                                    </p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$200</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Personal
+                                      Care/Clothing
+                                    </p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$345</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Education
+                                      (after-school, babysitting, au-pair)</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$345</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Life/Health Insurance
+                                    </p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$345</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Vehicle Insurance</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$300</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">House/Contents
+                                      Insurance</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$300</td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <div class="d-flex">
+                                  <a href="#">
+                                    <p class="mb-0 py-1 mx-3 font-weight-normal text-xs text-dark">Tithing/Charities</p>
+                                  </a>
+                                </div>
+                              </td>
+                              <td class="  text-xs">$300</td>
+                            </tr>
+                          <tfoot>
+
+                            <td class=" text-start px-4 text-lg font-weight-bolder">Total</td>
+                            <td class=" text-start px-4 text-lg font-weight-bolder">$8,000</td>
+                          </tfoot>
+                          </tbody>
+
+
+                        </table>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-2">
+                  <div class="row  ">
+                    <div class="col-lg-12">
+                      <h6 class="p-2 text-dark">Your Existing Mortgages</h6>
+                      <div class="table-responsive">
+                        <table class="table align-items-center mb-0">
+                          <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                            <tr>
+                              <th class="text-xs font-weight-bolder  ps-2 " style="text-transform: none;">Security
+                                Address
+                              </th>
+                              <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Security Value
+                              </th>
+                              <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Security Debt
+                              </th>
+                              <th class="text-xs font-weight-bolder ps-2 " style="text-transform: none;">Interest Rate &
+                                Fixed Expiry</th>
+                              <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Loan Term</th>
+                              <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Bank</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                            </tr>
+                            <tr>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                            </tr>
+                            <tr>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                            </tr>
+                            <tr>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                            </tr>
+                            <tr>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                            </tr>
+                            <tr>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                            </tr>
+                            <tr>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                            </tr>
+
+                          </tbody>
+
+
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-2">
+                  <div class="row  ">
+                    <div class="col-lg-12">
+                      <div class="d-flex justify-content-between">
+                        <h6 class="p-2 text-dark">Your Existing Insurances</h6>
+                        <p class="p-2 text-info text-decoration-underline">Policydocument.Pdf</p>
+                      </div>
+
+                      <div class="table-responsive">
+                        <table class="table align-items-center mb-0">
+                          <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                            <tr>
+                              <th class="text-xs font-weight-bolder ps-2 " style="text-transform: none;">Product</th>
+                              <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Cover Amount
+                              </th>
+                              <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Cover Structure
+                              </th>
+                              <th class="text-xs font-weight-bolder ps-2  " style="text-transform: none;">
+                                Exclusions/Loadings</th>
+                              <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Insurer</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                            </tr>
+                            <tr>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                            </tr>
+                            <tr>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                            </tr>
+                            <tr>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                            </tr>
+                            <tr>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                            </tr>
+                            <tr>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                            </tr>
+                            <tr>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                            </tr>
+
+                          </tbody>
+
+
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row  mt-3 ">
+                    <div class="col-lg-12">
+                      <div class="d-flex justify-content-between">
+                        <h6 class="p-2 text-dark">Monthly Premiums</h6>
+                        <p class="p-2 text-info text-decoration-underline">Policydocument.Pdf</p>
+                      </div>
+
+                      <div class="table-responsive">
+                        <table class="table align-items-center mb-0">
+                          <thead style="background-color: #F6F6F6;border-radius: 10px !important;">
+                            <tr>
+                              <th class="text-xs font-weight-bolder ps-2 " style="text-transform: none;">Monthly
+                                Premiums</th>
+                              <th class=" text-xs font-weight-bolder ps-2" style="text-transform: none;">Premium</th>
+                              <th class="text-xs font-weight-bolder ps-2" style="text-transform: none;">Insurer </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="  text-xs">Life & Disability Insurance</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem </td>
+                            </tr>
+                            <tr>
+                              <td class="  text-xs">Life & Disability Insurance</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem </td>
+                            </tr>
+                            <tr>
+                              <td class="  text-xs">Life & Disability Insurance</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem </td>
+                            </tr>
+                            <tr>
+                              <td class="  text-xs">Life & Disability Insurance</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem </td>
+                            </tr>
+                            <tr>
+                              <td class="  text-xs">Life & Disability Insurance</td>
+                              <td class="  text-xs">Lorem ipsum</td>
+                              <td class="  text-xs">Lorem </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-3">Is there anything else you want to add?</p>
+                <div class=" card col-lg-12">
+                  <div class="input-group input-group-outline">
+                    <textarea class="multisteps-form__textarea form-control" rows="5" placeholder="Comment"></textarea>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- current application -->
+            <div class="tab-pane " id="tab_default_3">
+             
+
+            </div>
+            <!-- previous application -->
+          
+            <!-- board  -->
+          
+            <!-- insurance -->
+           
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+>
+ 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    document.getElementById('image-upload').addEventListener('change', function (event) {
+      var input = event.target;
+      var reader = new FileReader();
+
+      reader.onload = function () {
+        var dataURL = reader.result;
+        var uploadedImage = document.getElementById('uploaded-image');
+
+        uploadedImage.src = dataURL;
+        uploadedImage.style.display = 'block';
+
+        var cameraIcon = input.previousElementSibling.querySelector('i');
+        cameraIcon.style.display = 'none';
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    });
+  </script>
+  <script type="text/javascript">
+    function switchDocument() {
+      if (document.getElementById('Divone')) {
+
+        if (document.getElementById('Divone').style.display == 'none') {
+          document.getElementById('Divone').style.display = 'block';
+          document.getElementById('Divtwo').style.display = 'none';
+        }
+        else {
+          document.getElementById('Divone').style.display = 'none';
+          document.getElementById('Divtwo').style.display = 'block';
+        }
+      }
+    }
+    function switchbackboard() {
+      if (document.getElementById('Show4')) {
+
+        if (document.getElementById('Show4').style.display == 'none') {
+          document.getElementById('Show4').style.display = 'block';
+          document.getElementById('Show5').style.display = 'none';
+        }
+        else {
+          document.getElementById('Show4').style.display = 'none';
+          document.getElementById('Show5').style.display = 'block';
+        }
+      }
+    }
+    function switchbackDocument() {
+      if (document.getElementById('Divtwo')) {
+
+        if (document.getElementById('Divtwo').style.display == 'none') {
+          document.getElementById('Divtwo').style.display = 'block';
+          document.getElementById('Divone').style.display = 'none';
+        }
+        else {
+          document.getElementById('Divtwo').style.display = 'none';
+          document.getElementById('Divone').style.display = 'block';
+        }
+      }
+    }
+    function switchwithDocument() {
+      if (document.getElementById('DivOne')) {
+
+        if (document.getElementById('DivOne').style.display == 'none') {
+          document.getElementById('DivOne').style.display = 'block';
+          document.getElementById('DivTwo').style.display = 'none';
+        }
+        else {
+          document.getElementById('DivOne').style.display = 'none';
+          document.getElementById('DivTwo').style.display = 'block';
+        }
+      }
+    }
+    function switchwithbackDocument() {
+      if (document.getElementById('DivTwo')) {
+
+        if (document.getElementById('DivTwo').style.display == 'none') {
+          document.getElementById('DivTwo').style.display = 'block';
+          document.getElementById('DivOne').style.display = 'none';
+        }
+        else {
+          document.getElementById('DivTwo').style.display = 'none';
+          document.getElementById('DivOne').style.display = 'block';
+        }
+      }
+    }
+    function switchWithCover() {
+      if (document.getElementById('DivShowthree')) {
+
+        if (document.getElementById('DivShowthree').style.display == 'none') {
+          document.getElementById('DivShowthree').style.display = 'block';
+          document.getElementById('DivShowFour').style.display = 'none';
+        }
+        else {
+          document.getElementById('DivShowthree').style.display = 'none';
+          document.getElementById('DivShowFour').style.display = 'block';
+        }
+      }
+    }
+    function switchWithbackCover() {
+      if (document.getElementById('DivShowFour')) {
+
+        if (document.getElementById('DivShowFour').style.display == 'none') {
+          document.getElementById('DivShowFour').style.display = 'block';
+          document.getElementById('DivShowthree').style.display = 'none';
+        }
+        else {
+          document.getElementById('DivShowFour').style.display = 'none';
+          document.getElementById('DivShowthree').style.display = 'block';
+        }
+      }
+    }
+    function getOption() {
+      selectElement = document.querySelector('#select1');
+      output = selectElement.options[selectElement.selectedIndex].value;
+      document.querySelector('.output').textContent = output;
+    }
+  </script>
+  <script>
+
+    $(document).ready(function () {
+      var max_fields = 5;
+      var wrapper = $(".input_fields_wrap");
+      var add_button = $(".add_field_button");
+      var x = 1;
+      $(add_button).click(function (e) {
+        e.preventDefault();
+        if (x < max_fields) {
+          x++;
+          $(wrapper).append(' <div class="col-lg-3 col-md-6 col-sm-6"><div class="card  mb-2" id="changecolor9" style="background-color: #FFB1B1;opacity: 0.9;"><div class=" d-flex justify-content-between p-3 py-2"><div><span class="output"></span> </div> <div class="text-end pt-1"> <div class="dropdown pt-2"> <a href="javascript:;" class="text-secondary ps-4" id="dropdownCam" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-ellipsis-v"></i>  </a>   <ul class="dropdown-menu dropdown-menu-end me-sm-n4 p-2" aria-labelledby="dropdownCam"><li><a class="dropdown-item border-radius-md" href="javascript:;"><input id = "colorpicker8" type = "color"><i class="fa fa-circle mx-2" aria-hidden="true" id="changecolor"></i>Change Color</a></li><li><a class="dropdown-item border-radius-md" href="javascript:;"><i class="fa fa-trash-o mx-2 text-danger" aria-hidden="true"></i>Delete</a></li> </ul> </div> </div></div><hr class="dark horizontal "> <div class="card-footer p-3"> <p class="mb-0 text-sm"><i class="fa fa-calendar-o text-sm mx-1" aria-hidden="true"></i>12/03/2023</p> <p class="mb-0 text-sm"><i class="fa fa-history text-sm  mx-1 " aria-hidden="true"></i>Today at 3:45 PM</p></div> </div></div>');
+        }
+      });
+
+    });
+  </script>
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap.min.js"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/choices.min.js"></script>
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/plugins/datatables.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script>
+
+    function switchVisibleeditprofile() {
+      if (document.getElementById('Show6')) {
+
+        if (document.getElementById('Show6').style.display == 'none') {
+          document.getElementById('Show6').style.display = 'block';
+          document.getElementById('Show7').style.display = 'none';
+        }
+        else {
+          document.getElementById('Show6').style.display = 'none';
+          document.getElementById('Show7').style.display = 'block';
+        }
+      }
+    }
+    function switchboard() {
+      if (document.getElementById('Show4')) {
+
+        if (document.getElementById('Show4').style.display == 'none') {
+          document.getElementById('Show4').style.display = 'block';
+          document.getElementById('Show5').style.display = 'none';
+        }
+        else {
+          document.getElementById('Show4').style.display = 'none';
+          document.getElementById('Show5').style.display = 'block';
+        }
+      }
+    }
+    function switchboard() {
+      if (document.getElementById('Show4')) {
+
+        if (document.getElementById('Show4').style.display == 'none') {
+          document.getElementById('Show4').style.display = 'block';
+          document.getElementById('Show5').style.display = 'none';
+        }
+        else {
+          document.getElementById('Show4').style.display = 'none';
+          document.getElementById('Show5').style.display = 'block';
+        }
+      }
+    }
+    function switchDocument() {
+      if (document.getElementById('Divone')) {
+
+        if (document.getElementById('Divone').style.display == 'none') {
+          document.getElementById('Divone').style.display = 'block';
+          document.getElementById('Divtwo').style.display = 'none';
+        }
+        else {
+          document.getElementById('Divone').style.display = 'none';
+          document.getElementById('Divtwo').style.display = 'block';
+        }
+      }
+    }
+    function switchNextDocument() {
+      if (document.getElementById('Divfour')) {
+
+        if (document.getElementById('Divfour').style.display == 'none') {
+          document.getElementById('Divfour').style.display = 'block';
+          document.getElementById('Divthree').style.display = 'none';
+        }
+        else {
+          document.getElementById('Divfour').style.display = 'none';
+          document.getElementById('Divthree').style.display = 'block';
+        }
+      }
+    }
+  </script>
+  <script>
+    // file upload
+    function switchCover() {
+      if (document.getElementById('DivShowOne')) {
+
+        if (document.getElementById('DivShowOne').style.display == 'none') {
+          document.getElementById('DivShowOne').style.display = 'block';
+          document.getElementById('DivShowTwo').style.display = 'none';
+        }
+        else {
+          document.getElementById('DivShowOne').style.display = 'none';
+          document.getElementById('DivShowTwo').style.display = 'block';
+        }
+      }
+    }
+    function switchbackCover() {
+      if (document.getElementById('DivShowTwo')) {
+
+        if (document.getElementById('DivShowTwo').style.display == 'none') {
+          document.getElementById('DivShowTwo').style.display = 'block';
+          document.getElementById('DivShowOne').style.display = 'none';
+        }
+        else {
+          document.getElementById('DivShowTwo').style.display = 'none';
+          document.getElementById('DivShowOne').style.display = 'block';
+        }
+      }
+    }
+    document.getElementById('image-upload').addEventListener('change', function (event) {
+      var input = event.target;
+      var reader = new FileReader();
+
+      reader.onload = function () {
+        var dataURL = reader.result;
+        var uploadedImage = document.getElementById('uploaded-image');
+
+        uploadedImage.src = dataURL;
+        uploadedImage.style.display = 'block';
+
+        var cameraIcon = input.previousElementSibling.querySelector('i');
+        cameraIcon.style.display = 'none';
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    });
+    // 
+    // Get the canvas element and create a drawing context
+    const canvas = document.getElementById('signatureCanvas');
+    const context = canvas.getContext('2d');
+
+    let isDrawing = false;
+    let lastX = 0;
+    let lastY = 0;
+
+    // Add event listeners to track mouse movements
+    canvas.addEventListener('mousedown', startDrawing);
+    canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener('mouseup', stopDrawing);
+    canvas.addEventListener('mouseout', stopDrawing);
+    canvas.addEventListener('touchstart', startDrawing);
+    canvas.addEventListener('touchmove', draw);
+    canvas.addEventListener('touchend', stopDrawing);
+    canvas.addEventListener('touchcancel', stopDrawing);
+
+
+    // Function to start drawing
+    function startDrawing(event) {
+      var isTouch = event.type.startsWith('touch'); // Check if it's a touch event
+
+      if (isTouch) {
+        var touch = event.touches[0]; // Get the first touch point
+        lastX = touch.clientX;
+        lastY = touch.clientY;
+      } else {
+        lastX = event.offsetX;
+        lastY = event.offsetY;
+      }
+
+      isDrawing = true;
+      // [lastX, lastY] = [event.offsetX, event.offsetY];
+    }
+
+    // Function to draw
+    function draw(event) {
+      if (!isDrawing) return;
+
+      var isTouch = event.type.startsWith('touch'); // Check if it's a touch event
+
+      var x, y;
+
+      if (isTouch) {
+        var touch = event.touches[0]; // Get the first touch point
+        x = touch.clientX;
+        y = touch.clientY;
+      } else {
+        x = event.offsetX;
+        y = event.offsetY;
+      }
+
+      context.beginPath();
+      context.moveTo(lastX, lastY);
+      context.lineTo(x, y);
+      context.stroke();
+
+      lastX = x;
+      lastY = y;
+    }
+
+    // Function to stop drawing
+    function stopDrawing() {
+      isDrawing = false;
+    }
+
+    // Clear the canvas when the clear button is clicked
+    const clearButton = document.getElementById('clearButton');
+    clearButton.addEventListener('click', clearCanvas);
+
+    function clearCanvas() {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+
+
+
+
+
+    // Function to convert canvas to JPEG image
+    function convertCanvasToJPEG() {
+      // Get the data URL of the canvas as a JPEG image
+      const dataURL = canvas.toDataURL('image/jpg');
+
+      // Create a link element and set the data URL as its href
+      const link = document.createElement('a');
+      link.href = dataURL;
+
+      // Set the download attribute to specify the filename
+      link.download = 'signature.jpeg';
+
+      // Programmatically trigger a click event on the link element
+      link.click();
+    }
+
+
+
+    // Clear the canvas when the clear button is clicked
+    const downloadButton = document.getElementById('downloadButton');
+    downloadButton.addEventListener('click', downloadSignature);
+
+    function downloadSignature() {
+      convertCanvasToJPEG();
+    }
+
+  </script>
+
+  <script>
+    $("#profileImage").click(function (e) {
+      $("#imageUpload").click();
+    });
+
+    function fasterPreview(uploader) {
+      if (uploader.files && uploader.files[0]) {
+        $('#profileImage').attr('src',
+          window.URL.createObjectURL(uploader.files[0]));
+      }
+    }
+
+    $("#imageUpload").change(function () {
+      fasterPreview(this);
+    });
+
+  </script>
+
+  <script>
+
+    const accordionBtns = document.querySelectorAll(".accordion");
+
+    accordionBtns.forEach((accordion) => {
+      accordion.onclick = function () {
+        this.classList.toggle("is-open");
+
+        let content = this.nextElementSibling;
+        console.log(content);
+
+        if (content.style.maxHeight) {
+          //this is if the accordion is open
+          content.style.maxHeight = null;
+        } else {
+          //if the accordion is currently closed
+          content.style.maxHeight = content.scrollHeight + "px";
+          console.log(content.style.maxHeight);
+        }
+      };
+    });
+
+  </script>
+  <script>
+    $(document).ready(function () {
+
+      var current_fs, next_fs, previous_fs;
+
+      // No BACK button on first screen
+      if ($(".show").hasClass("first-screen")) {
+        $(".prev").css({ 'display': 'none' });
+      }
+
+      // Next button
+      $(".next-button").click(function () {
+
+        current_fs = $(this).parent().parent();
+        next_fs = $(this).parent().parent().next();
+
+        $(".prev").css({ 'display': 'block' });
+
+        $(current_fs).removeClass("show");
+        $(next_fs).addClass("show");
+
+        $("#progressbar li").eq($(".card2").index(next_fs)).addClass("active");
+
+        current_fs.animate({}, {
+          step: function () {
+
+            current_fs.css({
+              'display': 'none',
+              'position': 'relative'
+            });
+
+            next_fs.css({
+              'display': 'block'
+            });
+          }
+        });
+      });
+
+      // Previous button
+      $(".prev").click(function () {
+
+        current_fs = $(".show");
+        previous_fs = $(".show").prev();
+
+        $(current_fs).removeClass("show");
+        $(previous_fs).addClass("show");
+
+        $(".prev").css({ 'display': 'block' });
+
+        if ($(".show").hasClass("first-screen")) {
+          $(".prev").css({ 'display': 'none' });
+        }
+
+        $("#progressbar li").eq($(".card2").index(current_fs)).removeClass("active");
+
+        current_fs.animate({}, {
+          step: function () {
+
+            current_fs.css({
+              'display': 'none',
+              'position': 'relative'
+            });
+
+            previous_fs.css({
+              'display': 'block'
+            });
+          }
+        });
+      });
+
+    });
+  </script>
+
+
+ 
+
+  <!-- Kanban scripts -->
+  <script src="./assets/js/plugins/dragula/dragula.min.js"></script>
+  <script src="./assets/js/plugins/jkanban/jkanban.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    document.getElementById("colorpicker1").addEventListener("change", function () {
+      document.getElementById("changecolor1").style.backgroundColor = this.value;
+    });
+    document.getElementById("colorpicker2").addEventListener("change", function () {
+      document.getElementById("changecolor2").style.backgroundColor = this.value;
+    });
+    document.getElementById("colorpicker3").addEventListener("change", function () {
+      document.getElementById("changecolor3").style.backgroundColor = this.value;
+    });
+    document.getElementById("colorpicker4").addEventListener("change", function () {
+      document.getElementById("changecolor4").style.backgroundColor = this.value;
+    });
+    document.getElementById("colorpicker5").addEventListener("change", function () {
+      document.getElementById("changecolor5").style.backgroundColor = this.value;
+    });
+    document.getElementById("colorpicker6").addEventListener("change", function () {
+      document.getElementById("changecolor6").style.backgroundColor = this.value;
+    });
+    document.getElementById("colorpicker7").addEventListener("change", function () {
+      document.getElementById("changecolor7").style.backgroundColor = this.value;
+    });
+    document.getElementById("colorpicker8").addEventListener("change", function () {
+      document.getElementById("changecolor8").style.backgroundColor = this.value;
+    });
+    document.getElementById("colorpicker9").addEventListener("change", function () {
+      document.getElementById("changecolor9").style.backgroundColor = this.value;
+    });
+  </script>
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!--   Core JS Files   -->
+
+  <script>
+    if (document.getElementById('choices-state')) {
+      var element = document.getElementById('choices-state');
+      const example = new Choices(element, {
+        searchEnabled: false
+      });
+    };
+  </script>
+
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-dashboard.min.js?v=3.0.5"></script>
+
+  <script src="./assets/js/plugins/multistep-form.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-dashboard.min.js?v=3.0.5"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/Fav Icon (4).png">
+    <link rel="icon" type="image/png" href="./assets/img/Logo (1).png">
+    <title>bluemint</title>
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+    <!-- Nucleo Icons -->
+    <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link href="./assets/css/custom.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.5" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.5" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body class="g-sidenav-show  " style="background-color: #E5EBE6;">
+
+    <aside
+        class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 z-index-2  "
+        id="sidenav-main"
+        style="background-color: #38383E;box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);">
+        <div class="sidenav-header">
+            <i class="fas fa-times px-5 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+                aria-hidden="true" id="iconSidenav"></i>
+            <a class="navbar-brand m-0 mx-1" href="# " target="_blank">
+                <img src="./assets/img/Mint-logo.png" class="navbar-brand-img h-90 img-fluid" alt="main_logo">
+
+
+            </a>
+        </div>
+        <hr class="horizontal dark mt-0 mb-2">
+        <div class="collapse navbar-collapse  w-auto h-auto" id="sidenav-collapse-main">
+            <ul class="navbar-nav">
+                <li class="nav-item mb-2 mt-0">
+                    <a data-bs-toggle="collapse" href="#ProfileNav" class="nav-link text-dark "
+                        aria-controls="ProfileNav" role="button" aria-expanded="false">
+                        <img src="./assets/img/kal-visuals-square.jpg" class="avatar">
+                        <span class="nav-link-text ms-2 ps-1 text-white" style="font-weight: 400;">Alex Brooklyn</span>
+                    </a>
+                    <div class="collapse" id="ProfileNav">
+                        <ul class="nav ">
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark " href="Login.html">
+                                    <span class="sidenav-mini-icon text-light"> L </span>
+                                    <span class="sidenav-normal  ms-3 text-light  ps-1" style="font-weight: 400;">
+                                        Logout</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+                <hr class="horizontal dark mt-0">
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link    " style="color:#3C4856 !important;">
+                        <i class="material-icons-round  text-sm text-light  float-start">home</i>
+                        <span class="nav-link-text  px-3 ps-0 text-light" style="font-weight: 500;">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="InformationHub.html" class="nav-link active  ">
+                        <span class="material-symbols-outlined ps-2  text-sm" style="color:#262646!important">
+                            info
+                        </span>
+                        <span class="nav-link-text  px-2 ps-2  " style="font-weight: 400">Information Hub</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="inbox.html" class="nav-link  " style="color:#3C4856 !important;">
+                        <span class="material-symbols-outlined text-light text-sm ps-2">
+                            chat
+                        </span>
+                        <span class="nav-link-text text-light px-2 ps-2  " style="font-weight: 400">Inbox</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Settings.html" class="nav-link  " style="color:#3C4856 !important;">
+                        <i class="fa fa-cog  text-light text-sm" aria-hidden="true"></i>
+                        <span class="nav-link-text text-light  ps-1 " style="font-weight: 400">
+                            Settings</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        </li>
+        </ul>
+        </div>
+    </aside>
+
+    <main class="main-content border-radius-lg ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-main navbar-expand-lg position-sticky mt-4 top-1 px-0 mx-4 shadow-none border-radius-xl z-index-sticky"
+            id="navbarBlur" data-scroll="true">
+            <div class="container-fluid py-1 px-3">
+
+                <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
+                    <a href="javascript:;" class="nav-link text-body p-0">
+                        <div class="sidenav-toggler-inner">
+                            <i class="sidenav-toggler-line"></i>
+                            <i class="sidenav-toggler-line"></i>
+                            <i class="sidenav-toggler-line"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+                    <div class="col-lg-11 px-4">
+                        <div class="main">
+                            <!-- <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control search" placeholder="Search">
+
+              </div> -->
+                        </div>
+                    </div>
+
+                    <ul class="navbar-nav  justify-content-end">
+                        <li class="nav-item dropdown pe-2 mt-2">
+                            <a href="javascript:;" class="nav-link text-body p-0 position-relative"
+                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="material-icons cursor-pointer">
+                                    notifications
+                                </i>
+                                <!-- <span class="position-absolute top-5 start-100 translate-middle badge rounded-pill bg-danger border border-white small py-1 px-2">
+                <span class="small">11</span>
+                <span class="visually-hidden">unread notifications</span>
+              </span> -->
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end p-2 me-sm-n4"
+                                aria-labelledby="dropdownMenuButton">
+                                <p class="text-end text-info text-decoration-underline">Clear all</p>
+                                <li class="mb-2">
+                                    <a class="dropdown-item border-radius-md" href="javascript:;">
+                                        <div class="d-flex align-items-center py-1">
+                                            <span class="material-symbols-outlined">
+                                                person_add
+                                            </span>
+                                            <div class="ms-2">
+                                                <p class="text-sm font-weight-normal my-auto">
+                                                    Johan Doe set up their account successfully
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="dropdown-item border-radius-md" href="javascript:;">
+                                        <div class="d-flex align-items-center py-1">
+                                            <span class="material-symbols-outlined">
+                                                person_add
+                                            </span>
+                                            <div class="ms-2">
+                                                <p class="text-sm font-weight-normal my-auto">
+                                                    Johan Doe set up their account successfully
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <img src="./assets/img/kal-visuals-square.jpg" alt="bruce" class="rounded-circle shadow-lg"
+                            style="width: 50%;">
+
+                        <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-body p-0">
+                                <div class="sidenav-toggler-inner">
+                                    <i class="sidenav-toggler-line"></i>
+                                    <i class="sidenav-toggler-line"></i>
+                                    <i class="sidenav-toggler-line"></i>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container ">
+            <h6>Information Hub</h6>
+            <div class="col-lg-12 col-md-12">
+                <div class="tabbable-line">
+                    <ul class="nav nav-tabs  ">
+                        <li class="active ms-0"><a href="#tab_default_1" data-toggle="tab"
+                                class="font-weight-bold text-sm">Personal Information</a> </li>
+                        <li> <a href="#tab_default_2" data-toggle="tab" class="font-weight-bold text-sm">Mortgage </a>
+                        </li>
+                        <li> <a href="#tab_default_3" data-toggle="tab" class="font-weight-bold text-sm">Insurance</a>
+                        </li>
+                        <li> <a href="#tab_default_4" data-toggle="tab" class="font-weight-bold text-sm">Board</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-2">
+                        <!-- personal application -->
+                        <div class="tab-pane  active" id="tab_default_1" style="overflow: hidden;">
+                            <div class="col-lg-12 d-flex justify-content-between">
+                                <div class="col-lg-3 ">
+                                </div>
+                                <div class="col-lg-4 d-flex ">
+                                    <div class="col-lg-8">
+                                        <div class="input-group input-group-outline">
+                                            <label class="form-label">Search here</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <a href="#"> <button type="button" id="buttonColor"
+                                            class="btn btn-lg  py-2  mx-1 ">Apply</button></a>
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-12 col-lg-12 col-sm-6  ">
+                                <div class="card  ">
+                                    <div class="card-header my-0 py-3 " style="background-color: #EBFBFB;">
+                                        <h6 class="font-weight-bolder my-0"> Personal Information</h6>
+                                    </div>
+                                    <div class="row mt-4 px-4">
+                                        <div class="col-lg-3  col-md-10 col-12">
+                                            <div class="d-flex">
+                                                <div> <img src="./assets/img/personaldetail (1).png"
+                                                        class=" w-70 img-fluid">
+                                                </div>
+                                                <div>
+                                                    <p class="" id="jkanban-update-task" data-bs-toggle="modal"
+                                                        data-bs-target="#personaldetail">Personal Details
+                                                        <br /> <small class="terxt-sm">Fraser. 14/09/1992. Male. New
+                                                            Zealand. Lawyer.</small></small>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-10 col-12">
+                                            <div class="d-flex">
+                                                <div><img src="./assets/img/personaldetail (27).png"
+                                                        class="w-80 img-fluid">
+                                                </div>
+                                                <div>
+                                                    <p class=" mt-1" id="jkanban-update-task" data-bs-toggle="modal"
+                                                        data-bs-target="#physicaladdress">Physical Address<br /> <small
+                                                            class="terxt-sm">9 Airmens Lane, Hobsonville.</small></p>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="horizontal dark" />
+                                    <div class="row px-4">
+                                        <div class="col-lg-3  col-md-10 col-12">
+                                            <div class="d-flex">
+                                                <div><img src="./assets/img/personaldetail (24).png"
+                                                        class="w-80 img-fluid">
+                                                </div>
+                                                <div>
+                                                    <p class=" mt-1">Your Family
+                                                        <br /> <small class="terxt-sm">Chantelle. William &
+                                                            Amelia.</small></small>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-10 col-12">
+                                            <div class="d-flex">
+                                                <div> <img src="./assets/img/personaldetail (14).png"
+                                                        class="w-100 img-fluid">
+                                                </div>
+                                                <div>
+                                                    <p class="mx-2 mt-1" id="jkanban-update-task" data-bs-toggle="modal"
+                                                        data-bs-target="#contactdetail">Contact Details<br />
+                                                        <small class="terxt-sm">fraser.bowden1409@gmail.com +64 21 026
+                                                            12996</small>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-end px-2">
+                                        <a href="#"> <button type="button" id="buttonColor"
+                                                class="btn btn-lg  py-2  mx-1 ">Update</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mortgage -->
+                        <div class=" tab-pane" id="tab_default_2">
+                      <h6>hfufj</h6>
+                        </div>
+
+                        <!-- Insurance -->
+                        <div class="tab-pane " id="tab_default_3">
+
+                        </div>
+                        <!-- Board -->
+                        <div class="tab-pane " id="tab_default_4">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+    </main>
+    <!-- modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sl  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header d-flex">
+                    <p class="modal-title float-start" id="myModalLabel">
+                        <Strong class="text-dark">Add Cover</Strong>
+                    </p>
+                </div>
+                <div class="modal-body">
+                    <form role="form" action='#' method="post">
+                        <div class="input-group input-group-outline mb-3" style="border-color: #384B6B !important;">
+                            <input type="name" class="form-control" placeholder="Product">
+                        </div>
+                        <div class="input-group input-group-outline mb-3" style="border-color: #384B6B !important;">
+                            <input type="text" class="form-control" placeholder="Cover Amount">
+                        </div>
+                        <div class="input-group input-group-outline mb-3" style="border-color: #384B6B !important;">
+                            <input type="text" class="form-control" placeholder="Cover Structure">
+                        </div>
+                        <div class="input-group input-group-outline mb-3" style="border-color: #384B6B !important;">
+                            <input type="text" class="form-control" placeholder="Exclusions/Loadings">
+                        </div>
+                        <div class="input-group input-group-outline mb-3" style="border-color: #384B6B !important;">
+                            <input type="text" class="form-control" placeholder="Insurer">
+                        </div>
+                        <button type="button" id="buttonColor" class="btn btn-default float-end mt-3" id="signin"
+                            data-dismiss="myModal">Add</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="./assets/js/core/popper.min.js"></script>
+    <script src="./assets/js/core/bootstrap.min.js"></script>
+    <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="./assets/js/plugins/datatables.js"></script>
+    <script src="./assets/js/plugins/chartjs.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <!-- Kanban scripts -->
+    <script src="./assets/js/plugins/dragula/dragula.min.js"></script>
+    <script src="./assets/js/plugins/jkanban/jkanban.js"></script>
+
+    <script>
+        var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
+            }
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        }
+    </script>
+
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+    <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="./assets/js/material-dashboard.min.js?v=3.0.5"></script>
+</body>
+
+</html>

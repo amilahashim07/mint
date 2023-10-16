@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/Fav Icon (4).png">
+  <link rel="icon" type="image/png" href="./assets/img/Logo (1).png">
+  <title>bluemint</title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+  <!-- Nucleo Icons -->
+  <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link href="./assets/css/custom.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.5" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .btn:not([class*="btn-outline-"]) {
+    border: 0;
+    background-color: #b6bbb7b8 !important;
+}
+</style>
+</head>
+
+
+<body class="g-sidenav-show  " style="background-color: #E5EBE6;">
+  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3  "
+    id="sidenav-main"
+    style="background-color: #38383E;box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);">
+    <div class="sidenav-header">
+      <i class="fas fa-times px-5 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand m-0 mx-1" href="# " target="_blank">
+        <img src="./assets/img/Mint-logo.png" class="navbar-brand-img h-90 img-fluid" alt="main_logo"  >
+   
+        <span class="ms-2   text-white" style="font-size: 23px;font-family: monospace,'bolder';margin-top: 3px!important;font-weight: bolder;">MINT</span>
+      </a>
+    </div>
+    <hr class="horizontal dark mt-0 mb-2">
+    <div class="collapse navbar-collapse  w-auto h-auto" id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item mb-2 mt-0">
+          <a data-bs-toggle="collapse" href="#ProfileNav" class="nav-link text-dark " aria-controls="ProfileNav"
+            role="button" aria-expanded="false">
+            <img src="./assets/img/kal-visuals-square.jpg" class="avatar">
+            <span class="nav-link-text ms-2 ps-1 text-white" style="font-weight: 400;">Alex Brooklyn</span>
+          </a>
+          <div class="collapse" id="ProfileNav" style="">
+            <ul class="nav ">
+
+              <li class="nav-item">
+                <a class="nav-link text-dark " href="Login.html">
+                  <span class="sidenav-mini-icon  text-light"> L </span>
+                  <span class="sidenav-normal text-light  ms-3  ps-1" style="font-weight: 400;"> Logout</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </li>
+        <hr class="horizontal dark mt-0">
+
+        <li class="nav-item">
+          <a href="index.html" class="nav-link   " >
+            <i class="material-icons-round  text-sm  text-light float-start">home</i>
+            <span class="nav-link-text  px-3 ps-0" style="font-weight: 500;">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="InformationHub.html" class="nav-link  ">
+            <span class="material-symbols-outlined ps-2 text-light text-sm">
+              info
+              </span>
+            <span class="nav-link-text text-light px-2 ps-2  "
+              style="font-weight: 400">Information Hub</span>
+          </a>
+        </li>
+       
+        <li class="nav-item">
+          <a href="inbox.html" class="nav-link active " >
+            <span class="material-symbols-outlined  text-sm ps-2" style="color:#262646!important;">
+              chat
+              </span>
+            <span class="nav-link-text px-2 ps-2  "
+              style="font-weight: 400">Inbox</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="Settings.html" class="nav-link  " style="color:#3C4856 !important;">
+            <i class="fa fa-cog  text-light text-sm" aria-hidden="true"></i>
+            <span class="nav-link-text text-light  ps-1 " style="font-weight: 400">
+              Settings</span>
+          </a>
+        </li>
+   
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="main-content border-radius-lg ">
+    <!-- Navbar -->
+    <nav
+    class="navbar navbar-main navbar-expand-lg position-sticky mt-4 top-1 px-0 mx-4 shadow-none border-radius-xl z-index-sticky"
+    id="navbarBlur" data-scroll="true">
+    <div class="container-fluid py-1 px-3">
+
+      <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
+        <a href="javascript:;" class="nav-link text-body p-0">
+          <div class="sidenav-toggler-inner">
+            <i class="sidenav-toggler-line"></i>
+            <i class="sidenav-toggler-line"></i>
+            <i class="sidenav-toggler-line"></i>
+          </div>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+        <div class="col-lg-11 px-4">
+          <div class="main">
+            <!-- <div class="form-group has-search">
+              <span class="fa fa-search form-control-feedback"></span>
+              <input type="text" class="form-control search" placeholder="Search">
+
+            </div> -->
+          </div>
+        </div>
+
+        <ul class="navbar-nav  justify-content-end">
+          <li class="nav-item dropdown pe-2 mt-2">
+            <a href="javascript:;" class="nav-link text-body p-0 position-relative" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons cursor-pointer">
+            notifications
+          </i>
+              <!-- <span class="position-absolute top-5 start-100 translate-middle badge rounded-pill bg-danger border border-white small py-1 px-2">
+                <span class="small">11</span>
+                <span class="visually-hidden">unread notifications</span>
+              </span> -->
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end p-2 me-sm-n4" aria-labelledby="dropdownMenuButton">
+              <p class="text-end text-info text-decoration-underline">Clear all</p>
+              <li class="mb-2">
+                <a class="dropdown-item border-radius-md" href="javascript:;">
+                  <div class="d-flex align-items-center py-1">
+                    <span class="material-symbols-outlined">
+                      person_add
+                      </span>
+                    <div class="ms-2">
+                      <p class="text-sm font-weight-normal my-auto">
+                        Johan Doe set up their account successfully
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="mb-2">
+                <a class="dropdown-item border-radius-md" href="javascript:;">
+                  <div class="d-flex align-items-center py-1">
+                    <span class="material-symbols-outlined">
+                      person_add
+                      </span>
+                    <div class="ms-2">
+                      <p class="text-sm font-weight-normal my-auto">
+                        Johan Doe set up their account successfully
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+           
+            </ul>
+          </li>
+          <img src="./assets/img/kal-visuals-square.jpg" alt="bruce" class="rounded-circle shadow-lg"
+            style="width: 50%;">
+
+          <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+            <a href="javascript:;" class="nav-link text-body p-0">
+              <div class="sidenav-toggler-inner">
+                <i class="sidenav-toggler-line"></i>
+                <i class="sidenav-toggler-line"></i>
+                <i class="sidenav-toggler-line"></i>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container-fluid mx-3 py-2">
+      <div class="col-lg-10  d-flex justify-content-between">
+        <div class="col-lg-8"> <h6 class="mb-0">Contact My Adviser</h6>
+          <div class="d-flex">
+            <p class="font-weight-bolder text-xs">Inbox</p>
+            <ul class="d-flex justify-content-between">
+              <li class="text-xs">Contact My Adviser</li>
+          
+            </ul>
+          </div>
+        </div>
+       
+      </div>
+        
+        <div class="card col-lg-11">
+          <h5 class="text-center my-4">Contact My Adviser</h5>
+       <div class="row justify-content-center  d-flex " style="margin-right: 25rem !important; margin-left: 25rem !important;" >
+        <div class="nav justify-content-around nav-pills  px-0 mx-0 py-0 my-0 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <button class="nav-link h-navlinks mx-0 btn btn-ls btn-tab   px-0 py-2 my-0  bg-chat" 
+            id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"   role="tab"  style="text-transform: none;color: black; font-weight: bolde; font-size: 20px;justify-content: center;background-color: #88888B;opacity: 0.9;    padding-inline: 40px !important"
+            role="tab" aria-controls="v-pills-home" aria-selected="false">
+            Insurance
+          </button>
+          <button class="nav-link h-navlinks btn btn-ls  btn-tab    px-0 py-2 my-0 bg-chat" id="v-pills-profile-tab"
+            data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" style="padding-inline: 40px !important;text-transform: none;color: black; font-weight: bolde; font-size: 20px;justify-content: center;background-color: #88888B;opacity: 0.9"
+            aria-controls="v-pills-profile" aria-selected="false">
+            Mortgage
+            </button>
+          <!-- <button class="nav-link h-navlinks btn btn-ls btn-tab   px-0 py-2 my-0 bg-chat" id="v-pills-messages-tab" 
+            data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" style="padding-inline: 40px !important;text-transform: none;color: black; font-weight: bolde; font-size: 20px;justify-content: center;background-color: #88888B;opacity: 0.9" 
+            aria-controls="v-pills-messages" aria-selected="false">
+           General Query
+          </button> -->
+        </div>
+       </div>
+       <hr class="horizontal dark"/>
+                    
+               <div class="col-md-12 chat-right-column">
+            <div class="tab-content">
+              <div class="tab-pane fade  show  px-4 py-4" id="v-pills-home" role="tabpanel"
+                aria-labelledby="v-pills-home-tab">
+               
+                <h6 class="text-sm">I would like to...</h6>
+                <!-- <button onclick="showValue('Button 1')">Button 1</button> -->
+                <button   onclick="showValue('Apply for more cover')" type="button" class="btn  btn-main  btn-sm btn-round">Apply for more cover</button>
+                <button  onclick="showValue('Make a claim')" type="button" class="btn  btn-main    text-transform-none btn-sm btn-round">Make a claim</button>
+                <button  onclick="showValue('Make an alternation to my cover')" type="button" class="btn  btn-main   text-transform-none btn-sm btn-round">Make an alternation to my cover</button>
+                <button    onclick="showValue('Update my address')"  type="button" class="btn btn-main    text-transform-none btn-sm btn-round">Update my address</button>
+                <button  onclick="showValue('Update my payment details')"  type="button" class="btn   btn-main    text-transform-none btn-sm btn-round">Update my payment details</button>
+                 <button  onclick="showValue('Update my contact details')"  type="button" class="btn  btn-main    text-transform-none btn-sm btn-round">Update my contact details</button>
+                 <button  onclick="showValue('Review my exclusion')"  type="button" class="btn  btn-main   text-transform-none btn-sm btn-round">Review my exclusion</button>
+                 <h6 class="text-sm">Subject</h6>
+                 
+                 <div class="col-lg-11 col-md-12">
+                  <div class="input-group input-group-outline my-1">
+                    <input type="text" class="form-control"  id="value-textbox" readonly>
+                </div>
+                 </div>
+                 <div class="col-lg-11 col-sm-12 col-md-12">
+                  <p class="text-sm font-weight-bolder mt-4  text-dark">Additional Comments <span class="text-grey">(Optional)</span> </p>
+                  <div class="input-group input-group-outline">
+                   <textarea class="multisteps-form__textarea form-control" rows="5" placeholder="Say a few words about who you are or what you're working on."></textarea>
+                 </div>
+                 </div>
+                
+                <div class="float-end text-end my-2">
+                  <button type="button" class="btn btn-ls  mb-0 "
+                    style="background-color: #3fd6d4!important; text-transform: none;color:#262646!important"><i class="fa fa-paper-plane px-1 "
+                      aria-hidden="true"></i>Send</button>
+                </div>
+              </div>
+
+              <div class="tab-pane fade show p-3" id="v-pills-profile" role="tabpanel"
+                aria-labelledby="v-pills-profile-tab">
+                <h6 class="text-sm">I would like to...</h6>
+                <button onclick="showData('Apply for more cover')" type="button" class="btn  btn-main  btn-sm btn-round">Apply for more cover</button>
+                <button onclick="showData('Make a claim')" type="button" class="btn  btn-main    text-transform-none btn-sm btn-round">Make a claim</button>
+                <button onclick="showData('Make an alternation to my cover')" type="button" class="btn  btn-main   text-transform-none btn-sm btn-round">Make an alternation to my cover</button>
+                <button onclick="showData('Update my address')" type="button" class="btn btn-main    text-transform-none btn-sm btn-round">Update my address</button>
+                <button onclick="showData('Update my payment details')" type="button" class="btn   btn-main    text-transform-none btn-sm btn-round">Update my payment details</button>
+                 <button onclick="showData('Update my contact details')" type="button" class="btn  btn-main    text-transform-none btn-sm btn-round">Update my contact details</button>
+                 <button onclick="showData('Review my exclusion')" type="button" class="btn  btn-main   text-transform-none btn-sm btn-round">Review my exclusion</button>
+                 <h6 class="text-sm">Subject</h6>
+                 <div class="col-lg-11 col-md-12">
+                  <div class="input-group input-group-outline my-1">
+                    <input type="text" class="form-control" id="value-text" readonly>
+                </div>
+                 </div>
+                 <div class="col-lg-11 col-sm-12 col-md-12">
+                  <p class="text-sm font-weight-bolder mt-4  text-dark">Additional Comments <span class="text-grey">(Optional)</span> </p>
+                  <div class="input-group input-group-outline">
+                   <textarea class="multisteps-form__textarea form-control" rows="5" placeholder="Say a few words about who you are or what you're working on."></textarea>
+                 </div>
+                 </div>
+                 <div class="float-end text-end my-2">
+                  <button type="button" class="btn btn-ls  mb-0 "
+                  style="background-color: #3fd6d4!important; text-transform: none;color:#262646!important"><i class="fa fa-paper-plane px-1 "
+                    aria-hidden="true"></i>Send</button>
+                </div>
+              </div>
+           
+              <div class="tab-pane fade show p-3" id="v-pills-messages" role="tabpanel"
+              aria-labelledby="v-pills-messages">
+              <h6 class="text-sm">Subject</h6>
+              <div class="col-lg-11 col-md-12">
+               <div class="input-group input-group-outline my-1">
+                 <input type="text" class="form-control" placeholder="Apply for more cover,Make a claim">
+             </div>
+              </div>
+               <h6 class="text-sm">Additional Comments <span class="text-light">(Optional)</span> </h6>
+              <div class="input-group input-group-outline">
+               <textarea class="multisteps-form__textarea form-control" rows="5" placeholder="Say a few words about who you are or what you're working on."></textarea>
+             </div>
+             <div class="float-end text-end my-2">
+              <button type="button" class="btn btn-ls  mb-0 "
+              style="background-color: #3fd6d4!important; text-transform: none;color:#262646!important"><i class="fa fa-paper-plane px-1 "
+                aria-hidden="true"></i>Send</button>
+             </div>
+            </div>
+            </div>
+          </div>
+        
+          </div>
+      </div>
+  </main>
+
+  <!--   Core JS Files   -->
+  <script src="./assets/js/plugins/datatables.js"></script>
+  <script src="./assets/js/plugins/chartjs.min.js"></script>
+
+<script src="./assets/js/core/popper.min.js"></script>
+<script src="./assets/js/core/bootstrap.min.js"></script>
+<script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+<script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+<script src="./assets/js/plugins/choices.min.js"></script>
+<script src="./assets/js/plugins/multistep-form.js"></script>
+<script src="./assets/js/core/popper.min.js"></script>
+<script src="./assets/js/core/bootstrap.min.js"></script>
+<script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+<script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+<script src="./assets/js/plugins/datatables.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./assets/js/plugins/quill.min.js"></script>
+<script src="./assets/js/plugins/dragula/dragula.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./assets/js/plugins/chartjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<script>
+  function showValue(value) {
+  document.getElementById('value-textbox').value = value;
+}
+function showData(value) {
+  document.getElementById('value-text').value = value;
+}
+            $("#profileImage").click(function(e) {
+$("#imageUpload").click();
+});
+
+function fasterPreview( uploader ) {
+if ( uploader.files && uploader.files[0] ){
+  $('#profileImage').attr('src', 
+     window.URL.createObjectURL(uploader.files[0]) );
+}
+}
+
+$("#imageUpload").change(function(){
+fasterPreview( this );
+});
+
+</script>
+<script>
+  function showDiv() {
+    var x = document.getElementById("myDIV");
+
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    myFunction();
+  });
+</script>
+<script>
+
+  const accordionBtns = document.querySelectorAll(".accordion");
+
+  accordionBtns.forEach((accordion) => {
+    accordion.onclick = function () {
+      this.classList.toggle("is-open");
+
+      let content = this.nextElementSibling;
+      console.log(content);
+
+      if (content.style.maxHeight) {
+        //this is if the accordion is open
+        content.style.maxHeight = null;
+      } else {
+        //if the accordion is currently closed
+        content.style.maxHeight = content.scrollHeight + "px";
+        console.log(content.style.maxHeight);
+      }
+    };
+  });
+
+</script>
+<script>
+  $(document).ready(function () {
+
+    var current_fs, next_fs, previous_fs;
+
+    // No BACK button on first screen
+    if ($(".show").hasClass("first-screen")) {
+      $(".prev").css({ 'display': 'none' });
+    }
+
+    // Next button
+    $(".next-button").click(function () {
+
+      current_fs = $(this).parent().parent();
+      next_fs = $(this).parent().parent().next();
+
+      $(".prev").css({ 'display': 'block' });
+
+      $(current_fs).removeClass("show");
+      $(next_fs).addClass("show");
+
+      $("#progressbar li").eq($(".card2").index(next_fs)).addClass("active");
+
+      current_fs.animate({}, {
+        step: function () {
+
+          current_fs.css({
+            'display': 'none',
+            'position': 'relative'
+          });
+
+          next_fs.css({
+            'display': 'block'
+          });
+        }
+      });
+    });
+
+    // Previous button
+    $(".prev").click(function () {
+
+      current_fs = $(".show");
+      previous_fs = $(".show").prev();
+
+      $(current_fs).removeClass("show");
+      $(previous_fs).addClass("show");
+
+      $(".prev").css({ 'display': 'block' });
+
+      if ($(".show").hasClass("first-screen")) {
+        $(".prev").css({ 'display': 'none' });
+      }
+
+      $("#progressbar li").eq($(".card2").index(current_fs)).removeClass("active");
+
+      current_fs.animate({}, {
+        step: function () {
+
+          current_fs.css({
+            'display': 'none',
+            'position': 'relative'
+          });
+
+          previous_fs.css({
+            'display': 'block'
+          });
+        }
+      });
+    });
+
+  });
+</script>
+
+  <!-- Kanban scripts -->
+  <script src="./assets/js/plugins/dragula/dragula.min.js"></script>
+  <script src="./assets/js/plugins/jkanban/jkanban.js"></script>
+
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-dashboard.min.js?v=3.0.5"></script>
+</body>
+
+</html>

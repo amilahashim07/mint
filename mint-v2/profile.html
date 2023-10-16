@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="./assets/img/Logo (1).png">
+
+    <title>
+        bluemint
+    </title>
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+    <!-- Nucleo Icons -->
+    <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+    <!-- <link href=".../assets/css/nucleo-icons.css" rel="stylesheet" /> -->
+    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <!-- CSS Files -->
+    <link href="./assets/css/custom.css" rel="stylesheet" />
+    <link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.5" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .card {
+
+            box-shadow: 0 4px 25px 1px rgb(0 0 0 / 5%), 0 1px 2px 1px rgb(0 0 0 / 6%);
+            border-radius: 20px;
+            border: 4px solid #3FD6D4;
+        }
+       
+    </style>
+</head>
+
+<body class="" style="background-color: #E5EBE6;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg top-0 z-index-3 w-100 shadow-none py-4" style="background-color: #262746;">
+        <div class="container">
+            <img src="./assets/img/Logo (5).png" class="w-15 ">
+
+            <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon mt-2">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse w-100  py-lg-0" id="navigation">
+                <ul class="navbar-nav navbar-nav-hover "
+                    style="margin-left: auto !important;margin-right: 0px !important;">
+                    <li>
+                        <div class="float-end mx-2 mb-0" id="jkanban-update-task" data-bs-toggle="modal"
+                            data-bs-target="#saveandexit">
+                            <button type="button" id="buttonoutline"  class="btn btn-sm  w-100 text-light  mb-2" style=" background-color: #262746;">Save & Exit</button>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav  text-light d-lg-block d-none">
+
+                    <li class="nav-item">
+                        <span class="material-symbols-outlined text-xl text-light font-weight-bolder">
+                            menu
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content  mt-4">
+
+        <div class="page-header align-items-start min-vh-100">
+
+            <div class="container my-auto">
+                <div class="row">
+                    <div class="col-lg-9 col-md-10 col-12 mx-auto">
+                        <div class="card px-2 py-2">
+                            <div class="d-flex ">
+                                <div> <img src="./assets/img/Group 10364.png" class="w-80 "></div>
+
+                                <div class="mt-3">
+                                    <h6>Johan Doe</h6>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-9 my-4  col-md-8 col-12 mx-auto">
+                        <div class="card px-4 py-4">
+
+                            <h5>Your Profile</h5>
+                            <p class="text-sm  mb-3">This information you share will help your Financial Adviser prepare recommendations that
+                                are tailored to your needs. </p>
+
+                            <div class="row mt-2">
+                                <div class="col-lg-5  col-md-10 col-12">
+                                    <div class="d-flex">
+                                        <div> <img src="./assets/img/personaldetail (1).png" class=" w-70 img-fluid">
+                                        </div>
+                                        <div>
+                                            <p class="" id="jkanban-update-task" data-bs-toggle="modal"
+                                                data-bs-target="#personaldetail">Personal Details</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-10 col-12">
+                                    <div class="d-flex">
+                                        <div><img src="./assets/img/personaldetail (27).png" class="w-80 img-fluid">
+                                        </div>
+                                        <div>
+                                            <p class=" mt-1" id="jkanban-update-task" data-bs-toggle="modal"
+                                                data-bs-target="#physicaladdress">Physical Address</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="horizontal dark" />
+                            <div class="row">
+                                <div class="col-lg-5  col-md-10 col-12">
+                                    <div class="d-flex">
+                                        <div><img src="./assets/img/personaldetail (24).png" class="w-80 img-fluid">
+                                        </div>
+                                        <div>
+                                            <p class=" mt-1" id="jkanban-update-task" data-bs-toggle="modal"
+                                            data-bs-target="#yourfamily">Your Family</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-10 col-12">
+                                    <div class="d-flex">
+                                        <div> <img src="./assets/img/personaldetail (14).png" class="w-80 img-fluid">
+                                        </div>
+                                        <div>
+                                            <p class="mx-2 mt-1" id="jkanban-update-task" data-bs-toggle="modal"
+                                                data-bs-target="#contactdetail">Contact Details</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="horizontal dark" />
+                            <h5>Financial Position</h5>
+                            <div class="row">
+                                <div class="col-lg-5  col-md-10 col-12">
+                                    <div class="d-flex">
+                                        <div> <img src="./assets/img/personaldetail (25).png" class="w-80 img-fluid">
+                                        </div>
+                                        <div>
+                                            <p class=" mt-1">Income</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-10 col-12">
+                                    <div class="d-flex">
+                                        <div><img src="./assets/img/personaldetail (21).png" class="w-70 img-fluid">
+                                        </div>
+                                        <div>
+                                            <p class=" mt-1">Assets</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="horizontal dark" />
+                            <div class="row">
+                                <div class="col-lg-5  col-md-10 col-12">
+                                    <div class="d-flex">
+                                        <div><img src="./assets/img/personaldetail (12).png" class="w-70 img-fluid">
+                                        </div>
+                                        <div>
+                                            <p class=" mt-1">Expenses</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-10 col-12">
+                                    <div class="d-flex">
+                                        <div class="mx-0 px-0"><img src="./assets/img/personaldetail (16).png"
+                                                class="w-60  img-fluid"></div>
+                                        <div>
+                                            <p class=" mt-1" style="margin-left: -9px ;">Liabilities</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="horizontal dark" />
+                            <h5>Policies, Lending & Investments</h5>
+                            <div class="row">
+                                <div class="col-lg-5  col-md-10 col-12">
+                                    <div class="d-flex">
+                                        <div><img src="./assets/img/personaldetail (4).png" class="w-70 img-fluid">
+                                        </div>
+                                        <div>
+                                            <p class=" mt-1">Life Insurance</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-10 col-12">
+                                    <div class="d-flex">
+                                        <div> <img src="./assets/img/personaldetail (7).png" class="w-70 img-fluid">
+                                        </div>
+                                        <div>
+                                            <p class=" mt-1">Mortgage</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="horizontal dark" />
+                            <div class="row">
+                                <div class="col-lg-5  col-md-10 col-12">
+                                    <div class="d-flex">
+                                        <div><img src="./assets/img/personaldetail (8).png" class="w-70 img-fluid">
+                                        </div>
+                                        <div>
+                                            <p class=" mt-1 mx-2">KiwiSaver</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr class="horizontal dark" />
+                            <h5>How can we help?</h5>
+                            <div class="row">
+                                <div class="col-lg-5  col-md-10 col-12">
+                                    <div class="d-flex">
+                                        <div><img src="./assets/img/personaldetail (9).png" class="w-80 img-fluid">
+                                        </div>
+                                        <div>
+                                            <p class=" mt-1 mx-2">Scope of service</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-10 col-12">
+                                    <div class="d-flex">
+                                        <div><img src="./assets/img/personaldetail (22).png" class="w-70 img-fluid">
+                                        </div>
+                                        <div>
+                                            <p class=" mt-1">Disclosure Documents</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="horizontal dark" />
+                            <div class="row">
+                                <div class="col-lg-5  col-md-10 col-12">
+                                    <div class="d-flex">
+                                        <div><img src="./assets/img/personaldetail (19).png" class="w-70 img-fluid">
+                                        </div>
+                                        <div>
+                                            <p class=" mt-1">Professional Advisers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- personal information -->
+        <div class="modal fade" id="personaldetail" style="display: none" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="h5 modal-title">
+                            <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" fill="#3A3A40" width="25.531"
+                                height="25.534" viewBox="0 0 56.981 41.529">
+                                <path fill="#3A3A40" id="id-card-svgrepo-com"
+                                    d="M52.919,5.25H6.562A5.319,5.319,0,0,0,1.25,10.562v30.9a5.319,5.319,0,0,0,5.312,5.312H52.919a5.319,5.319,0,0,0,5.312-5.312v-30.9A5.319,5.319,0,0,0,52.919,5.25ZM6.562,8.147H52.919a2.418,2.418,0,0,1,2.414,2.414v2.414H4.147V10.562A2.418,2.418,0,0,1,6.562,8.147ZM52.919,43.881H6.562a2.418,2.418,0,0,1-2.414-2.414V15.874H55.334V41.467a2.418,2.418,0,0,1-2.414,2.414ZM17.465,29.159a5.09,5.09,0,1,0-5.09-5.09h0a5.094,5.094,0,0,0,5.09,5.09Zm0-7.282a2.192,2.192,0,1,1-2.192,2.192h0a2.194,2.194,0,0,1,2.192-2.192Zm0,9.567a8.782,8.782,0,0,0-8.518,6.8l-.012.06a1.4,1.4,0,0,0-.033.309,1.448,1.448,0,0,0,2.861.319l0-.01a5.838,5.838,0,0,1,11.392-.039l.008.039a1.449,1.449,0,0,0,2.863-.315,1.417,1.417,0,0,0-.035-.315l0,.01a8.8,8.8,0,0,0-8.526-6.859h0ZM49.056,20.7H33.6a1.449,1.449,0,1,0,0,2.9H49.056a1.449,1.449,0,0,0,0-2.9Zm0,7.726H33.6a1.449,1.449,0,1,0,0,2.9H49.056a1.449,1.449,0,0,0,0-2.9Zm0,7.726H33.6a1.449,1.449,0,0,0,0,2.9H49.056a1.449,1.449,0,0,0,0-2.9Z"
+                                    transform="translate(-1.25 -5.25)" fill="#7b809a" />
+                            </svg>Personal Details
+                        </h5>
+
+                        <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
+                    <div class=" modal-body">
+                        <p class="text-sm">Tell us your name, date of birth and where you were born</p>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Name: </label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                    <input type="name" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">DOB:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Gender: </label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Occupation:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Country of Birth:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+
+                                <div class="col-lg-8 mx-3 mt-2 px-0 d-flex">
+                                    <p class="text-sm mt-1 mx-1">NZ Citizenship/Residency</p>
+                                    <div class="form-check mx-0 ps-0">
+                                        <input class="form-check-input" type="checkbox" id="customCheck1">
+                                        <label>Yes</label>
+                                    </div>
+                                    <div class="form-check mx-0 ps-0">
+                                        <input class="form-check-input" type="checkbox" id="customCheck1">
+                                        <label>No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <button class="m-1 btn text-light" style="background-color: #3FD6D4;" data-bs-dismiss="modal"
+                            aria-label="Close">
+                                Save
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal physical address -->
+        <div class="modal fade" id="physicaladdress" style="display: none" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="h5 modal-title">
+                            <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" fill="#3A3A40" width="25.531"
+                                height="25.534" viewBox="0 0 46.531 43.534">
+                                <g id="home-1-svgrepo-com" transform="translate(-0.594 -2)">
+                                    <path id="Path_612" data-name="Path 612" d="M45.72,22H2"
+                                        transform="translate(0 22.534)" fill="#3A3A40" stroke="#7b809a"
+                                        stroke-linecap="round" stroke-width="2" />
+                                    <path id="Path_613" data-name="Path 613"
+                                        d="M2,19.489l8.882-7.105M45.72,19.489,27.957,5.279a6.558,6.558,0,0,0-8.194,0L18.054,6.646"
+                                        transform="translate(0 0.999)" fill="#3A3A40" stroke="#7b809a"
+                                        stroke-linecap="round" stroke-width="2" />
+                                    <path id="Path_614" data-name="Path 614"
+                                        d="M15.5,8.465V4.093A1.093,1.093,0,0,1,16.593,3h5.465a1.093,1.093,0,0,1,1.093,1.093v10.93"
+                                        transform="translate(16.011 0)" fill="#3A3A40" stroke="#7b809a"
+                                        stroke-linecap="round" stroke-width="2" />
+                                    <path id="Path_615" data-name="Path 615" d="M4,36.825V9.5"
+                                        transform="translate(2.372 7.709)" fill="#3A3A40" stroke="#7b809a"
+                                        stroke-linecap="round" stroke-width="2" />
+                                    <path id="Path_616" data-name="Path 616" d="M20,9.5v8.744m0,18.581V26.988"
+                                        transform="translate(21.348 7.709)" fill="#3A3A40" stroke="#7b809a"
+                                        stroke-linecap="round" stroke-width="2" />
+                                    <path id="Path_617" data-name="Path 617"
+                                        d="M22.116,31.488V20.558c0-3.091,0-4.637-.96-5.6s-2.506-.96-5.6-.96-4.637,0-5.6.96M9,31.488V20.558"
+                                        transform="translate(8.302 13.046)" fill="#3A3A40" stroke="#7b809a"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                    <path id="Path_618" data-name="Path 618"
+                                        d="M18.744,11.872A4.372,4.372,0,1,1,14.372,7.5,4.372,4.372,0,0,1,18.744,11.872Z"
+                                        transform="translate(9.488 5.337)" fill="#3A3A40" stroke="#7b809a"
+                                        stroke-width="2" />
+                                </g>
+                            </svg>
+                            Physical Address
+                        </h5>
+                        <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="pt-4 modal-body">
+                        <p>Where do you live and what is your best postal address.</p>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Physical Address:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Postal Address:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-lg-4"> </div>
+                                <div class="col-lg-8  d-flex">
+                                    <div class="form-check  ">
+                                        <input class="form-check-input" type="checkbox" id="customCheck1">
+                                    </div>
+                                    <p class="text-sm mt-1 mx-1">Tick if same as Physical Address.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <button class="m-1 btn text-light " style="background-color: #3FD6D4;" data-bs-dismiss="modal"
+                            aria-label="Close">
+                                Save
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--your family  -->
+        <div class="modal fade" id="yourfamily" style="display: none" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="h5 modal-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25.183" height="25.217" viewBox="0 0 56.183 48.217">
+                                <path fill="#1B3E3D" id="life-insurance-svgrepo-com" d="M39.727,74.223a8.613,8.613,0,0,1,0,12.314L30.2,95.909a3.072,3.072,0,0,1-4.3,0l-9.526-9.372a8.613,8.613,0,0,1,0-12.314,8.919,8.919,0,0,1,11.676-.689A8.919,8.919,0,0,1,39.727,74.223Zm-12.465,1.6a6.664,6.664,0,0,0-9.31,0,6.363,6.363,0,0,0,0,9.107L27.479,94.3a.822.822,0,0,0,1.144,0l9.526-9.372a6.363,6.363,0,0,0,0-9.107,6.664,6.664,0,0,0-9.31,0,1.125,1.125,0,0,1-1.578,0ZM21.811,99.821H11.685l-4.67-4.67a4.1,4.1,0,0,0-5.8,5.8l5.874,5.874a4.085,4.085,0,0,0,2.929,1.2l8.715,0v10.747a1.125,1.125,0,1,0,2.25,0V106.9a1.125,1.125,0,0,0-1.125-1.125H10.049a1.871,1.871,0,0,1-1.371-.54L2.8,99.363a1.853,1.853,0,0,1,2.62-2.621l5,5a1.125,1.125,0,0,0,.8.329H21.761c.016,0,1.079.005,1.079.005a1.857,1.857,0,0,1,1.857,1.857v14.841a1.125,1.125,0,1,0,2.25,0V103.932a4.107,4.107,0,0,0-4.107-4.106h-.919l-.111-.005Zm11.557.005a4.107,4.107,0,0,0-4.107,4.106v14.841a1.125,1.125,0,1,0,2.25,0V103.932a1.857,1.857,0,0,1,1.857-1.857h.981l.085-.005H44.989a1.125,1.125,0,0,0,.8-.329l5-5a1.853,1.853,0,0,1,2.62,2.621l-5.874,5.874a1.837,1.837,0,0,1-1.331.538,1.225,1.225,0,0,0-.249.024,1.1,1.1,0,0,1,.222-.022H36.352a1.125,1.125,0,0,0-1.125,1.125v11.872a1.125,1.125,0,1,0,2.25,0V108.026h8.694a4.1,4.1,0,0,0,2.949-1.2l5.874-5.874a4.1,4.1,0,0,0-5.8-5.8l-4.67,4.67H34.4l-.119.006h-.911Z" transform="translate(-0.013 -71.682)" fill="#7b809a"/>
+                              </svg>
+                            Your Family
+                        </h5>
+                        <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="text-start modal-body">
+                        <p>Tell us about additional family members. </p>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Adult:</label></div>
+                            <div class="col-lg-7 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                    <!-- <label class="form-label">email</label> -->
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-1 mt-3 mx-0 px-0"><span class="material-symbols-outlined" style="color: #262746;" data-bs-toggle="modal"
+                                data-bs-target="#adult">
+                                add_circle
+                                </span></div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Dependent:</label></div>
+                            <div class="col-lg-7">
+                                <div class="input-group input-group-outline mt-2 ">
+                                    <!-- <label class="form-label">call</label> -->
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-1 mt-3 mx-0 px-0"><span class="material-symbols-outlined" style="color: #262746;" data-bs-toggle="modal"
+                                data-bs-target="#dependent">
+                                add_circle
+                                </span></div>
+                        </div>
+
+
+                        <div class="text-end">
+                        <button class="m-1 btn text-light" style="background-color: #3FD6D4;"  data-bs-dismiss="modal" aria-label="Close" >
+                                    Save </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- adult to -->
+        <div class="modal fade" id="adult" style="display: none" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="h5 modal-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25.183" height="25.217" viewBox="0 0 56.183 48.217">
+                                <path fill="#1B3E3D" id="life-insurance-svgrepo-com" d="M39.727,74.223a8.613,8.613,0,0,1,0,12.314L30.2,95.909a3.072,3.072,0,0,1-4.3,0l-9.526-9.372a8.613,8.613,0,0,1,0-12.314,8.919,8.919,0,0,1,11.676-.689A8.919,8.919,0,0,1,39.727,74.223Zm-12.465,1.6a6.664,6.664,0,0,0-9.31,0,6.363,6.363,0,0,0,0,9.107L27.479,94.3a.822.822,0,0,0,1.144,0l9.526-9.372a6.363,6.363,0,0,0,0-9.107,6.664,6.664,0,0,0-9.31,0,1.125,1.125,0,0,1-1.578,0ZM21.811,99.821H11.685l-4.67-4.67a4.1,4.1,0,0,0-5.8,5.8l5.874,5.874a4.085,4.085,0,0,0,2.929,1.2l8.715,0v10.747a1.125,1.125,0,1,0,2.25,0V106.9a1.125,1.125,0,0,0-1.125-1.125H10.049a1.871,1.871,0,0,1-1.371-.54L2.8,99.363a1.853,1.853,0,0,1,2.62-2.621l5,5a1.125,1.125,0,0,0,.8.329H21.761c.016,0,1.079.005,1.079.005a1.857,1.857,0,0,1,1.857,1.857v14.841a1.125,1.125,0,1,0,2.25,0V103.932a4.107,4.107,0,0,0-4.107-4.106h-.919l-.111-.005Zm11.557.005a4.107,4.107,0,0,0-4.107,4.106v14.841a1.125,1.125,0,1,0,2.25,0V103.932a1.857,1.857,0,0,1,1.857-1.857h.981l.085-.005H44.989a1.125,1.125,0,0,0,.8-.329l5-5a1.853,1.853,0,0,1,2.62,2.621l-5.874,5.874a1.837,1.837,0,0,1-1.331.538,1.225,1.225,0,0,0-.249.024,1.1,1.1,0,0,1,.222-.022H36.352a1.125,1.125,0,0,0-1.125,1.125v11.872a1.125,1.125,0,1,0,2.25,0V108.026h8.694a4.1,4.1,0,0,0,2.949-1.2l5.874-5.874a4.1,4.1,0,0,0-5.8-5.8l-4.67,4.67H34.4l-.119.006h-.911Z" transform="translate(-0.013 -71.682)" fill="#7b809a"/>
+                              </svg>
+                            Adult Two
+                        </h5>
+                        <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class=" modal-body">
+                        <p>Tell us about your spouse.</p>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Name:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Date of Birth:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                 <input type="date" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Gender:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                 <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Occupation:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                 <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Country of Birth:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                 <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-lg-8 mx-3 mt-2 px-0 d-flex">
+                                <p class="text-sm mt-1 ">NZ Citizenship/Residency</p>
+                                <div class="form-check mx-0 ps-1">
+                                    <input class="form-check-input" type="checkbox" id="customCheck1">
+                                    <label>Yes</label>
+                                </div>
+                                <div class="form-check mx-0 ps-2">
+                                    <input class="form-check-input" type="checkbox" id="customCheck1">
+                                    <label>No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Email Address:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                    <!-- <label class="form-label">email</label> -->
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Contact Number:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                    <!-- <label class="form-label">call</label> -->
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end ">
+                            <button class="m-1 mt-2 mx-0 btn text-light" style="background-color: #3FD6D4;" data-bs-dismiss="modal"
+                            aria-label="Close">
+                                Save
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- dependent  -->
+        <div class="modal fade" id="dependent" style="display: none" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="h5 modal-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25.183" height="25.217" viewBox="0 0 56.183 48.217">
+                                <path fill="#1B3E3D" id="life-insurance-svgrepo-com" d="M39.727,74.223a8.613,8.613,0,0,1,0,12.314L30.2,95.909a3.072,3.072,0,0,1-4.3,0l-9.526-9.372a8.613,8.613,0,0,1,0-12.314,8.919,8.919,0,0,1,11.676-.689A8.919,8.919,0,0,1,39.727,74.223Zm-12.465,1.6a6.664,6.664,0,0,0-9.31,0,6.363,6.363,0,0,0,0,9.107L27.479,94.3a.822.822,0,0,0,1.144,0l9.526-9.372a6.363,6.363,0,0,0,0-9.107,6.664,6.664,0,0,0-9.31,0,1.125,1.125,0,0,1-1.578,0ZM21.811,99.821H11.685l-4.67-4.67a4.1,4.1,0,0,0-5.8,5.8l5.874,5.874a4.085,4.085,0,0,0,2.929,1.2l8.715,0v10.747a1.125,1.125,0,1,0,2.25,0V106.9a1.125,1.125,0,0,0-1.125-1.125H10.049a1.871,1.871,0,0,1-1.371-.54L2.8,99.363a1.853,1.853,0,0,1,2.62-2.621l5,5a1.125,1.125,0,0,0,.8.329H21.761c.016,0,1.079.005,1.079.005a1.857,1.857,0,0,1,1.857,1.857v14.841a1.125,1.125,0,1,0,2.25,0V103.932a4.107,4.107,0,0,0-4.107-4.106h-.919l-.111-.005Zm11.557.005a4.107,4.107,0,0,0-4.107,4.106v14.841a1.125,1.125,0,1,0,2.25,0V103.932a1.857,1.857,0,0,1,1.857-1.857h.981l.085-.005H44.989a1.125,1.125,0,0,0,.8-.329l5-5a1.853,1.853,0,0,1,2.62,2.621l-5.874,5.874a1.837,1.837,0,0,1-1.331.538,1.225,1.225,0,0,0-.249.024,1.1,1.1,0,0,1,.222-.022H36.352a1.125,1.125,0,0,0-1.125,1.125v11.872a1.125,1.125,0,1,0,2.25,0V108.026h8.694a4.1,4.1,0,0,0,2.949-1.2l5.874-5.874a4.1,4.1,0,0,0-5.8-5.8l-4.67,4.67H34.4l-.119.006h-.911Z" transform="translate(-0.013 -71.682)" fill="#7b809a"/>
+                              </svg>
+
+                            Dependent One
+                        </h5>
+                        <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class=" modal-body">
+                        <p>Please provide basic information about your dependent.</p>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Name:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Date of Birth:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                 <input type="date" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Gender:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                 <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Occupation:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                 <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Country of Birth:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                 <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end ">
+                            <button class="m-1 mt-2 mx-0 btn text-light" style="background-color: #3FD6D4;" data-bs-dismiss="modal"
+                            aria-label="Close">
+                                Save
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal physical address -->
+        <div class="modal fade" id="contactdetail" style="display: none" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="h5 modal-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#3A3A40" width="25.531" height="25.534"
+                                viewBox="0 0 33.592 43.517">
+                                <g id="_x31_2_sending_mail" transform="translate(-8.07 -1)">
+                                    <g id="Group_10330" data-name="Group 10330" transform="translate(8.07 1)">
+                                        <path fill="#3A3A40" id="Path_7920" data-name="Path 7920"
+                                            d="M40.663,13.6l0-.006a.663.663,0,0,0-.054-.042,3.133,3.133,0,0,0-2.1-.817H35.133V3.473A2.476,2.476,0,0,0,32.66,1H10.543A2.476,2.476,0,0,0,8.07,3.473V42.044a2.476,2.476,0,0,0,2.473,2.473H32.66a2.476,2.476,0,0,0,2.473-2.473V30.951H38.5a3.141,3.141,0,0,0,2.191-.893s.01-.005.014-.01l0,0a3.149,3.149,0,0,0,.95-2.253v-11.9A3.141,3.141,0,0,0,40.663,13.6Zm-2.158.539a1.739,1.739,0,0,1,.4.052L29.154,22.7l-9.761-8.51a1.74,1.74,0,0,1,.407-.052Zm-12.6,7.59L18.42,28.861a1.74,1.74,0,0,1-.373-1.07v-11.9a1.733,1.733,0,0,1,.215-.825ZM15.989,2.4H27.212v.924a.925.925,0,0,1-.924.924H16.912a.925.925,0,0,1-.924-.924Zm-5.445,0h4.042v.924a2.33,2.33,0,0,0,2.327,2.327h9.376a2.33,2.33,0,0,0,2.327-2.327V2.4H32.66a1.071,1.071,0,0,1,1.069,1.069v9.261H19.8a3.133,3.133,0,0,0-2.11.825c-.015.014-.034.021-.047.036l0,.005a3.141,3.141,0,0,0-1,2.29V16H13.957a.7.7,0,0,0,0,1.4h2.686v2.981H13.957a.7.7,0,0,0,0,1.4h2.686v3.631H13.957a.7.7,0,0,0,0,1.4h2.686v.965a3.162,3.162,0,0,0,3.157,3.16H33.729v8.477H9.474V3.473A1.071,1.071,0,0,1,10.543,2.4ZM32.66,43.113H10.543a1.071,1.071,0,0,1-1.069-1.069V40.831H33.729v1.213A1.071,1.071,0,0,1,32.66,43.113ZM38.5,29.547H19.8c-.02,0-.039-.005-.059-.006l7.224-6.886,1.728,1.507a.7.7,0,0,0,.923,0L31.637,22.4l7.423,7.052A1.73,1.73,0,0,1,38.5,29.547Zm1.754-1.756a1.743,1.743,0,0,1-.154.713L32.7,21.47l7.342-6.406a1.731,1.731,0,0,1,.217.828Z"
+                                            transform="translate(-8.07 -1)" fill="#7b809a" />
+                                    </g>
+                                </g>
+                            </svg>
+
+                            Contact Details
+                        </h5>
+                        <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="pt-4 modal-body">
+                        <p>Please confirm your email address and contact number.</p>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Email Address:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                    <!-- <label class="form-label">email</label> -->
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  ">
+                            <div class="col-lg-4"> <label class="form-label mt-3">Contact Number:</label></div>
+                            <div class="col-lg-8 ">
+                                <div class="input-group input-group-outline mt-2 ">
+                                    <!-- <label class="form-label">call</label> -->
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-end ">
+                            <button class="m-1 mt-2 mx-0 btn text-light" style="background-color: #3FD6D4;" data-bs-dismiss="modal"
+                            aria-label="Close">
+                                Save
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- save and exit -->
+        <div class="modal fade" id="saveandexit" style="display: none" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="">
+                        <h5 class="h5 modal-title">
+                            <button type="button" class="btn-close d-flex float-end text-dark" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    
+                    </div>
+                    <div class="pt-4 text-center modal-body">
+                        <p>Thank you for completing your profile. Your adviser will be in contact with you shortly. </p>
+                        <p> the meantime, you can review and update your profile at any time.</p>
+                        <div class="text-center">
+                            <a href="dashboard.html"><button class="m-1 btn text-light" style="background-color: #3FD6D4;" >
+                                    Exit </button></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--  -->
+    <!--   Core JS Files   -->
+    <script src="./assets/js/core/popper.min.js"></script>
+    <script src="./assets/js/core/bootstrap.min.js"></script>
+    <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <!-- Kanban scripts -->
+
+    <script>
+        var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
+            }
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        }
+    </script>
+    <!-- Github buttons -->
+
+</body>
+
+</html>
